@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="box col-12">
                 hola
             </div>
         </div>
