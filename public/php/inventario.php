@@ -21,7 +21,6 @@
 
 
     <?php
-        echo 'gg';
         include("databaseconnection.php");
         $connection=conectar();
         $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria='lacteo'");
