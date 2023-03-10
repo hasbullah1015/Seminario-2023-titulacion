@@ -21,9 +21,9 @@
     <div class="container">
     <br>
         <div class="row text-center">
-        <b><h1 class="display-1">Bienvenido,</h1></b><br>
-        <h2 class="display-2">Por favor, ingrese su usuario y contraseña:</h2><br>
-</div>   
+            <b><h1 class="display-1">Bienvenido,</h1></b><br>
+            <h2 class="display-2">Por favor, ingrese su usuario y contraseña:</h2><br>
+        </div>   
 
         <div class="row">
             <div class="col-sm-3 col-md-3 mx-auto slide">
