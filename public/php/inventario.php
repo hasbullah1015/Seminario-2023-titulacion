@@ -20,8 +20,8 @@
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row">
                 <form action="" method="get">
-                    <input type="text" placeholder="id,nombre,categora">
-                    <input type="submit" name="enviar" value=""buscar>
+                    <input type="text" placeholder="id,nombre,categora"> 
+                    <input type="submit" name="enviar" value="buscar">
                 </form>
             </div>
             <div class="table-responsive">
