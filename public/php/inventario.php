@@ -20,10 +20,17 @@
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row">
                 <form action="" method="get">
-                    <input type="text" placeholder="id,nombre,categora"> 
+                    <input type="text" placeholder="busqueda"> <!-- id, producto, marca--> 
                     <input type="submit" name="enviar" value="buscar">
                 </form>
             </div>
+            <?php 
+                if(isset($_GET['enviar'])){
+                    $busqueda = $GET['busqueda'];
+                }
+                $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria LIKE '%$busqueda%' OR idProducto LIKE '%$busqueda%' OR nombre LIKE '%$busqueda%' ");
+
+            ?>
             <div class="table-responsive">
                 <table class="table">
                 <tr>
@@ -34,7 +41,6 @@
                 </tr>
 
                 <?php
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria='lacteo'");
                     if($connection){
                         while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
                 ?>
