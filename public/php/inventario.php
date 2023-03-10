@@ -18,9 +18,10 @@
                 <table class="table">
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">categoria</th>
+                    <th scope="col">cantidad</th>
                 </tr>
                 </table>
             </div>
