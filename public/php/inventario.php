@@ -1,3 +1,7 @@
+<?php
+        include("databaseconnection.php");
+        $connection=conectar();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,12 +21,30 @@
             <div class="table-responsive">
                 <table class="table">
                 <tr>
-                    <th scope="col">#</th>
                     <th scope="col">ID</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">categoria</th>
                     <th scope="col">cantidad</th>
                 </tr>
+
+                <?php
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria='lacteo'");
+                    if($connection){
+                        while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
+                ?>
+                        <tr>
+                            <td><?php echo $datos['idProducto'];  ?></td>
+                            <td><?php echo $datos['nombre'];  ?></td>
+                            <td><?php echo $datos['categoria'];  ?></td>
+                            <td><?php echo $datos['cantidad'];  ?></td>
+
+                        </tr>
+                <?php
+                        }
+                    }   
+                ?>
+
+
                 </table>
             </div>
         </div>
@@ -30,8 +52,6 @@
     <br>
 
     <?php
-        include("databaseconnection.php");
-        $connection=conectar();
         $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria='lacteo'");
         if($connection){
             while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
