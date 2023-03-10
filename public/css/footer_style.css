@@ -1,0 +1,50 @@
+    
+
+#linkedin:hover{
+    color: rgb(255, 0, 238);
+}
+
+#ft_h2{
+    font-size: 16px !important;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+h4{
+    font-size: 20px !important;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+p{
+    font-size: 14px !important;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.row .box{
+    text-align: center;
+
+}
+
+#logo-footer{
+    width: 120px;
+    height: 140ox;
+    margin-top: 50px;
+}
+
+@media (orientation : portrait) {
+
+    #logo-footer{
+        width: 80px;
+        height: 100ox;
+        margin-top: 20px;
+    }
+
+        
+    
+    
+}
+

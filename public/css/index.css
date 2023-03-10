@@ -1,0 +1,172 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+
+
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.722) !important;
+    font-size: 40px !important;
+
+}
+.row h2{
+    color: rgba(0, 0, 0, 0.722) ;
+    font-size: 30px !important;
+
+}
+
+footer h4:hover{
+    color: blueviolet;
+}
+
+.navbar-collapse{
+    justify-content: space-between;
+    color: black;
+    text-align: center;
+}
+.navbar { padding: 2rem; background-color: rgba(36, 36, 36, 0.53)}
+.navbar-toggler-icon{color:black}
+
+.navbar-nav .nav-link:hover{
+    color: black ;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10em;
+    text-align: center;
+    transition: 0.01 s linear;
+    
+}
+
+
+
+.slide{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    text-align: center; 
+    
+}
+
+.slide:hover{
+    background-color: rgba(0, 0, 0, 0.751);
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
+    border-radius: 20px;
+    transition: 0.1 s linear;
+
+}
+
+
+#main_data_panel{
+    align-items: center !important;
+    text-align: center !important; 
+    
+}
+
+
+form button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #000000;
+    border: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+
+
+
+form button:hover {
+    padding-right: 25px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 24px;
+
+  }
+  
+
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+input
+    {
+        text-align: left;
+        background-color: transparent;
+        border: 0px;
+        border-bottom: solid rgb(0, 0, 0) 1px; 
+    }
+
+    input:hover
+    {
+        background-color: transparent;
+        border: 0px;
+        border-bottom: solid rgb(255, 255, 255) 1px !important; 
+        color: white !important;
+    }
+
+
+@media (orientation:landscape) {
+
+    body{
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+    }
+    Footer {margin-top:auto;}
+
+
+    video{
+        min-height: 100vh;
+
+    }
+
+}
+
+
+
+@media (orientation : portrait) {
+
+    body{
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+    }
+    Footer {margin-top:auto;}
+
+    video{
+        min-height: 100vh;
+
+    }
+
+        
+    
+    
+}
