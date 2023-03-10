@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <h1>Inventario: </h1> <br>
+            <h1>Inventario: </h1> <hr>
             <div class="box col-12">
                 hola
             </div>
