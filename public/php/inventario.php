@@ -18,6 +18,9 @@
     <div class="container">
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
+            <div class="row">
+                
+            </div>
             <div class="table-responsive">
                 <table class="table">
                 <tr>
