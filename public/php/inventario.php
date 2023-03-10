@@ -14,8 +14,15 @@
     <div class="container">
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
-            <div class="box col-12">
-                hola
+            <div class="table-responsive">
+                <table class="table">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </table>
             </div>
         </div>
     </div>
