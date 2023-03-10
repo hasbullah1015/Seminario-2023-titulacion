@@ -41,7 +41,8 @@
                         </tr>
                 <?php
                         }
-                    }   
+                    }  
+                    mysqli_close($connection);
                 ?>
 
 
@@ -51,18 +52,5 @@
     </div>
     <br>
 
-    <?php
-        $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria='lacteo'");
-        if($connection){
-            while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
-                echo $datos['nombre'];
-                echo $datos['cantidad'];
-            }
-        }
-    ?>
-
-    <?php 
-            mysqli_close($connection);
-    ?>
 </body>
 </html>
