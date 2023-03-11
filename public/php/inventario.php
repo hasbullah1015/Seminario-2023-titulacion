@@ -24,6 +24,7 @@
                     <input type="submit" name="enviar" value="buscar">
                 </form>
             </div>
+            hola
             <?php 
                 if(isset($_GET['enviar'])){
                     $busqueda = $GET['busqueda'];
