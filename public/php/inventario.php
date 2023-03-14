@@ -19,7 +19,7 @@
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row">
-                <form method="get">
+                <form method="post">
                     <input type="text" placeholder="busqueda" name="busqueda"> <!-- id, producto, marca--> 
                     <input type="submit" name="enviar" value="buscar">
                 </form>
@@ -27,8 +27,8 @@
             
             <?php 
                 $busqueda="";
-                if(isset($_GET['enviar'])){
-                    $busqueda = $GET['busqueda'];
+                if(isset($_POST['enviar'])){
+                    $busqueda = $POST['busqueda'];
                     echo 'hola';
                 }
                 $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria LIKE '%".$busqueda."%' OR idProducto LIKE '%".$busqueda."%' OR nombre LIKE '%".$busqueda."%'");
