@@ -30,7 +30,7 @@
                 if(isset($_POST['enviar'])){
                     $busqueda = $POST['busqueda'];
                     echo 'hola';
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria LIKE '%".$busqueda."%' OR idProducto LIKE '%".$busqueda."%' OR nombre LIKE '%".$busqueda."%'");
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE categoria LIKE '%$busqueda%' OR idProducto LIKE '%$busqueda%' OR nombre LIKE '%$busqueda%'");
 
                 }
 
