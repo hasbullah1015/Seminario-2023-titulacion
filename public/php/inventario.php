@@ -53,7 +53,7 @@
                             <td><?php echo $datos['categoria'];  ?></td>
                             <td><?php echo $datos['cantidad'];  ?></td>
                         </tr>
-                <?
+                <?php
                         }
                     }  
                     mysqli_close($connection);
