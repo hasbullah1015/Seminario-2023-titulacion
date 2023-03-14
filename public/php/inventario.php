@@ -19,7 +19,7 @@
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row">
-                <form method="post">
+                <form   method="post">
                     <input type="text" placeholder="busqueda" name="busqueda"> <!-- id, producto, marca--> 
                     <input type="submit" name="enviar" value="buscar">
                 </form>
@@ -29,7 +29,7 @@
     
                 if(isset($_POST['enviar'])){
                     $busqueda = $POST['busqueda'];
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%'");
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE (nombre LIKE '%$busqueda%')");
                 }
 
             ?>
