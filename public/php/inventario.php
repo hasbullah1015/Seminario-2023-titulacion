@@ -28,8 +28,7 @@
             <?php 
     
                 if(isset($_POST['enviar'])){
-                    $busqueda = $_POST['busqueda'];
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_POST['busqueda']."%'");
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_POST['busqueda']."%' OR categoria LIKE '%".$_POST['busqueda']."%' ");
                 }
 
             ?>
