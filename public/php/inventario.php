@@ -45,7 +45,7 @@
 
                 <?php
                     if($connection && $_POST['busqueda']){
-                        while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
+                        while($datos = $sqlquery ->fetch_array()) {
                 ?>
                         <tr>
                             <td><?php echo $datos['idProducto'];  ?></td>
