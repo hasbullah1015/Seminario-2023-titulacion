@@ -48,9 +48,13 @@
                 
                 if($busqueda){
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $inicio,$por_pagina");
+                    $cantidad_registros=mysqli_num_rows($sqlquery);
+
                 }
                 else {
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto");   
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto");
+                    $cantidad_registros=mysqli_num_rows($sqlquery);
+
                 }
 
             ?>
