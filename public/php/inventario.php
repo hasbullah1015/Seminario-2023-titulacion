@@ -1,6 +1,7 @@
 <?php
         include("databaseconnection.php");
         $connection=conectar();
+
         $por_pagina=1;
 
         if(isset($_GET['pagina'])){
@@ -38,7 +39,7 @@
             <?php 
     
                 if(isset($_GET['busqueda'])){
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_GET['busqueda']."%' OR categoria LIKE '%".$_GET['busqueda']."%' ");
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_GET['busqueda']."%' OR categoria LIKE '%".$_GET['busqueda']."%' LIMIT '$inicio','$por_pagina'");
                 }
 
             ?>
