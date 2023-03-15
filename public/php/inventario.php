@@ -32,14 +32,14 @@
             <div class="row">
                 <form action="inventario.php" method="get">
                     <input type="text" placeholder="busqueda" name="busqueda"> <!-- id, producto, marca--> 
-                    <input type="submit" name="enviar" value="buscar">
+                    <input type="submit" name="enviar">
                 </form>
             </div>
             
             <?php 
     
                 if(isset($_GET['busqueda'])){
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_GET['busqueda']."%' OR categoria LIKE '%".$_GET['busqueda']."%' LIMIT 0,1");
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_GET['busqueda']."%' OR categoria LIKE '%".$_GET['busqueda']."%' LIMIT 0,2");
                 }
 
             ?>
