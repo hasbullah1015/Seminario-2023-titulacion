@@ -3,6 +3,11 @@
 
         include("databaseconnection.php");
         $connection=conectar();
+
+        $busqueda=strtolower($_REQUEST['busqueda']);
+        if(empty($busqueda)){
+            header('https://seminario2023.website/public/php/inventario.php');
+        }
 ?>
 
 
@@ -24,8 +29,8 @@
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row">
-                <form action="inventario_busqueda.php" method="get">
-                    <input type="text" placeholder="busqueda" name="busqueda" > <!-- id, producto, marca--> 
+                <form action="inventario.php" method="get">
+                    <input type="text" placeholder="busqueda" name="busqueda" value="<?php echo $busqueda; ?>" > <!-- id, producto, marca--> 
                     <input type="submit" name="enviar">
                 </form>
             </div>
