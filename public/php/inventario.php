@@ -43,7 +43,7 @@
                 </tr>
 
                 <?php
-                    if($connection && $_POST['busqueda']){
+                    if($connection && $_GET['busqueda']){
                         while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
                 ?>
                         <tr>
