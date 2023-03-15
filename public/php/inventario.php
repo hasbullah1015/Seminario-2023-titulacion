@@ -53,10 +53,12 @@
                 else {
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto");
                     $cantidad_registros=mysqli_num_rows($sqlquery);
-                }
-                $total_paginas = ceil($cantidad_registros/$por_pagina);
-                echo $total_paginas;
+                    
 
+                }
+                echo $cantidad_registros;
+                $total_paginas = ceil($cantidad_registros/$por_pagina);
+               
             ?>
 
             <div class="table-responsive">
