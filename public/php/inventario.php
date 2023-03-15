@@ -36,6 +36,7 @@
             </div>
             
             <?php 
+                $busqueda=strtolower($_REQUEST['busqueda']);
                 $por_pagina=2;
                 $sqlquery_registros =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%'");
                 $cantidad_registros=mysqli_num_rows($sqlquery_registros);
@@ -51,7 +52,6 @@
                 }
 
                 $desde =($pagina-1)*$por_pagina;
-                $busqueda=strtolower($_REQUEST['busqueda']);
                 $total_paginas=ceil($cantidad_registros/$por_pagina);
                 $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $desde,$por_pagina");
                 $cantidad_resultados=mysqli_num_rows($sqlquery);
