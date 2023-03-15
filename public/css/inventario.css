@@ -28,6 +28,11 @@ video{
 }
 
 
+footer{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 @media (orientation:landscape) {
 
     body{

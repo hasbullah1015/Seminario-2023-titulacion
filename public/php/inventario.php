@@ -103,10 +103,8 @@
     <footer id="pie_pagina" class="mt-auto">
 
     </footer>
-
+    <script src="/public/js/index.js"></script>
 </body>
-<script src="/public/js/index.js"></script>
-
 </html>
 
  
