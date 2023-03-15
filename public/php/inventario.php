@@ -1,6 +1,16 @@
 <?php
         include("databaseconnection.php");
         $connection=conectar();
+        $por_pagina=1;
+
+        if(isset($_GET['pagina'])){
+            $pagina=$_GET['pagina'];
+        }
+        else{
+            $pagina=1;
+        }
+
+        $inicio=($pagina-1)*$por_pagina;
 ?>
 <!DOCTYPE html>
 <html lang="es">
