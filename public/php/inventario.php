@@ -18,9 +18,7 @@
 
 
         $busqueda=strtolower($_REQUEST['busqueda']);
-        if(empty($busqueda)){
-            header("location: inventario.php");
-        }
+
 
 ?>
 
