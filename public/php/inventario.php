@@ -18,8 +18,8 @@
 
 
         $busqueda=strtolower($_REQUEST['busqueda']);
-        if(empty($aux)){
-            header("location: inventariopp.php");
+        if(empty($busqueda)){
+            header("location: inventario.php");
         }
 
 ?>
@@ -43,7 +43,7 @@
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row">
                 <form action="inventario.php" method="get">
-                    <input type="text" placeholder="busqueda" name="busqueda" value="<?php echo $aux ?>"> <!-- id, producto, marca--> 
+                    <input type="text" placeholder="busqueda" name="busqueda" value="<?php echo $busqueda; ?>"> <!-- id, producto, marca--> 
                     <input type="submit" name="enviar">
                 </form>
             </div>
