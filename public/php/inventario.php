@@ -53,9 +53,9 @@
                 else {
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto");
                     $cantidad_registros=mysqli_num_rows($sqlquery);
-                    echo 'jeje';
-
                 }
+                $total_paginas = ceil($cantidad_registros/$por_pagina);
+                echo $total_paginas;
 
             ?>
 
@@ -90,9 +90,7 @@
             <div class="col">
                 <ul>
                     <li><a href="#"><<</a></li>
-                    <?php
-                        
-                        $total_paginas = ceil($cantidad_registros/$por_pagina);
+                    <?php                        
                         for($i=1; $i<$total_paginas; $i++){
                             echo '<li><a href="?pagina='.$i.'">'.$i.'</a></li>';
                         } 
