@@ -5,13 +5,13 @@
         $connection=conectar();
         $por_pagina=1;
 
-        if(isset($_GET['pagina'])){
-            $pagina=$_GET['pagina'];
+        if($_REQUEST['pagina']){
+            $pagina=$_REQUEST['pagina'];
         }
         else{
             $pagina=1;
         }
-            $inicio=($pagina-1)*$por_pagina;
+        $inicio=($pagina-1)*$por_pagina;
 
 ?>
 
