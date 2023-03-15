@@ -2,7 +2,7 @@
 <?php
         include("databaseconnection.php");
         $connection=conectar();
-        $por_pagina=1;
+        $por_pagina=2;
 
         if(isset($_GET['pagina'])){
             $pagina=$_GET['pagina'];
@@ -11,7 +11,6 @@
             $pagina=1;
         }
                         $inicio=($pagina-1)*$por_pagina;
-
 
 ?>
 
@@ -49,7 +48,6 @@
                 if($busqueda){
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $inicio,$por_pagina");
                     $cantidad_registros=mysqli_num_rows($sqlquery);
-
                 }
                 else {
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto");
