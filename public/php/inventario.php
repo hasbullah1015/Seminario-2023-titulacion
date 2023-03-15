@@ -58,6 +58,7 @@
                 $total_paginas=ceil($cantidad_registros/$por_pagina);
                 $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $desde,$por_pagina");
                 $cantidad_resultados=mysqli_num_rows($sqlquery);
+                mysqli_close($connection);
 
                
             ?>
@@ -84,7 +85,7 @@
                 <?php
                         }
                     }  
-                    //mysqli_close($connection);
+                
                 ?>
 
 
