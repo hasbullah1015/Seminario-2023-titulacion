@@ -12,8 +12,6 @@
             $pagina=1;
         }
         $inicio=($pagina-1)*$por_pagina;
-        $sqlquery_cantidad_registros =mysqli_query($connection,"SELECT * FROM producto");
-        $cantidad_registros=mysqli_num_rows($sqlquery_cantidad_registros);
         $total_paginas = ceil($cantidad_registros/$por_pagina);
         $busqueda=strtolower($_REQUEST['busqueda']);
 
