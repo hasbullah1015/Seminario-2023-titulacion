@@ -15,6 +15,13 @@
         $sqlquery_cantidad_registros =mysqli_query($connection,"SELECT * FROM producto");
         $cantidad_registros=mysqli_num_rows($sqlquery_cantidad_registros);
         $total_paginas = ceil($cantidad_registros/$por_pagina);
+
+
+        $busqueda=strtolower($_REQUEST['busqueda']);
+        if(empty($aux)){
+            header("location: inventario.php");
+        }
+
 ?>
 
 
@@ -44,11 +51,10 @@
             <?php 
                 
                 if(isset($_GET['busqueda'])){
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_GET['busqueda']."%' OR categoria LIKE '%".$_GET['busqueda']."%' LIMIT $inicio,$por_pagina");
-                    $aux=strtolower($_REQUEST['busqueda']);
-                    if(empty($aux)){
-                        header("location: inventario.php");
-                    }
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $inicio,$por_pagina");
+                }
+                else {
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto");   
                 }
 
             ?>
