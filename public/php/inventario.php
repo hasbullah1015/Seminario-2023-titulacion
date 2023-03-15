@@ -96,7 +96,7 @@
                     <?php                        
                         echo $total_paginas; 
                         for($i=0; $i<$total_paginas; $i++){
-                            echo '<li><a href="?pagina='.$i.'">'.$i.'</a></li>';
+                            echo '<li><a href="?pagina='.$i.'$busqueda='.$busqueda.'">'.$i.'</a></li>';
                         } 
                     ?>
                     <li><a href=">>"><<</a></li>
