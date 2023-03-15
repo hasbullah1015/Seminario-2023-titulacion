@@ -30,9 +30,7 @@
 </head>
 
 <body>
-    <?php 
-        $busqueda=strtolower($_REQUEST['busqueda']);
-    ?>
+
     <div class="container">
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
@@ -45,7 +43,8 @@
             
             <?php 
 
-                
+                $busqueda=strtolower($_REQUEST['busqueda']);
+
                 if($busqueda){
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $inicio,$por_pagina");
                     $cantidad_registros=mysqli_num_rows($sqlquery);
