@@ -4,9 +4,11 @@
         include("databaseconnection.php");
         $connection=conectar();
 
-        $busqueda=strtolower($_REQUEST['busqueda']);
         if(empty($busqueda)){
             header('https://seminario2023.website/public/php/inventario.php');
+        }
+        else{
+            $busqueda=strtolower($_REQUEST['busqueda']);
         }
 ?>
 
@@ -107,3 +109,4 @@
 </body>
 </html>
 
+ 
