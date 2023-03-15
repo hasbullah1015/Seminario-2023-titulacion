@@ -93,8 +93,8 @@
                     <li><a href="#"><<</a></li>
                     <?php                        
                         echo $total_paginas; 
-                        for($i=0; $i<$total_paginas; $i++){
-                            echo '<li><a href="?pagina='.($i).'&busqueda='.$busqueda.'">'.($i+1).'</a></li>';
+                        for($i=1; $i<$total_paginas; $i++){
+                            echo '<li><a href="?pagina='.($i+1).'&busqueda='.$busqueda.'">'.($i+1).'</a></li>';
                         } 
                     ?>
                     <li><a href=">>"><<</a></li>
