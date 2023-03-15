@@ -3,7 +3,7 @@
 
         include("databaseconnection.php");
         $connection=conectar();
-        $por_pagina=5;
+        $por_pagina=1;
 
         if(isset($_GET['pagina'])){
             $pagina=$_GET['pagina'];
