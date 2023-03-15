@@ -57,7 +57,9 @@
 
                 }
                 echo $cantidad_registros;
-                $total_paginas = $cantidad_registros/$por_pagina;
+                echo $total_paginas = $cantidad_registros/$por_pagina;
+                
+
                
             ?>
 
