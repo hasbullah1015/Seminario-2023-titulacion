@@ -6,7 +6,6 @@
 
         if(empty($busqueda)){
             header('https://seminario2023.website/public/php/inventario.php');
-            mysqli_close($connection);
         }
         else{
             $busqueda=strtolower($_REQUEST['busqueda']);
