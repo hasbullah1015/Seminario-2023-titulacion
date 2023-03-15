@@ -19,7 +19,7 @@
 
         $busqueda=strtolower($_REQUEST['busqueda']);
         if(empty($aux)){
-            header("location: inventario.php");
+            header("location: inventariopp.php");
         }
 
 ?>
