@@ -7,11 +7,7 @@
         $busqueda=strtolower($_REQUEST['busqueda']);
         if(empty($busqueda)){
             header('https://seminario2023.website/public/php/inventario.php');
-       
         }
-
-
-
 ?>
 
 
@@ -34,7 +30,7 @@
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row">
                 <form action="inventario.php" method="get">
-                    <input type="text" placeholder="busqueda" name="busqueda"> <!-- id, producto, marca--> 
+                    <input type="text" placeholder="busqueda" name="busqueda" value <?php echo $busqueda; ?> > <!-- id, producto, marca--> 
                     <input type="submit" name="enviar">
                 </form>
             </div>
@@ -58,7 +54,7 @@
                 $total_paginas=ceil($cantidad_registros/$por_pagina);
                 $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $desde,$por_pagina");
                 $cantidad_resultados=mysqli_num_rows($sqlquery);
-                mysqli_close($connection);
+        
 
                
             ?>
@@ -82,7 +78,9 @@
                             <td><?php echo $datos['categoria'];  ?></td>
                             <td><?php echo $datos['cantidad'];  ?></td>
                         </tr>
+                        
                 <?php
+                        mysqli_close($connection);
                         }
                     }  
                 
