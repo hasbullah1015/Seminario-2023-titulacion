@@ -35,16 +35,6 @@
             </div>
             
             <?php 
-                $por_pagina=1;
-
-                if(isset($_GET['pagina'])){
-                    $pagina=$_GET['pagina'];
-                }
-                else{
-                    $pagina=1;
-                }
-                $inicio=($pagina-1)*$por_pagina;
-                $total_paginas = ceil($cantidad_registros/$por_pagina);
                 
                 if($busqueda){
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $inicio,$por_pagina");
@@ -90,9 +80,21 @@
             <div class="col">
                 <ul>
                     <li><a href="#"><<</a></li>
-                    <?php for($i=1; $i<$total_paginas; $i++){
-                        echo '<li><a href="?pagina='.$i.'">'.$i.'</a></li>';
-                    } ?>
+                    <?php
+                        $por_pagina=1;
+
+                        if(isset($_GET['pagina'])){
+                            $pagina=$_GET['pagina'];
+                        }
+                        else{
+                            $pagina=1;
+                        }
+                        $inicio=($pagina-1)*$por_pagina;
+                        $total_paginas = ceil($cantidad_registros/$por_pagina);
+                        for($i=1; $i<$total_paginas; $i++){
+                            echo '<li><a href="?pagina='.$i.'">'.$i.'</a></li>';
+                        } 
+                    ?>
                     <li><a href=">>"><<</a></li>
 
                 </ul>
