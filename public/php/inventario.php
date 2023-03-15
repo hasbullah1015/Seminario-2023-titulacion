@@ -45,6 +45,7 @@
                 
                 if(isset($_GET['busqueda'])){
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_GET['busqueda']."%' OR categoria LIKE '%".$_GET['busqueda']."%' LIMIT $inicio,$por_pagina");
+                    $aux=$_GET['busqueda'];
                 }
                 else {
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto");
@@ -84,7 +85,7 @@
                 <ul>
                     <li><a href="#"><<</a></li>
                     <?php for($i=1; $i<$total_paginas; $i++){
-                        echo '<li><a href="?pagina='.$i.'&busueda='. $_GET['busqueda'].'">'.$i.'</a></li>';
+                        echo '<li><a href="?pagina='.$i.'&busueda='.$aux.'">'.$i.'</a></li>';
                     } ?>
 
                     <li><a href=">>"><<</a></li>
