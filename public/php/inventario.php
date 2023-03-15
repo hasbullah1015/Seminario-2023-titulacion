@@ -84,8 +84,8 @@
             <div class="col">
                 <ul>
                     <li><a href="#"><<</a></li>
-                    <?php for($i=1; $i<$total_paginas; $i++){
-                        echo '<li><a href="?pagina='.$i.'&busueda='.$aux.'">'.$i.'</a></li>';
+                    <?php for($i=0; $i<$total_paginas; $i++){
+                        echo '<li><a href="?pagina='.$i.'&busueda='.$aux.'">'.($i+1).'</a></li>';
                     } ?>
 
                     <li><a href=">>"><<</a></li>
