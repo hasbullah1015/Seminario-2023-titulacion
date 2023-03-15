@@ -1,3 +1,4 @@
+<!--Paginacion php -->
 <?php
         include("databaseconnection.php");
         $connection=conectar();
@@ -10,9 +11,13 @@
         else{
             $pagina=1;
         }
-
         $inicio=($pagina-1)*$por_pagina;
+        $sqlquery_cantidad_registros =mysqli_query($connection,"SELECT * FROM producto");
+        $cantidad_registros=mysqli_num_rows($sqlquery_cantidad_registros);
+        $total_paginas = ceil($cantidad_registros/$por_pagina);
 ?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -66,11 +71,22 @@
                 <?php
                         }
                     }  
-                    mysqli_close($connection);
+                    //mysqli_close($connection);
                 ?>
 
 
                 </table>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="#"><<</a></li>
+                    <?php for($i=1; $i<$total_paginas; $i++){
+                        echo '<li><a href="?pagina='.$i.'"></a></li>';
+                    } ?>
+
+                    <li><a href=">>"><<</a></li>
+
+                </ul>
             </div>
         </div>
     </div>
