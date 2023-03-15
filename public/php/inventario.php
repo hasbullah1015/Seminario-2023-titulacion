@@ -1,5 +1,6 @@
 
 <?php
+
         include("databaseconnection.php");
         $connection=conectar();
         $por_pagina=2;
@@ -52,6 +53,7 @@
                 else {
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto");
                     $cantidad_registros=mysqli_num_rows($sqlquery);
+                    echo 'jeje';
 
                 }
 
