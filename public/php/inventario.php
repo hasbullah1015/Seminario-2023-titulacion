@@ -19,7 +19,7 @@
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row">
-                <form method="post">
+                <form action="inventario.php" method="get">
                     <input type="text" placeholder="busqueda" name="busqueda"> <!-- id, producto, marca--> 
                     <input type="submit" name="enviar" value="buscar">
                 </form>
@@ -67,3 +67,4 @@
 
 </body>
 </html>
+
