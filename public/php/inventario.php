@@ -1,22 +1,11 @@
-<!--Paginacion php -->
+
 <?php
         include("databaseconnection.php");
         $connection=conectar();
 
-        $por_pagina=1;
-
-        if(isset($_GET['pagina'])){
-            $pagina=$_GET['pagina'];
-        }
-        else{
-            $pagina=1;
-        }
-        $inicio=($pagina-1)*$por_pagina;
-        $total_paginas = ceil($cantidad_registros/$por_pagina);
-        $busqueda=strtolower($_REQUEST['busqueda']);
-
 
 ?>
+
 
 
 <!DOCTYPE html>
@@ -32,6 +21,9 @@
 </head>
 
 <body>
+    <?php 
+        $busqueda=strtolower($_REQUEST['busqueda']);
+    ?>
     <div class="container">
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
@@ -43,6 +35,16 @@
             </div>
             
             <?php 
+                $por_pagina=1;
+
+                if(isset($_GET['pagina'])){
+                    $pagina=$_GET['pagina'];
+                }
+                else{
+                    $pagina=1;
+                }
+                $inicio=($pagina-1)*$por_pagina;
+                $total_paginas = ceil($cantidad_registros/$por_pagina);
                 
                 if($busqueda){
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $inicio,$por_pagina");
