@@ -59,7 +59,7 @@
                 </tr>
 
                 <?php
-                    if($connection && $_GET['busqueda']){
+                    if($connection){
                         while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
                 ?>
                         <tr>
