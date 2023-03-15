@@ -42,9 +42,12 @@
             </div>
             
             <?php 
-    
+                
                 if(isset($_GET['busqueda'])){
                     $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%".$_GET['busqueda']."%' OR categoria LIKE '%".$_GET['busqueda']."%' LIMIT $inicio,$por_pagina");
+                }
+                else {
+                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto");
                 }
 
             ?>
