@@ -3,18 +3,16 @@
 
         include("databaseconnection.php");
         $connection=conectar();
-        $por_pagina=1;
 
-        if($_REQUEST['pagina']){
-            $pagina=$_REQUEST['pagina'];
+        $busqueda=strtolower($_REQUEST['busqueda']);
+        if(empty($busqueda)){
+            header('https://seminario2023.website/public/php/inventario.php');
+            mysqli_close($connection);
         }
-        else{
-            $pagina=1;
-        }
-        $inicio=($pagina-1)*$por_pagina;
+
+
 
 ?>
-
 
 
 <!DOCTYPE html>
@@ -42,21 +40,24 @@
             </div>
             
             <?php 
+                $por_pagina=2;
+                $sqlquery_registros =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%'");
+                $cantidad_registros=mysqli_num_rows($sqlquery_registros);
 
-                $busqueda=strtolower($_REQUEST['busqueda']);
 
-                if($busqueda){
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $inicio,$por_pagina");
-                    $cantidad_registros=mysqli_num_rows($sqlquery);
+
+                if(empty($_GET['pagina'])){
+                    $pagina= 1;
+
                 }
                 else {
-                    $sqlquery =mysqli_query($connection,"SELECT * FROM producto");
-                    $cantidad_registros=mysqli_num_rows($sqlquery);
-                    
-
+                        $pagina=$_GET['pagina'];
                 }
-                echo $cantidad_registros;
-                echo $total_paginas = ceil($cantidad_registros/$por_pagina);
+
+                $desde =($pagina-1)*$por_pagina;
+                $total_paginas=ceil($cantidad_registros/$por_pagina);
+                $sqlquery =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $desde,$por_pagina");
+
                
             ?>
 
