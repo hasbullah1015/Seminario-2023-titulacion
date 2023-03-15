@@ -11,7 +11,7 @@
         else{
             $pagina=1;
         }
-                        $inicio=($pagina-1)*$por_pagina;
+            $inicio=($pagina-1)*$por_pagina;
 
 ?>
 
@@ -93,6 +93,7 @@
                 <ul>
                     <li><a href="#"><<</a></li>
                     <?php                        
+                        echo $total_paginas; 
                         for($i=1; $i<$total_paginas; $i++){
                             echo '<li><a href="?pagina='.$i.'">'.$i.'</a></li>';
                         } 
