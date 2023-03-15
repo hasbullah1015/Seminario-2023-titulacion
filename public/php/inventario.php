@@ -40,7 +40,7 @@
             </div>
             
             <?php 
-                $por_pagina=3;
+                $por_pagina=2;
                 $sqlquery_registros =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%'");
                 $cantidad_registros=mysqli_num_rows($sqlquery_registros);
 
