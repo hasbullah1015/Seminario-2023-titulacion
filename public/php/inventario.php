@@ -40,7 +40,7 @@
             </div>
             
             <?php 
-                $por_pagina=2;
+                $por_pagina=2       ;
                 $sqlquery_registros =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%'");
                 $cantidad_registros=mysqli_num_rows($sqlquery_registros);
 
@@ -96,7 +96,7 @@
                     <?php                        
                         echo $total_paginas; 
                         for($i=0; $i<$total_paginas; $i++){
-                            echo '<li><a href="?pagina='.$i.'$busqueda='.$busqueda.'">'.$i.'</a></li>';
+                            echo '<li><a href="?pagina='.($i+1).'$busqueda='.$busqueda.'">'.($i+1).'</a></li>';
                         } 
                     ?>
                     <li><a href=">>"><<</a></li>
