@@ -57,7 +57,7 @@
 
                 }
                 echo $cantidad_registros;
-                $total_paginas = ceil($cantidad_registros/$por_pagina);
+                $total_paginas = $cantidad_registros/$por_pagina;
                
             ?>
 
