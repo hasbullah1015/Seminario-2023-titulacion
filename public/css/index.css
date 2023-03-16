@@ -22,23 +22,6 @@ footer h4:hover{
     color: blueviolet;
 }
 
-.navbar-collapse{
-    justify-content: space-between;
-    color: black;
-    text-align: center;
-}
-.navbar { padding: 2rem; background-color: rgba(36, 36, 36, 0.53)}
-.navbar-toggler-icon{color:black}
-
-.navbar-nav .nav-link:hover{
-    color: black ;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10em;
-    text-align: center;
-    transition: 0.01 s linear;
-    
-}
-
 
 
 .slide{
@@ -114,7 +97,7 @@ video{
 
 
 
-footer,header{
+footer{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
