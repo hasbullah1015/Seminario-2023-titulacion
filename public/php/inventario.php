@@ -32,7 +32,7 @@
     <div class="container">
         <div class="row">
             <h1>Inventario: </h1> <hr id="div-line">
-            <div class="row">
+            <div class="row" id="buscador">
                 <form action="inventario.php" method="get">
                     <input type="text" placeholder="busqueda" name="busqueda" value="<?php echo $busqueda; ?>" > <!-- id, producto, marca--> 
                     <input type="submit" name="enviar">

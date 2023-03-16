@@ -121,7 +121,10 @@ input
         color: #000000 !important;
     }
 
-
+#buscador{
+    align-items: center;
+    text-align: center;
+}
 @media (orientation:landscape) {
 
     body{
