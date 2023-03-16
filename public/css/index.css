@@ -105,7 +105,7 @@ footer, header{
 input
     {
         text-align: left;
-        background-color: rgba(20, 20, 20, 0.612)
+        background-color: rgba(20, 20, 20, 0.612);
         border: 0px;
         border-bottom: solid rgb(0, 0, 0) 1px; 
     }
