@@ -110,7 +110,6 @@ input
         border: 0px;
         border-bottom: solid rgb(0, 0, 0) 1px; 
         color: #FFFFFF !important;
-        border-radius: 20px;
     }
 
     input:hover
@@ -125,6 +124,12 @@ input
     align-items: center;
     text-align: center;
 }
+
+#search_bar{
+    border-radius: 20px;
+
+}
+
 @media (orientation:landscape) {
 
     body{
