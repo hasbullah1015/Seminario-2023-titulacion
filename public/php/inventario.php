@@ -34,8 +34,8 @@
             <h1>Inventario: </h1> <hr id="div-line">
             <div class="row" id="buscador">
                 <form action="inventario.php" method="get">
-                    <input type="text" placeholder="busqueda" name="busqueda" value="<?php echo $busqueda; ?>" > <!-- id, producto, marca--> 
-                    <input type="submit" name="enviar">
+                    <input id="search_bar" type="text" placeholder="busqueda" name="busqueda" value="<?php echo $busqueda; ?>" > <!-- id, producto, marca--> 
+                    <input id="sent" type="submit" name="enviar">
                 </form>
             </div>
             
