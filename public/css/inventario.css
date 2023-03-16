@@ -10,7 +10,7 @@
 
 
 .slide{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3) !important;
     border-radius: 30px;
     padding: 20px;
     margin-top: 10px;
