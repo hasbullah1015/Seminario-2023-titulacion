@@ -117,6 +117,7 @@ input
         background-color: rgba(255, 255, 255, 0.6);
         border: 0px;
         border-bottom: solid rgb(2, 2, 2) 1px !important; 
+        color: #000000 !important;
     }
 
 
