@@ -108,7 +108,7 @@ input
         background-color: rgba(20, 20, 20, 0.6);
         border: 0px;
         border-bottom: solid rgb(0, 0, 0) 1px; 
-        color: #FFFFFF;
+        color: #FFFFFF !important;
     }
 
     input:hover
