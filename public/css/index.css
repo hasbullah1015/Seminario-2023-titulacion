@@ -105,17 +105,16 @@ footer, header{
 input
     {
         text-align: left;
-        background-color: rgba(20, 20, 20, 0.612);
+        background-color: rgba(20, 20, 20, 0.6);
         border: 0px;
         border-bottom: solid rgb(0, 0, 0) 1px; 
     }
 
     input:hover
     {
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.6);
         border: 0px;
-        border-bottom: solid rgb(255, 255, 255) 1px !important; 
-        color: white !important;
+        border-bottom: solid rgb(2, 2, 2) 1px !important; 
     }
 
 
