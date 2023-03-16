@@ -26,6 +26,8 @@
 </head>
 
 <body>
+    <header id="encabezado">
+    </header>
 <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
     <div class="container">
         <div class="row">
