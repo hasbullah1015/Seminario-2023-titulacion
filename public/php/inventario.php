@@ -62,7 +62,7 @@
                 
             ?>
 
-            <div class="table-responsive">
+            <div style="slide" class="table-responsive">
                 <table class="table">
                 <tr>
                     <th scope="col">ID</th>

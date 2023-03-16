@@ -9,6 +9,21 @@
 
 
 
+.slide{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    text-align: center; 
+    
+}
+
 
 video{
     position: absolute;
