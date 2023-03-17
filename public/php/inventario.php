@@ -97,7 +97,7 @@
                             echo '<li><a href="?pagina='.($i+1).'&busqueda='.$busqueda.'">'.($i+1).'</a></li>';
                         } 
                     ?>
-                    <li><a href=">>"><<</a></li>
+                    <li><a href=">>">>></a></li>
                 </ul>
             </div>
         </div>
