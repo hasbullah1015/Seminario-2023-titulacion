@@ -8,7 +8,6 @@
 }
 
 
-
 .slide{
     background-color: rgba(0, 0, 0, 0.3) !important;
     border-radius: 30px;
@@ -23,7 +22,6 @@
     text-align: center; 
     
 }
-
 
 video{
     position: absolute;
@@ -53,9 +51,6 @@ ul.pagination li a {
     padding: 8px 16px;
     text-decoration: none;
 }
-
-
-
 
 
 @media (orientation:landscape) {

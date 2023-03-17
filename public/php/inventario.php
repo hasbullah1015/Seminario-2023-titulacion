@@ -91,13 +91,13 @@
             </div>
             <div class="col">
                 <ul class="pagination">
-                    <li><a href="#"><<</a></li>
+                    <li><<</li>
                     <?php                         
                         for($i=0; $i<$total_paginas; $i++){
                             echo '<li><a href="?pagina='.($i+1).'&busqueda='.$busqueda.'">'.($i+1).'</a></li>';
                         } 
                     ?>
-                    <li><a href=">>">>></a></li>
+                    <li>>></li>
                 </ul>
             </div>
         </div>
