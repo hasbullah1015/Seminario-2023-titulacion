@@ -36,6 +36,7 @@ ul.pagination {
     padding: 0;
     margin: 0;
     border: 1px solid black ;
+    justify-content: center;
 }
 
 ul.pagination li {
