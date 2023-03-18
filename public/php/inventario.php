@@ -70,10 +70,10 @@
                         while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
                 ?>
                         <tr class="row_data">
-                            <td class="data"><?php echo $datos['idProducto'];  ?></td>
-                            <td class="data"><?php echo $datos['nombre'];  ?></td>
-                            <td class="data"><?php echo $datos['categoria'];  ?></td>
-                            <td class="data"><?php echo $datos['cantidad'];  ?></td>
+                            <td class="data_id"><?php echo $datos['idProducto'];  ?></td>
+                            <td class="data_name"><?php echo $datos['nombre'];  ?></td>
+                            <td class="data_category"><?php echo $datos['categoria'];  ?></td>
+                            <td class="data_amount"><?php echo $datos['cantidad'];  ?></td>
                         </tr>
                 <?php
                         }
