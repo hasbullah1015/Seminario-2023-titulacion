@@ -75,17 +75,15 @@
                     if($cantidad_resultados>0){
                         while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
                 ?>
-                        <tr>
+                        <tr class="row_data">
                             <td class="data"><?php echo $datos['idProducto'];  ?></td>
                             <td class="data"><?php echo $datos['nombre'];  ?></td>
                             <td class="data"><?php echo $datos['categoria'];  ?></td>
                             <td class="data"><?php echo $datos['cantidad'];  ?></td>
                         </tr>
-                        
                 <?php
                         }
-                    }  
-                
+                    }    
                 ?>
                 </table>
             </div>

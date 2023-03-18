@@ -1,2 +1,4 @@
-let val = document.getElementsByTagName("tr");
-console.log(val);
+let row_data = document.querySelectorAll(".row_data");
+console.log(row_data);
+
+
