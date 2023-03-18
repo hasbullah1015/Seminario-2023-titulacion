@@ -2,7 +2,7 @@
 <?php
         include("databaseconnection.php");
         $connection=conectar();
-        
+
         if(empty($busqueda)){
             header('https://seminario2023.website/public/php/inventario.php');
         }
@@ -43,9 +43,6 @@
                 $por_pagina=2;
                 $sqlquery_registros =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%'");
                 $cantidad_registros=mysqli_num_rows($sqlquery_registros);
-
-
-
                 if(empty($_GET['pagina'])){
                     $pagina= 1;
 
