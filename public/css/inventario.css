@@ -7,7 +7,6 @@
 
 }
 
-
 .slide{
     background-color: rgba(0, 0, 0, 0.3) !important;
     border-radius: 30px;
@@ -52,9 +51,9 @@ ul.pagination li a {
     text-decoration: none;
 }
 
-ul.pagination li:hover {
-    color: white;
-    background-color: black;
+ul.pagination li :hover {
+    color: white !important;
+    background-color: black !important;
     float: left;
     padding: 8px 16px;
 }
