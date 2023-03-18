@@ -60,6 +60,7 @@ ul.pagination li a.active {
 
 .dataWarning{
     background-color: rgba(255, 0, 0, 0.6);
+    color: white;
 } 
 
 
