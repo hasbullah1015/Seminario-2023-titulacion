@@ -51,11 +51,10 @@ ul.pagination li a {
     text-decoration: none;
 }
 
-ul.pagination li :hover {
-    color: white !important;
-    background-color: black !important;
-    float: left;
-    padding: 8px 16px;
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
 }
 
 
