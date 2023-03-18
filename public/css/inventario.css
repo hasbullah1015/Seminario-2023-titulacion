@@ -52,7 +52,7 @@ ul.pagination li a {
     text-decoration: none;
 }
 
-ul.pagination li a:hover {
+ul.pagination li:hover {
     color: white;
     background-color: black;
     float: left;
