@@ -4,7 +4,7 @@ const data = document.querySelectorAll(".data_amount"); //cantidad de producto t
 for (i=0; i<data.length; i++){
     console.log(data[i]);
 
-    if(data[i]>5){
+    if(data[i].innerHTML>5){
         row_data[i-3].classList.add("data_Warning");
     }
 
