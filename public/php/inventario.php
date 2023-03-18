@@ -21,7 +21,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="/public/css/inventario.css" type="text/css">
-    <script src="/public/js/index.js"></script>
 </head>
 
 <body>
@@ -97,6 +96,7 @@
     <footer id="pie_pagina" class="mt-auto">
     </footer>
     <script src="/public/js/inventario.js"></script>
+    <script src="/public/js/index.js"></script>
 </body>
 </html>
 
