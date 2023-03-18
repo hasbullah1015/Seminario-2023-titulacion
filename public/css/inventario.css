@@ -47,6 +47,12 @@ ul.pagination li {
 
 }
 
+ul.pagination li :hover {
+    
+    border: 1px solid white;
+    background-color: black;
+
+}
 ul.pagination li a {
     color: black;
     float: left;
