@@ -23,6 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="/public/css/inventario.css" type="text/css">
+    <script src="/public/js/inventario.js"></script>
 </head>
 
 <body>
@@ -75,14 +76,13 @@
                         while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
                 ?>
                         <tr>
-                            <td><?php echo $datos['idProducto'];  ?></td>
-                            <td><?php echo $datos['nombre'];  ?></td>
-                            <td><?php echo $datos['categoria'];  ?></td>
-                            <td><?php echo $datos['cantidad'];  ?></td>
+                            <td class="data"><?php echo $datos['idProducto'];  ?></td>
+                            <td class="data"><?php echo $datos['nombre'];  ?></td>
+                            <td class="data"><?php echo $datos['categoria'];  ?></td>
+                            <td class="data"><?php echo $datos['cantidad'];  ?></td>
                         </tr>
                         
                 <?php
-                    
                         }
                     }  
                 
