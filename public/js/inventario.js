@@ -5,7 +5,7 @@ console.log(row_data.length);
 for (i=0; i<data.length; i++){
     console.log(data[i]);
     if(data[i].innerHTML>5){
-        row_data[i-3].classList.add("")
+        row_data[i-3].classList.add("dataWarning");
 
     }
 }
