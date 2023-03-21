@@ -36,10 +36,10 @@ ul.pagination {
     padding: 0;
     margin: 0;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
 ul.pagination li {
-    
     display: inline;
     border: 3px;
     border: 1px solid black ;
