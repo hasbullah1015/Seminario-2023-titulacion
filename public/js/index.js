@@ -13,7 +13,7 @@ photo.src=url; //se indica la url
 photo.alt=user_Label.innerHTML; // indica alt tezt
 photo.id="user_photo";
 
-user_Label.appendChild(photo); //insertamos en el nodo padre (div)  la imagen creada
+user_portrait.appendChild(photo); //insertamos en el nodo padre (div)  la imagen creada
 
 //console.log(url);
 
