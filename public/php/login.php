@@ -9,7 +9,7 @@
     $sqlquery =mysqli_query($connection,"SELECT * FROM  administracion WHERE usr = '$user' AND pass ='$pswd'"); //realizar la validación en la db mediante la conexioón
     if($sqlquery->num_rows > 0){ //se realizá la validación (si hay al menos un usuario)
         $_SESSION['user']=$user; //crear la sesión del ususario
-        header('Location: https://seminario2023.website/public/html/index_panel.html');
+        header('Location: https://seminario2023.website/public/php/index_panel.php');
 
     }
     else{
