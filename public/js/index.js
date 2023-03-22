@@ -6,7 +6,7 @@ const user_portrait = document.querySelector("#userPortrait");
 
 const user_Label = document.querySelector("#userLabel");
 
-let url = "public_html/public/assets_img/"+user_Label.innerHTML+".jpg"; //concatenamos la url con el usuario
+let url = "/public/assets_img/"+user_Label.innerHTML+".jpg"; //concatenamos la url con el usuario
 
 const photo = document.createElement("img");
 photo.src=url;
