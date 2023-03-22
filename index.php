@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
-<html lang="es-mx">
-    
+<html lang="es-mx">    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +11,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="/public/css/index.css" type="text/css"> 
-
-
 </head>
 
-<body > 
+<body> 
 <div id="video-background"><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
     <div class="container">
     <br>
