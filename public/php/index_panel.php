@@ -1,6 +1,8 @@
 <?php 
     session_start();
     $user=$_SESSION['username'];
+    $id=$_SESSION['id'];
+    $rol=$_SESSION['rol'];
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +46,13 @@
                 <div class="container">
                     <div class="row" id="title"><h2>Datos Personales</h2></div>
                     <div class=" slide col" id="main_data">
-                        <div class="col"> Bienvenido <?php echo $user; ?></div>
+                        <div class="col"> 
+                            Bienvenido <?php echo $user; ?>
+                            <br>
+                            Id <?php echo $id; ?>
+                            <br>
+                            Rol <?php echo $rol; ?>
+                        </div>
                     </div>
                 </div>
             </div>
