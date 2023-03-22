@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $_SESSION['user']=$_user;
+    $_SESSION['user']=$user;
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +46,7 @@
                 <div class="container">
                     <div class="row" id="title"><h2>Datos Personales</h2></div>
                     <div class=" slide col" id="main_data">
-                        <div class="col"> Bienvenido <?php echo $_user; ?></div>
+                        <div class="col"> Bienvenido <?php echo $user;?></div>
                     </div>
                 </div>
             </div>
