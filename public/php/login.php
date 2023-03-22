@@ -8,7 +8,7 @@
     $sqlquery =mysqli_query($connection,"SELECT * FROM  administracion WHERE usr = '$user' AND pass ='$pswd'"); //realizar la validación en la db mediante la conexioón
     if($sqlquery->num_rows > 0){ //se realizá la validación (si hay al menos un usuario)
         $_SESSION['username']=$user; //se guarda el usuario en la variable de tipo sesion 
-        while($datos = $sqlquery -> fetch_array()){
+        while($datos = $sqlquery -> fetch_array()){ // obtenermos las variables id y rol del usuario logeado
             $_SESSION['id']=$datos['idUser'];
             $_SESSION['rol']=$datos['rol'];
         }
@@ -22,6 +22,6 @@
 <?php
     }
 
-   // mysqli_close($connection);
+    mysqli_close($connection);
 
 ?>
