@@ -1,6 +1,7 @@
 <?php 
     session_start();
     $_SESSION['user']=$_user;
+    echo 'hola usuario '+$_user;
 ?>
 
 <!DOCTYPE html>
