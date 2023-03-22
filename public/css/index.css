@@ -119,6 +119,10 @@ input
 
 }
 
+#main_data{
+    text-align: center !important;
+}
+
 @media (orientation:landscape) {
 
     body{
