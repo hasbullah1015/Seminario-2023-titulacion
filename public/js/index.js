@@ -11,6 +11,7 @@ let url = "/public/assets_img/"+user_Label.innerHTML+".jpg"; //concatenamos la u
 const photo = document.createElement("img"); // creamos una imaagen
 photo.src=url; //se indica la url
 photo.alt=user_Label.innerHTML; // indica alt tezt
+photo.id="user_photo";
 
 user_Label.appendChild(photo); //insertamos en el nodo padre (div)  la imagen creada
 
