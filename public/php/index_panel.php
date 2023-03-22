@@ -22,24 +22,7 @@
 </head>
 <body>
     <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
-    <nav class="navbar d-flex navbar-dark navbar-expand-md">
-        <div class="container-fluid" >
-            <a class="navbar-brand text text-decoration" href="#"  >LOGO</a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#btn_menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-            </button>      
-            <div class="collapse navbar-collapse" id="btn_menu">
-                <ul class="navbar-nav d-flex">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Detalles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de</a>
-                    </li>
-                </ul>
-            </div>       
-        </div>
-    </nav> 
+    <head id="encabezado"></head>
     <div class="container">
         <div class="row" id="main_panel" >
             <div class="col-sm-12 col-lg-4 col-md-4" >
