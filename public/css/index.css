@@ -46,7 +46,6 @@ h1{
 
 
 
-
 form button {
     display: inline-block;
     border-radius: 4px;
@@ -136,9 +135,9 @@ input
     }
 
     #user_photo{
-        border-radius: 10px;
-        height: 250px;
-        width: 250px;
+        border-radius: 30px;
+        height: 100px;
+        width: 100px;
     }
 }
 
