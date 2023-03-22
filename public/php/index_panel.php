@@ -16,13 +16,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="/public/css/index.css" type="text/css">
-
-
-
 </head>
+
 <body>
     <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
-    <head id="encabezado"></head>
+    <head id="encabezado">
+        
+    </head>
     <div class="container">
         <div class="row" id="main_panel" >
             <div class="col-sm-12 col-lg-4 col-md-4" >
