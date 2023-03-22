@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $_SESSION['user']=$user;
+    $_SESSION['username']=$user;
 ?>
 
 <!DOCTYPE html>
@@ -25,8 +25,7 @@
             <a class="navbar-brand text text-decoration" href="#"  >LOGO</a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#btn_menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
-            </button>
-            
+            </button>      
             <div class="collapse navbar-collapse" id="btn_menu">
                 <ul class="navbar-nav d-flex">
                     <li class="nav-item">
@@ -39,7 +38,6 @@
             </div>       
         </div>
     </nav> 
-    
     <div class="container">
         <div class="row" id="main_panel" >
             <div class="col-sm-12 col-lg-4 col-md-4" >
@@ -59,7 +57,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row" id="option_panel">
             <div class="col-sm-12 col-md-6 slide" id="btn_monthly_data">
                 <h4>MES</h4>
@@ -72,10 +69,8 @@
     </div>
 
 
-
     <footer id="pie_pagina" class="mt-auto">
     </footer>
-
     <script src="/public/js/index.js"></script>
 
 </body>
