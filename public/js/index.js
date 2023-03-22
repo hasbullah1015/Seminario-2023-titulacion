@@ -2,9 +2,17 @@
 $("#pie_pagina").load("/public/html/footer.html");
 $("#encabezado").load("/public/html/header.html");
 
-const photo = document.querySelector("#userPortrait");
-const user = document.querySelector("#userLabel");
-let url = "public_html/public/assets_img/"+user.innerHTML+".jpg"; //concatenamos la url con el usuario
+const user_portrait = document.querySelector("#userPortrait");
+
+const user_Label = document.querySelector("#userLabel");
+
+let url = "public_html/public/assets_img/"+user_Label.innerHTML+".jpg"; //concatenamos la url con el usuario
+
+const photo = document.createElement("img");
+photo.src=url;
+photo.alt=user_Label.innerHTML;
+
+user_Label.appendChild(photo);
 
 console.log(url);
 
