@@ -46,6 +46,7 @@
                 <div class="container">
                     <div class="row" id="title"><h2>Datos Personales</h2></div>
                     <div class=" slide col" id="main_data">
+                        <div class="col"> Bienvenido <?php echo $_user; ?></div>
                     </div>
                 </div>
             </div>
