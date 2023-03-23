@@ -22,8 +22,8 @@
     <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
     <header id="encabezado"></header>
     <div class="container">
-        <div class="row" id="main_panel" >
-            <div class="col-sm-12 col-lg-4 col-md-4" >
+        <div class="row" >
+            <div class="col-sm-12 col-lg-4 col-md-4" id="main_panel"  >
                 <div class="container">
                     <div class="row" id="title"><h2>Datos Personales</h2></div>
                     <div class=" slide col" id="main_data">
