@@ -9,6 +9,6 @@ header{
 .nav-item a:hover{
     color: black;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
