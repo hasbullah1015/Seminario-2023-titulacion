@@ -61,7 +61,7 @@ form button {
     margin: 5px;
   }
 
-#main_data{
+#main_panel{
     display: flex;
     align-items: center;
     justify-content: center;
