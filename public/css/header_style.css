@@ -7,7 +7,7 @@ header{
 }
 
 
-.nav-item a :hover{
+a .nav-link:hover{
     color: rgb(255, 2, 2) !important;
     background-color: white !important;
 }
