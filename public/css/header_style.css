@@ -6,8 +6,7 @@ header{
     color: white;
 }
 
-
-a .nav-link:hover{
+.nav-item a:hover{
     color: rgb(255, 2, 2) !important;
     background-color: white !important;
 }
