@@ -1,3 +1,7 @@
+footer{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 #linkedin:hover{
     color: rgb(248, 34, 34);
 }
