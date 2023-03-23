@@ -2,6 +2,7 @@
 $("#pie_pagina").load("/public/html/footer.html");
 $("#encabezado").load("/public/html/header.html");
 
+
 const user_portrait = document.querySelector("#userPortrait"); // seleccionamos el div donde se inserta la imagen
 
 const user_Label = document.querySelector("#userLabel"); // seleccionamos el div donde esta el nombre de usuario
