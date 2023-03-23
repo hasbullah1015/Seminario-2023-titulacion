@@ -21,9 +21,11 @@ h1{
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-direction: column;
+    display: inline-flex;   /*para centrar el contenido*/
+        align-items: center !important;
+        justify-content: center !important;
+    flex-direction: column; /* para poner los div en vertical*/
+
     -webkit-transition: 1s linear;
     transition: 1s linear;
     color: black !important;
