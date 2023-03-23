@@ -8,6 +8,6 @@ header{
 
 
 .nav-item a :hover{
-    color: black;
-    background-color: white;
+    color: black !important;
+    background-color: white !important;
 }
