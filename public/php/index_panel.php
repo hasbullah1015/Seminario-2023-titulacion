@@ -23,9 +23,10 @@
     <header id="encabezado"></header>
     <div class="container">
         <div class="row" >
-            <div class="col-sm-12 col-lg-4 col-md-4" id="main_panel"  >
+            <div class="col-sm-12 col-lg-4 col-md-4" id="main_panel">
                 <div class="container">
                     <div class="row" id="title"><h2>Datos Personales</h2></div>
+                    <div class="row" id="title"><h2>Datos Personale</h2></div>
                     <div class=" slide col">
                         <div class="col" id="main_data">
                             <div class="row" id="welcomeLabel"> Bienvenido</div> 
