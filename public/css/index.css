@@ -23,6 +23,7 @@ h1{
     margin-bottom: 10px;
     align-items: center !important;
     justify-content: center !important;
+    display: inline-flex;
     -webkit-transition: 1s linear;
     transition: 1s linear;
     color: black !important;
