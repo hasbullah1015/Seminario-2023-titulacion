@@ -27,10 +27,10 @@
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <h2>Datos Personales</h2>
                 <div class="container slide">
-                    <div class="row"></div>
-                    <div class="row"></div>
-                    <div class="row"></div>
-                    <div class="row"></div>
+                    <div class="row">a</div>
+                    <div class="row">l</div>
+                    <div class="row">e</div>
+                    <div class="row">x</div>
                 </div>
                 
             </div>
