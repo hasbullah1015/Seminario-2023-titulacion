@@ -132,7 +132,7 @@ input
         display:flex;
         flex-direction:column;
     }
-    Footer {margin-top:auto;}
+    Footer {margin-top:auto;} /* separar footer del container principal?*/
 
 
     video{
@@ -141,9 +141,9 @@ input
     }
 
     #user_photo{
-        border-radius: 30px;
-        height: 100px;
-        width: 100px;
+        border-radius: 100%;
+        height: 120px;
+        width: 120px;
         margin: 5px;
     }
 }
