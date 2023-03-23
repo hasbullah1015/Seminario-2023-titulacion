@@ -26,17 +26,11 @@
             <div class="col-sm-12 col-lg-4 col-md-4" id="main_panel">
                 <div class="container">
                     <div class="row" id="title"><h2>Datos Personales</h2></div>
-                    <div class="row" id="title"><h2>Datos Personale</h2></div>
-                    <div class=" slide col">
-                        <div class="col" id="main_data">
-                            <div class="row" id="welcomeLabel"> Bienvenido</div> 
-                            <div class="row" id="userPortrait"></div>
-                            <div class="row" id="userLabel"><?php echo $user;?></div>  
-                            <div class="row" id="idLabel"> <?php echo $id; ?></div>   
-                            <div class="row" id="rolLabel"><?php echo $rol; ?></div>
-                        </div>
+                    <div class="row">
+                        hola
                     </div>
                 </div>
+            </div>
             </div>
             <div class="col-sm-12 col-lg-8 col-md-8">
                 <div class="container">
@@ -47,6 +41,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row" id="option_panel">
             <div class="col-sm-12 col-md-6 slide" id="btn_monthly_data">
                 <h4>MES</h4>
