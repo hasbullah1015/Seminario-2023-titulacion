@@ -24,8 +24,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col slide"></div>
-            <div class="col slide"></div>
+            <div class="col-sm-12 col-md-4 col-lg-4 slide"></div>
+            <div class="col-sm-12 col-md-8 col-lg-8 slide"></div>
         </div>
     </div>
 
