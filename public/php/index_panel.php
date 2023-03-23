@@ -26,6 +26,12 @@
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <h2>Datos Personales</h2>
+                <div>
+                    hola
+                    <div>
+                        holax2
+                    </div>
+                </div>
                 
             </div>
 
