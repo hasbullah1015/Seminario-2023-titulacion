@@ -36,6 +36,10 @@
             </div>
 
             <div class="col-sm-12 col-md-8 col-lg-8">
+                <h2>Información</h2>
+                <div class="container slide">
+                    
+                </div>
             </div>
         </div> 
     </div>
