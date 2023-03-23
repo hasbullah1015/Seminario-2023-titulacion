@@ -21,35 +21,11 @@
 <body>
     <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
     <header id="encabezado"></header>
+
     <div class="container">
-        <div class="row" >
-            <div class="col-sm-12 col-lg-4 col-md-4" id="main_panel">
-                <div class="container">
-                    <div class="row" id="title"><h2>Datos Personales</h2></div>
-                    <div class="row">
-                        hola
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-sm-12 col-lg-8 col-md-8">
-                <div class="container">
-                    <div class="row" id="title"><h2>Registro</h2> </div>
-                    <div class=" slide col overflow-auto">
-                    <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" id="option_panel">
-            <div class="col-sm-12 col-md-6 slide" id="btn_monthly_data">
-                <h4>MES</h4>
-            </div>
-            <div class="col-sm-12 col-md-6 slide" id="btn_history_data">
-                <H4>HISTORICO</H4>
-            </div>
-
+        <div class="row">
+            <div class="col slide"></div>
+            <div class="col slide"></div>
         </div>
     </div>
 
