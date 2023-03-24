@@ -44,6 +44,10 @@
                 </div>
             </div>
         </div> 
+        <div class="row">
+                <div class="slide col-sm-12 col-md-6">a</div>
+                <div class="slide col-sm-12 col-md-6">b</div>
+        </div>
     </div>
 
 
