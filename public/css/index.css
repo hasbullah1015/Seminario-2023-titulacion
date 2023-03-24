@@ -156,6 +156,11 @@ input
 
     video{
         min-height: 100vh;
-
     }   
+    #user_photo{
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        margin: 5px;
+    }
 }
