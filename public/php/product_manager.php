@@ -15,6 +15,8 @@
             <h1>Gestor de productos:</h1>
         </div>
     </div>
-    
+    <footer id="pie_pagina" class="mt-auto">
+    </footer>
+    <script src="/public/js/index.js"></script>
 </body>
 </html>
