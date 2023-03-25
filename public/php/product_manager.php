@@ -40,7 +40,7 @@
                 </form>
                 <?php 
                     $busqueda=strtolower($_REQUEST['busqueda']);
-                    $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto LIKE '%$busqueda%'");
+                    $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto = '%$busqueda%'");
                     $resultado=mysqli_num_rows($sqlquery_busqueda);
                     if($resultado>0){
                         $datos=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC);
