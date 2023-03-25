@@ -6,7 +6,7 @@ if(product_id.innerHTML == ""){
     module.classList.add("slide");
     module.innerHTML="form";
 }
-else{
+else{ 
     module.classList.add("slide");
     module.innerHTML="qr";
 }
