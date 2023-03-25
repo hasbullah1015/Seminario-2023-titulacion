@@ -42,12 +42,12 @@
                     $busqueda=strtolower($_REQUEST['busqueda']);
                     $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto = '%$busqueda%'");
                     $resultado=mysqli_num_rows($sqlquery_busqueda);
-                    echo "hola";
+                    
                 ?>  
             </div>
             <div class="slide col-sm-12 col-md-8" id="data_product">
                 <?php 
-                
+                    echo "hola";
                     if($resultado>0){
                         while($datos=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC)){
                 ?>
