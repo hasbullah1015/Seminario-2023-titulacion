@@ -31,7 +31,7 @@
 
 }
 
-#data_product{
+.label{
     display: inline-flex;
     margin-left: auto;
 }

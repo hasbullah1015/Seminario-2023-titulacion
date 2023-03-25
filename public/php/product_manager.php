@@ -45,10 +45,10 @@
                 ?>  
             </div>
             <div class="slide col-sm-12 col-md-8" id="data_product">
-                    <div>ID</div>
-                    <div id="product_id">a</div>
-                    <div>Nombre</div>
-                    <div id="product_name">b</div>
+                    <div class="label">ID</div>
+                    <div class="label" id="product_id">a</div>
+                    <div class="label">Nombre</div>
+                    <div id="product_name" class="label">b</div>
             </div>
         </div>
 
