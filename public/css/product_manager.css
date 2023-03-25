@@ -34,7 +34,8 @@
 .label{
     display: inline-flex;
     margin-left: auto;
-    text-align: center;
+    text-align: center !important;
+    align-items: center !important;
 }
 video{
     position: absolute;
