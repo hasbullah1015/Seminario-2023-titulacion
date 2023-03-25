@@ -49,6 +49,7 @@
                 <?php 
                     echo "hola";
                     if($resultado>0){
+                        echo "hola";
                         while($datos=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC)){
                 ?>
                 
