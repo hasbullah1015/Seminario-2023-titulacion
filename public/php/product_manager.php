@@ -55,7 +55,7 @@
                 <div class="label" id="product_id"><?php echo $datos['idProducto'];?></div>
                 <div class="label">Nombre</div>
                 <div id="product_name" class="label"><?php echo $datos['nombre'];?></div>
-
+ 
                 <?php 
                         }
                     }
