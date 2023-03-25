@@ -35,12 +35,12 @@
         <div class="row">
             <div class="slide col-sm-12 col-md-4">
                 <form action="product_manager.php" method="get">
-                    <input type="text" id="search_bar" name="busqueda" placeholder="busqueda" value="<?php echo $busqueda;?>">  
+                    <input type="text" id="search_bar" name="busqueda" placeholder="busqueda">  
                     <input type="submit" id="sent" name="enviar">
                 </form>
                 <?php 
                     $busqueda=strtolower($_REQUEST['busqueda']);
-                    $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto = '%$busqueda%'");
+                    $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto LIKE '%$busqueda%'");
                     $resultado=mysqli_num_rows($sqlquery_busqueda);                
                 ?>  
             </div>
