@@ -42,9 +42,9 @@
                 </form>
                 <?php 
                     $busqueda=strtolower($_REQUEST['busqueda']);
-                    $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE id LIKE '%$busqueda%' OR nombre LIKE %$busqueda%");
+                    $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto LIKE '%$busqueda%' OR nombre LIKE %$busqueda%");
                     $resultado=mysqli_num_rows($sqlquery_busqueda);
-                ?>
+                ?>  
             </div>
             <div class="slide col-sm-12 col-md-8" id="data_product">
                     <div>ID</div>
