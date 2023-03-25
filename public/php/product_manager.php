@@ -46,6 +46,7 @@
         <?php 
             $busqueda=strtolower($_REQUEST['busqueda']);
             $sqlquery_busqueda=mysqli_query($connection,"SELECT id, nombre FROM producto WHERE id LIKE '%$busqueda%' OR nombre LIKE %$busqueda%");
+            $resultado=mysqli_num_rows($sqlquery_busqueda);
         ?>
     </div>
     <footer id="pie_pagina" class="mt-auto">
