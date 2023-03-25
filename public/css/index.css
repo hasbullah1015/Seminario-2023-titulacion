@@ -136,7 +136,7 @@ input
     }
 
     #user_photo{
-        border-radius: 50%;
+        border-radius: 20%;
         height: 120px;
         width: 120px;
         margin: 5px;
