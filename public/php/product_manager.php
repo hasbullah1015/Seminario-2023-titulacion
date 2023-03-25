@@ -50,9 +50,9 @@
             </div>
             <div class="slide col-sm-12 col-md-8" id="data_product">
                     <div class="label">ID</div>
-                    <div class="label" id="product_id"><?php echo $datos['idProducto'];?></div>
+                    <div class="label" id="product_id"><?php echo $dato['idProducto'];?></div>
                     <div class="label">Nombre</div>
-                    <div id="product_name" class="label"><?php echo $datos['nombre'];?></div>
+                    <div id="product_name" class="label"><?php echo $dato['nombre'];?></div>
             </div>
         </div>
 
