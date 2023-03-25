@@ -31,17 +31,14 @@
 
 }
 
-#data_product{
+#data_product .label{
     text-align: center !important;
     align-items: center !important;
-}
-
-.label{
     display: inline-flex;
     margin-left: auto;
-
-
 }
+
+
 video{
     position: absolute;
     top: 0;
