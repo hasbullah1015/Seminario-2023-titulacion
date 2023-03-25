@@ -21,10 +21,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="/public/css/header_style.css" type="text/css">
-    <link rel="stylesheet" href="/public/css/footer_style.css" type="text/css">
-    <link rel="stylesheet" href="/public/css/product_manager.css" type="text/css">
+    
+
 </head>
 
 <body>
@@ -36,7 +34,7 @@
         </div>
         <div class="row">
             <div class="slide col-sm-12 col-md-4">
-                <form action="product_manager.php">
+                <form action="product_manager.php" method="get">
                     <input type="text" id="search_bar" name="busqueda" placeholder="busqueda">
                     <input type="submit" id="sent" name="enviar">
                 </form>
