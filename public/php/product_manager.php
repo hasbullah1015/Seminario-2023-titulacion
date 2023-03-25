@@ -24,7 +24,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="/public/css/header_style.css" type="text/css">
     <link rel="stylesheet" href="/public/css/footer_style.css" type="text/css">
-
+    <link rel="stylesheet" href="/public/css/product_manager.css" type="text/css">
 </head>
 
 <body>
@@ -40,14 +40,20 @@
                     <input type="text" id="search_bar" name="busqueda" placeholder="busqueda">
                     <input type="submit" id="sent" name="enviar">
                 </form>
+                <?php 
+                    $busqueda=strtolower($_REQUEST['busqueda']);
+                    $sqlquery_busqueda=mysqli_query($connection,"SELECT id, nombre FROM producto WHERE id LIKE '%$busqueda%' OR nombre LIKE %$busqueda%");
+                    $resultado=mysqli_num_rows($sqlquery_busqueda);
+                ?>
             </div>
-            <div class="slide col-sm-12 col-md-8">b</div>
+            <div class="slide col-sm-12 col-md-8" id="data_product">
+                    <div>ID</div>
+                    <div id="product_id">a</div>
+                    <div>Nombre</div>
+                    <div id="product_name">b</div>
+            </div>
         </div>
-        <?php 
-            $busqueda=strtolower($_REQUEST['busqueda']);
-            $sqlquery_busqueda=mysqli_query($connection,"SELECT id, nombre FROM producto WHERE id LIKE '%$busqueda%' OR nombre LIKE %$busqueda%");
-            $resultado=mysqli_num_rows($sqlquery_busqueda);
-        ?>
+
     </div>
     <footer id="pie_pagina" class="mt-auto">
     </footer>

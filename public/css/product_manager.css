@@ -31,6 +31,10 @@
 
 }
 
+
+#data_product{
+    display: inline-block;
+}
 video{
     position: absolute;
     top: 0;
