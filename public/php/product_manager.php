@@ -63,7 +63,7 @@
         </div>
 
         <div class="row">
-            <div class="col">
+            <div class="slide col">
                     a
             </div>
         </div>
