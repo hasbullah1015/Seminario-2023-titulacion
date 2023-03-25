@@ -4,7 +4,11 @@ console.log("producto: "+product_id.innerHTML)
 
 if(product_id.innerHTML == ""){
     module.classList.add("slide");
-    module.innerHTML="p";
+    module.innerHTML="form";
+}
+else{
+    module.classList.add("slide");
+    module.innerHTML="qr";
 }
 
 //añadir clase slide
