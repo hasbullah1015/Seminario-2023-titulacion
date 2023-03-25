@@ -40,7 +40,7 @@
                 </form>
                 <?php 
                     $busqueda=strtolower($_REQUEST['busqueda']);
-                    $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto = '$busqueda'");
+                    $sqlquery_busqueda=mysqli_query($connection,"SELECT idProducto, nombre FROM producto WHERE idProducto = '$busqueda'");
                     $resultado=mysqli_num_rows($sqlquery_busqueda);     
                 ?>  
             </div>
@@ -50,7 +50,6 @@
                         $datos=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC);
                     }
                 ?>
-                
                 <div class="label">ID:</div>
                 <div class="label" id="product_id"><?php echo $datos['idProducto'];?></div>
                 <div class="label">Nombre:</div>
