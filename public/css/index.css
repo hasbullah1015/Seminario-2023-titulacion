@@ -130,12 +130,11 @@ input
     Footer {margin-top:auto;} /* separar footer del container principal?*/
 
 
-    video{
+video{
         min-height: 100vh;
+ }
 
-    }
-
-    #user_photo{
+#user_photo{
         border-radius: 20%;
         height: 120px;
         width: 120px;

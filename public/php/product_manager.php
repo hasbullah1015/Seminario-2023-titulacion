@@ -24,6 +24,10 @@
         <div class="row">
             <h1>Gestor de productos:</h1>
         </div>
+        <div class="row">
+            <div class="slide col-sm-12 col-md-6">a</div>
+            <div class="slide col-sm-12 col-md-6">b</div>
+        </div>
     </div>
     <footer id="pie_pagina" class="mt-auto">
     </footer>

@@ -21,6 +21,16 @@
     
 }
 
+#buscador{
+    align-items: center;
+    text-align: center;
+}
+
+#search_bar{
+    border-radius: 20px;
+
+}
+
 video{
     position: absolute;
     top: 0;
