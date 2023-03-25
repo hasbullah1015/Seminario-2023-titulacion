@@ -42,17 +42,25 @@
                     $busqueda=strtolower($_REQUEST['busqueda']);
                     $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto = '%$busqueda%'");
                     $resultado=mysqli_num_rows($sqlquery_busqueda);
-                    if($resultado>0){
-                        echo 'hola';
-                        $dato=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC);
-                    }
                 ?>  
             </div>
             <div class="slide col-sm-12 col-md-8" id="data_product">
-                    <div class="label">ID</div>
-                    <div class="label" id="product_id"><?php echo $dato['idProducto'];?></div>
-                    <div class="label">Nombre</div>
-                    <div id="product_name" class="label"><?php echo $dato['nombre'];?></div>
+                <?php 
+                    if($resultado>0){
+                        while($datos=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC)){
+                ?>
+                <div class="label">ID</div>
+                <div class="label" id="product_id"><?php echo $datos['idProducto'];?></div>
+                <div class="label">Nombre</div>
+                <div id="product_name" class="label"><?php echo $datos['nombre'];?></div>
+
+                <?php 
+                        }
+                    }
+                ?>
+                    
+                
+        
             </div>
         </div>
 
