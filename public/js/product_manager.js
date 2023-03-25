@@ -1,6 +1,7 @@
 const product_id = document.querySelector("#product_id");
 const module = document.querySelector("#qr_form_mod");
 
+console.log(product_id);
 
 if(product_id.innerHTML=""){
     
