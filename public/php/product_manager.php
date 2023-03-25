@@ -25,11 +25,12 @@
             <h1>Gestor de productos:</h1>
         </div>
         <div class="row">
-            <div class="slide col-sm-12 col-md-4">a</div>
+            <div class="slide col-sm-12 col-md-4">
                 <form action="product_manager.php">
                     <input type="text" id="search_bar" name="busqueda" placeholder="busqueda">
                     <input type="submit" id="sent" name="enviar">
                 </form>
+            </div>
             <div class="slide col-sm-12 col-md-8">b</div>
         </div>
     </div>
