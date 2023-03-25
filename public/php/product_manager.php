@@ -43,13 +43,6 @@
                     $sqlquery_busqueda=mysqli_query($connection,"SELECT * FROM producto WHERE idProducto LIKE '%$busqueda%' OR nombre LIKE '%$busqueda%'");
                     $resultado=mysqli_num_rows($sqlquery_busqueda);
                 ?>  
-
-
-$sqlquery_registros =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%'");
-                $cantidad_registros=mysqli_num_rows($sqlquery_registros);
-
-
-
             </div>
             <div class="slide col-sm-12 col-md-8" id="data_product">
                     <div>ID</div>
