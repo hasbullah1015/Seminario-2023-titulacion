@@ -47,13 +47,16 @@
             <div class="slide col-sm-12 col-md-8" id="data_product">
                 <?php 
                     if($resultado>0){
-                        $datos=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC);
+                        while($datos=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC)){
+                ?>
+                <div class="label">ID</div>
+                <div class="label" id="product_id"><?php echo $datos['idProducto'];?></div>
+                <div class="label">Nombre</div>
+                <div id="product_name" class="label"><?php echo $datos['nombre'];?></div>
+                <?php 
+                        }
                     }
                 ?>
-                <div class="label">ID:</div>
-                <div class="label" id="product_id"><?php echo $datos['idProducto'];?></div>
-                <div class="label">Nombre:</div>
-                <div id="product_name" class="label"><?php echo $datos['nombre'];?></div>
             </div>
         </div>
 
