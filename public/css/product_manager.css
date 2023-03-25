@@ -31,9 +31,9 @@
 
 }
 
-
 #data_product{
     display: inline-flex;
+    margin-left: auto;
 }
 video{
     position: absolute;
