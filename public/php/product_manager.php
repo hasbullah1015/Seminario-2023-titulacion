@@ -63,14 +63,13 @@
         </div>
 
         <div class="row">
-            <div class="slide col">
-                    a
-            </div>
+            <div class="col" id="qr_form_mod"></div>
         </div>
 
     </div>
     <footer id="pie_pagina" class="mt-auto">
     </footer>
     <script src="/public/js/index.js"></script>
+    <script src="/public/js/product_manager.js"></script>
 </body>
 </html>
