@@ -55,14 +55,16 @@
                 <div class="label" id="product_id"><?php echo $datos['idProducto'];?></div>
                 <div class="label">Nombre</div>
                 <div id="product_name" class="label"><?php echo $datos['nombre'];?></div>
- 
                 <?php 
                         }
                     }
                 ?>
-                    
-                
-        
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                    a
             </div>
         </div>
 
