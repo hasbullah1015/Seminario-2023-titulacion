@@ -64,7 +64,7 @@
                 <div class="label">Nombre:</div>
                 <div id="product_name" class="label">
                     <?php
-                        if(datos['idProducto'])
+                        if(datos['nombre'])
                             echo $datos['nombre'];
                         else
                             echo "n/d";
