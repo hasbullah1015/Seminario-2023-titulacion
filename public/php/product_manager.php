@@ -52,7 +52,7 @@
                     }
                 ?>
                 <div class="label">ID:</div>
-                <div class="label" id="product_id"><?php if($resultado>0){ echo $datos['idProducto'];} else{ echo 'n/d';}?></div>
+                <div class="label" id="product_id"><?php if($resultado>0){ echo $datos['idProducto'];} else{ echo 'n/d';}?></div> 
                 <div class="label">Nombre:</div>
                 <div id="product_name" class="label"><?php if($resultado>0){ echo $datos['nombre']; } else{ echo 'n/d';}?></div>
             </div>
