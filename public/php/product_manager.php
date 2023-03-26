@@ -54,9 +54,8 @@
                 <div class="label">ID:</div>
                 <div class="label" id="product_id">
                     <?php
-                        if($resultado>0){
+                        if($resultado>0)
                             echo $datos['idProducto'];
-                        }
                         else
                             echo "n/d";
                     ?>
