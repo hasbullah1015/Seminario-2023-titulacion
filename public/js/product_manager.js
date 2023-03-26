@@ -9,7 +9,7 @@ if(product_id.innerHTML == ""){
 else{ 
     module.classList.add("slide");
     module.innerHTML="qr";
-    
+        
 }
 
 //añadir clase slide

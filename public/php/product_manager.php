@@ -54,7 +54,7 @@
                 <div class="label">ID:</div>
                 <div class="label" id="product_id">
                     <?php
-                        if(datos['idProducto']){
+                        if($resultado>0){
                             echo $datos['idProducto'];
                         }
                         else
@@ -64,7 +64,7 @@
                 <div class="label">Nombre:</div>
                 <div id="product_name" class="label">
                     <?php
-                        if(datos['nombre'])
+                        if($resultado>0)
                             echo $datos['nombre'];
                         else
                             echo "n/d";
