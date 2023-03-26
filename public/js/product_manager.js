@@ -1,5 +1,6 @@
 const product_id = document.querySelector("#product_id");
 const module = document.querySelector("#qr_form_mod");
+
 console.log("producto: "+product_id.innerHTML)
 
 if(product_id.innerHTML != "n/d"){
@@ -7,7 +8,7 @@ if(product_id.innerHTML != "n/d"){
     module.innerHTML="qr";
 
 }
-else{ 
+else{   
     module.classList.add("slide");
     module.innerHTML="form";
 }
