@@ -57,7 +57,7 @@
                         if($resultado>0){
                             echo $datos['idProducto'];}
                         else{
-                            echo "n/d";}
+                            echo 'n/d';}
                     ?>
                 </div>
                 <div class="label">Nombre:</div>
@@ -66,7 +66,7 @@
                         if($resultado>0){
                             echo $datos['nombre']; }
                         else{ 
-                            echo "n/d";}
+                            echo 'n/d';}
                         
                      ?>
                 </div>
