@@ -49,6 +49,7 @@
                     if($resultado>0){
                         $datos=$sqlquery_busqueda->fetch_array(MYSQLI_ASSOC);
                     }
+                    echo $datos['idProducto']; 
                 ?>
                 <div class="label">ID:</div>
                 <div class="label" id="product_id"><?php echo $datos['idProducto'];?></div>
