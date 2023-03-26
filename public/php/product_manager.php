@@ -36,7 +36,7 @@
             <h1>Gestor de productos:</h1>
         </div>
         <div class="row">
-            <div class="slide col-sm-12 col-md-4">
+            <div class="slide col-sm-12 col-md-4" id="search_panel">
                 <form action="product_manager.php" method="get">
                     <input type="text" id="search_bar" name="busqueda" placeholder="busqueda">  
                     <input type="submit" id="sent" name="enviar">
