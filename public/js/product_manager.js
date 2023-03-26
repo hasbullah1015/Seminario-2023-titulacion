@@ -3,7 +3,7 @@ const module = document.querySelector("#qr_form_mod");
 
 console.log("producto: "+product_id.innerHTML)
 
-if(product_id.innerHTML != "n/d"){
+if(product_id.innerHTML != 'n/d'){
     module.classList.add("slide");
     module.innerHTML="qr";
 
