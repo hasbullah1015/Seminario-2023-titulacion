@@ -7,7 +7,7 @@ const module = document.querySelector("#qr_form_mod");
 if(product_id.innerHTML != 'n/d'){
         module.classList.add("slide");
         module.innerHTML="qr";
-        new QRcode(module,product_id.innerHTML); //Generamos el codigo QR 
+        module.innerHTML = new QRcode(module,product_id.innerHTML); //Generamos el codigo QR 
 }
 else{   
         module.classList.add("slide");
