@@ -31,8 +31,8 @@
 
 }
 
-#qr_form_mod{
-    display:table;
+#form_mod{
+    display:list-item;
 }
 
 .dataWarning{
