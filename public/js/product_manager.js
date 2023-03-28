@@ -31,6 +31,8 @@ function form_generator(){
 
     id_input.setAttribute('type',"text");
     id_input.setAttribute('placeholder',"inserte id");
+    id_input.setAttribute('name',"id");
+    id_input.setAttribute('value',"cocochanel");
 
     name_input.setAttribute('type',"text");
     name_input.setAttribute('placeholder',"inserte nombre");
