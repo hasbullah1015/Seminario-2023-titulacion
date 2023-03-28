@@ -46,9 +46,7 @@ function form_generator(){
     new_form.appendChild(category);
     new_form.appendChild(submit);
     form_module.appendChild(new_form);
-
-
-
+    console.log("hola je");
 
 }
 
