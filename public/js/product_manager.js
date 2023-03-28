@@ -5,9 +5,7 @@ const module = document.querySelector("#qr_form_mod");
 const sent = document.querySelector("#sent");
 
 
-sent.addEventListener("click",qr_form_generator);
 
-function qr_form_generator(){
     if(product_id.innerHTML != 'n/d'){
         module.classList.add("slide");
         module.innerHTML="qr";
@@ -19,6 +17,5 @@ function qr_form_generator(){
         search_panel.classList.add("dataWarning");
 
     }
-}
 
 //añadir clase slide
