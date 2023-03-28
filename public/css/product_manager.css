@@ -32,7 +32,7 @@
 }
 
 #form_mod{
-    display:list-item;
+    display:grid !important;
 }
 
 .dataWarning{
