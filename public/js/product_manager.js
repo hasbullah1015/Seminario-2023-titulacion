@@ -40,7 +40,7 @@ function form_generator(){
     category.setAttribute('type',"text");
     category.setAttribute('placeholder',"inserte nombre");
 
-    submit.setAttribute('type',"button");
+    submit.setAttribute('type',"submit");
 
 
     new_form.appendChild(id_input);
