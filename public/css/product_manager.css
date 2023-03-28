@@ -33,7 +33,7 @@
 
 #form_mod{
     display: flex;
-    flex-direction: column; /* para poner los div en vertical*/
+    flex-direction: column !important; /* para poner los div en vertical*/
 
 }
 
