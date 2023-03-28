@@ -10,7 +10,7 @@ if(product_id.innerHTML != 'n/d'){
 else{   
         module.classList.add("slide");
         module.innerHTML="form";
-        search_panel.classList.add("dataWarning");
+        module.classList.add("dataWarning");
 }
 
 
