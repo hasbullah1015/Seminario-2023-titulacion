@@ -27,7 +27,7 @@ function form_generator(){
 
     //asignación de atributos
     new_form.setAttribute('method',"get");
-    new_form.setAttribute('action',"");
+    new_form.setAttribute('action',"product_manager.php");
 
     id_input.setAttribute('type',"text");
     id_input.setAttribute('placeholder',"inserte id");
