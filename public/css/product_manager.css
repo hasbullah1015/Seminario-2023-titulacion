@@ -32,7 +32,7 @@
 }
 
 #qr_form_mod{
-    display: inline-flex !important;
+    display: block !important;
 }
 
 .dataWarning{
