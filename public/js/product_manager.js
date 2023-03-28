@@ -35,12 +35,11 @@ function form_generator(){
 
     name_input.setAttribute('type',"text");
     name_input.setAttribute('placeholder',"inserte nombre");
-    id_input.setAttribute('name',"nombre");
-
+    name_input.setAttribute('name',"nombre");
 
     category.setAttribute('type',"text");
     category.setAttribute('placeholder',"inserte categoria");
-    id_input.setAttribute('name',"categoria");
+    category.setAttribute('name',"categoria");
 
 
     submit.setAttribute('type',"submit");
