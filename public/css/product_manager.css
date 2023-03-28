@@ -32,9 +32,9 @@
 }
 
 #form_mod{
-    display: flex;
+    display:list-item;
     flex-direction: column !important; /* para poner los div en vertical*/
-    
+
 
 }
 

@@ -45,13 +45,12 @@ function form_generator(){
     submit.setAttribute('type',"submit");
 
 
-    new_form.appendChild(id_input);    document.createElement("br");
-    new_form.appendChild(name_input);    document.createElement("br");
-    new_form.appendChild(category);    document.createElement("br");
-    new_form.appendChild(submit);     document.createElement("br");
+    new_form.appendChild(id_input);   
+    new_form.appendChild(name_input);    
+    new_form.appendChild(category);    
+    new_form.appendChild(submit);     
     form_module.appendChild(new_form);
-    console.log("hola je");
-
+  
 }
 
 
