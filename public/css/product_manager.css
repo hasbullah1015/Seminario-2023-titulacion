@@ -31,6 +31,9 @@
 
 }
 
+#qr_form_mod{
+    display:table;
+}
 
 .dataWarning{
     background-color: rgba(255, 0, 0, 0.6);
