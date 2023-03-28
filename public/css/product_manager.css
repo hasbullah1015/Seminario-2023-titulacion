@@ -32,7 +32,7 @@
 }
 
 #qr_form_mod{
-    display: block !important;
+    display:list-item !important;
 }
 
 .dataWarning{
