@@ -58,8 +58,9 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col" id="qr_form_mod"></div>
+        <div class="row" id="qr_form_mod">
+            <div class="col-sm-12 col-md-6 "id="qr_mod"></div>
+            <div class="col-sm-12 col-md-6" id="form_mod"></div>
         </div>
 
     </div>
