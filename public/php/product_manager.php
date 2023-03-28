@@ -24,8 +24,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="/public/css/producto_manager.css" type="text/css">
 
-    
-
 </head>
 
 <body>
@@ -68,6 +66,6 @@
     <footer id="pie_pagina" class="mt-auto">
     </footer>
     <script src="/public/js/index.js"></script>
-    <script src="/public/js/product_manager.js"></script>
+    <script defer src="/public/js/product_manager.js"></script>
 </body>
 </html>
