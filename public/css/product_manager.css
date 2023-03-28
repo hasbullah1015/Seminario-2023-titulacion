@@ -31,9 +31,6 @@
 
 }
 
-#qr_form_mod{
-    display:list-item !important;
-}
 
 .dataWarning{
     background-color: rgba(255, 0, 0, 0.6);
