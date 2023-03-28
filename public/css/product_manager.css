@@ -32,7 +32,8 @@
 }
 
 #form_mod{
-    display:table-row;
+    flex-direction: column; /* para poner los div en vertical*/
+
 }
 
 .dataWarning{
