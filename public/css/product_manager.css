@@ -35,10 +35,11 @@
     display:flex !important;
     flex-direction: column !important; /* para poner los div en vertical*/
     margin: 10px;
-
-
 }
 
+#form_mod form input{
+    margin: 10px;
+}
 .dataWarning{
     background-color: rgba(255, 0, 0, 0.6);
     color: white;
