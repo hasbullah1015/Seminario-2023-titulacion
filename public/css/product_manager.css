@@ -98,6 +98,7 @@ input
 
 .opcSecc{
     display: inline-block !important;
+    flex-direction: inherit;
 }
 
 .dataWarning{
