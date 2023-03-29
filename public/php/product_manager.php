@@ -59,7 +59,7 @@
             <div class="col-sm-12 col-md-6" id="form_mod"></div>
         </div>
         <?php 
-            //echo dbGestor(); 
+             dbGestor(); 
         ?>
     </div>
     <footer id="pie_pagina" class="mt-auto">
