@@ -11,6 +11,7 @@ if(product_id.innerHTML != 'n/d'){
 }
 else{
         const form_module = document.querySelector("#right_mod");
+        
         form_generator();
 }
 
