@@ -63,8 +63,7 @@
             <div class="col-sm-12 col-md-6" id="form_mod"></div>
         </div>
         <?php 
-            dbGestor();
-            echo $cantidad_resultados;
+            echo dbGestor(); 
         ?>
     </div>
     <footer id="pie_pagina" class="mt-auto">
