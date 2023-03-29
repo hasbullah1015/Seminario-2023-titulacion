@@ -97,7 +97,7 @@ input
 }
 
 .opcSecc{
-    display: inline-block !important;
+    display: flex;
     flex-direction: inherit;
 }
 
