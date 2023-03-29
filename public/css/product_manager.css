@@ -39,6 +39,7 @@
 
 #form_mod form input{
     margin: 10px;
+    background-color: transparent;
 }
 .dataWarning{
     background-color: rgba(255, 0, 0, 0.6);
