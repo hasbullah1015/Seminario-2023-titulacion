@@ -1,4 +1,3 @@
-
 const product_id = document.querySelector("#product_id");
 const module = document.querySelector("#qr_form_mod");
 module.classList.add("slide");
@@ -12,7 +11,6 @@ if(product_id.innerHTML != 'n/d'){
 }
 else{
         const form_module = document.querySelector("#right_mod");
-        module.classList.add("slide");
         form_generator();
 }
 
@@ -23,7 +21,6 @@ function form_generator(){
     const name_input=document.createElement("input");
     const category = document.createElement("input");
     const submit = document.createElement("input");
-
 
     //asignación de atributos
     new_form.setAttribute('method',"get");
@@ -41,7 +38,6 @@ function form_generator(){
     category.setAttribute('placeholder',"inserte categoria");
     category.setAttribute('name',"categoria");
 
-
     submit.setAttribute('type',"submit");
 
 
@@ -52,6 +48,3 @@ function form_generator(){
     form_module.appendChild(new_form);
   
 }
-
-
-//añadir clase slide
