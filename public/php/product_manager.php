@@ -59,7 +59,7 @@
         </div>
 
         <div class="row" id="qr_form_mod">
-            <div class="col-sm-12 col-md-6 "id="qr_mod"></div>
+            <div class="col-sm-12 col-md-6 "id="left_mod"></div>
             <div class="col-sm-12 col-md-6" id="form_mod"></div>
         </div>
 

@@ -80,19 +80,19 @@ input
 
 }
 
-#qr_mod {
+#left_mod {
     display:flex;
     align-items: center;
     
 }
 
-#form_mod form{
+#right_mod form{
     display:flex !important;
     flex-direction: column !important; /* para poner los div en vertical*/
     margin: 10px;
 }
 
-#form_mod form input{
+#right_mod form input{
     margin: 10px;
 }
 

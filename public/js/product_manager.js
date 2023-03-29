@@ -1,16 +1,16 @@
 
 const product_id = document.querySelector("#product_id");
 const module = document.querySelector("#qr_form_mod");
-const QR_module = document.querySelector("#qr_mod");
-const form_module = document.querySelector("#form_mod");
+
 
 if(product_id.innerHTML != 'n/d'){
+        const QR_module = document.querySelector("#left_mod");
         module.classList.add("slide");
         new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
-        form_module.innerHTML="gola";
-    
+        
 }
-else{   
+else{
+        const form_module = document.querySelector("#right_mod");
         module.classList.add("slide");
         module.classList.add("dataWarning");
         form_generator();
