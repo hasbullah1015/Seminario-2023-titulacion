@@ -88,9 +88,8 @@ input
 
 #form_mod form input{
     margin: 10px;
-    background-color: transparent;
-    color: black;
 }
+
 .dataWarning{
     background-color: rgba(255, 0, 0, 0.6);
     color: white;
