@@ -46,10 +46,12 @@ function form_generator(){
     drop_opc.setAttribute('type',"radio");
     drop_opc.setAttribute('name',"opc");
     drop_opc.setAttribute('value',"drop");
+    drop_opc.setAttribute('class',"opcSecc")
 
     insert_opc.setAttribute('type',"radio");
     insert_opc.setAttribute('name',"opc");
     insert_opc.setAttribute('value',"insert");
+    insert_opc.setAttribute('class',"opcSecc")
 
 
     submit.setAttribute('type',"submit");
@@ -61,6 +63,7 @@ function form_generator(){
     new_form.appendChild(submit);  
     new_form.appendChild(insert_opc);
     new_form.appendChild(drop_opc);
+    
     form_module.appendChild(new_form);
   
 }

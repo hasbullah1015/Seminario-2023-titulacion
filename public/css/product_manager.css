@@ -96,6 +96,10 @@ input
     margin: 10px;
 }
 
+.opcSecc{
+    display: inline-block !important;
+}
+
 .dataWarning{
     background-color: rgba(255, 0, 0, 0.6);
     color: white;
