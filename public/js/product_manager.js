@@ -52,6 +52,8 @@ function form_generator(){
     insert_opc.setAttribute('name',"opc");
     insert_opc.setAttribute('value',"insert");
     insert_opc.setAttribute('class',"opcSecc")
+    insert_opc.setAttribute('placeholder',"inserte categoria");
+
 
 
     submit.setAttribute('type',"submit");
