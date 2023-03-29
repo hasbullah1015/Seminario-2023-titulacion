@@ -57,7 +57,7 @@ function form_generator(){
     insert_opc.setAttribute('class',"opcSecc")
 
     submit.setAttribute('type',"submit");
-
+ 
     new_form.appendChild(id_input);   
     new_form.appendChild(name_input);    
     new_form.appendChild(category);
