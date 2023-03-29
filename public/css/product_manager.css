@@ -29,6 +29,47 @@
 }
 
 
+form button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #000000;
+    border: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+form button:hover {
+    padding-right: 25px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 24px;
+}
+
+input
+    {
+        align-items: center;
+        text-align: left;
+        background-color: rgba(20, 20, 20, 0.6);
+        border: 0px;
+        border-bottom: solid rgb(0, 0, 0) 1px; 
+        color: #FFFFFF !important;
+    }
+
+    input:hover
+    {
+        background-color: rgba(255, 255, 255, 0.6);
+        border: 0px;
+        border-bottom: solid rgb(2, 2, 2) 1px !important; 
+        color: #000000 !important;
+    }
+
 #buscador{
     align-items: center;
     text-align: center;
