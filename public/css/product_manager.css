@@ -31,8 +31,7 @@
 
 }
 
-#form_mod{
-    display:list-item;
+#form_mod form{
     flex-direction: column !important; /* para poner los div en vertical*/
 
 
