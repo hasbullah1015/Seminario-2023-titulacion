@@ -25,7 +25,10 @@ function form_generator(){
     const name_input=document.createElement("input");
     const category = document.createElement("input");
     const submit = document.createElement("input");
-
+    const label1 = document.createElement("label");
+    label1.innerHTML="Añadir producto";
+    const label2 = document.createElement("label");
+    label2.innerHTML="Eliminar producto"
 
     //asignación de atributos
     new_form.setAttribute('method',"get");
@@ -47,27 +50,27 @@ function form_generator(){
     drop_opc.setAttribute('name',"opc");
     drop_opc.setAttribute('value',"drop");
     drop_opc.setAttribute('class',"opcSecc")
-
+    
     insert_opc.setAttribute('type',"radio");
     insert_opc.setAttribute('name',"opc");
     insert_opc.setAttribute('value',"insert");
     insert_opc.setAttribute('class',"opcSecc")
-    insert_opc.setAttribute('placeholder',"inserte categoria");
 
 
+    
 
-    submit.setAttribute('type',"submit");
+
 
 
     new_form.appendChild(id_input);   
     new_form.appendChild(name_input);    
-    new_form.appendChild(category);    
-    new_form.appendChild(submit);  
+    new_form.appendChild(category);
+    new_form.appendChild(label1);
     new_form.appendChild(insert_opc);
-    new_form.appendChild(drop_opc);
-    
+    new_form.appendChild(label2);
+    new_form.appendChild(drop_opc);    
+    new_form.appendChild(submit);
     form_module.appendChild(new_form);
-  
 }
 
 
