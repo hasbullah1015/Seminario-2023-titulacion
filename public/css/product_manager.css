@@ -84,6 +84,10 @@ input:hover{
     
 }
 
+#sent{
+    color: red;
+}
+
 #form_mod form{
     display:flex !important;
     flex-direction: column !important; /* para poner los div en vertical*/

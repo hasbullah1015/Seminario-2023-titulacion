@@ -1,13 +1,16 @@
 
 const product_id = document.querySelector("#product_id");
 const module = document.querySelector("#qr_form_mod");
+
+
 const QR_module = document.querySelector("#qr_mod");
 const form_module = document.querySelector("#form_mod");
 
 if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
         module.classList.add("slide");
         new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
-        form_module.innerHTML="gola";
+
+        //aqui ve como imprimir el codigo para un pdf o jpg
     
 }
 else{   
@@ -20,11 +23,13 @@ else{
 function form_generator(){
     const new_form = document.createElement("form");
     const id_input = document.createElement("input");
+       const name_input=document.createElement("input");
+    const category = document.createElement("input");
     const drop_opc = document.createElement("input");
     const insert_opc = document.createElement("input");
-    const name_input=document.createElement("input");
-    const category = document.createElement("input");
+
     const submit = document.createElement("input");
+    
     const label1 = document.createElement("label");
     label1.innerHTML="Añadir producto";
     const label2 = document.createElement("label");
@@ -57,6 +62,7 @@ function form_generator(){
     insert_opc.setAttribute('class',"opcSecc")
 
     submit.setAttribute('type',"submit");
+    submit.setAttribute('id',"")
 
     new_form.appendChild(id_input);   
     new_form.appendChild(name_input);    
