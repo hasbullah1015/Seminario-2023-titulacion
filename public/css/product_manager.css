@@ -86,7 +86,7 @@ input:hover{
 
 #sent{
     background-color: red;
-    border-radius: 10px ;
+    border-radius: 10px  ;
 
 }
 
@@ -100,9 +100,10 @@ input:hover{
     margin: 10px;
 }
 
-.opcSecc{
+form .opcSecc{
     display: flex;
     flex-direction: inherit;
+    background-color: yellow;
 }
 
 .dataWarning{
