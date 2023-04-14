@@ -85,7 +85,7 @@ input:hover{
 }
 
 #sent{
-    color: red;
+    background-color: red;
 }
 
 #form_mod form{
