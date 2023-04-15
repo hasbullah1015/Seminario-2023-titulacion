@@ -9,6 +9,7 @@ const form_module = document.querySelector("#form_mod");
 if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
         module.classList.add("slide");
         new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
+        print_qr();
 
         //aqui ve como imprimir el codigo para un pdf o jpg
     
@@ -73,6 +74,14 @@ function form_generator(){
     new_form.appendChild(drop_opc);    
     new_form.appendChild(submit);
     form_module.appendChild(new_form);
+}
+
+function print_qr(){
+        const submit = document.createElement("input");
+        submit.setAttribute('type',"submit");
+        submit.setAttribute('id',"sent");
+        form_module.appendChild(submit);
+
 }
 
 
