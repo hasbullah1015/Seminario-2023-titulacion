@@ -1,22 +1,18 @@
 
 const product_id = document.querySelector("#product_id");
+const name_id = document.querySelector("#product_name");
+
 const module = document.querySelector("#qr_form_mod");
-
-
 const QR_module = document.querySelector("#qr_mod");
 const form_module = document.querySelector("#form_mod");
 
 if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
         module.classList.add("slide");
         new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
-        print_qr();
-
-        //aqui ve como imprimir el codigo para un pdf o jpg
-    
+        pdf_generator();    
 }
 else{   
         module.classList.add("slide");
-        module.classList.add("dataWarning");
         form_generator();
 }
 
@@ -76,11 +72,20 @@ function form_generator(){
     form_module.appendChild(new_form);
 }
 
-function print_qr(){
+function pdf_generator(){
+        const new_form = document.createElement("form");
         const submit = document.createElement("input");
+
+        new_form.setAttribute('method',"get");
+        new_form.setAttribute('action',"product_manager.php");    
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
-        form_module.appendChild(submit);
+
+        new_form.appendChild(submit);
+        form_module.appendChild(new_form);
+
+
+
 
 }
 
