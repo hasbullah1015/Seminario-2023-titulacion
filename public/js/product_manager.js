@@ -80,7 +80,7 @@ function pdf_generator(){
 
         form_module.appendChild(submit);
 
-        document.getElementById("sent").addEventListener("click",pdfPrint);
+        document.querySelector("#sent").addEventListener("click",pdfPrint);
 
 
 }
