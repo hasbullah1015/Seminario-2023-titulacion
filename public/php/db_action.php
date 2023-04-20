@@ -21,6 +21,8 @@ if($id && $nombre && $categoria && $opc){
             mysqli_query($connection,"DELETE FROM producto WHERE idProducto = '$id' AND nombre = '$nombre' AND categoria = '$categoria'");
         echo 'Se eliminó el producto';
         }
+        else echo 'No existe un producto con ese ID';
+
     }
 }
 
