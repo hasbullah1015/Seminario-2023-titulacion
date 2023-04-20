@@ -24,13 +24,12 @@ function form_generator(){
     const category = document.createElement("input");
     const drop_opc = document.createElement("input");
     const insert_opc = document.createElement("input");
-
     const submit = document.createElement("input");
-    
     const label1 = document.createElement("label");
     label1.innerHTML="Añadir producto";
     const label2 = document.createElement("label");
     label2.innerHTML="Eliminar producto"
+    const label_status = document.createElement("label");
 
     //asignación de atributos
     new_form.setAttribute('method',"get");
