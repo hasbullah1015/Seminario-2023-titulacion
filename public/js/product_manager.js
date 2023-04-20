@@ -82,9 +82,6 @@ function pdf_generator(){
 
         document.getElementById("sent").addEventListener("click",pdfPrint);
 
-S
-
-
 
 }
 function pdfPrint(){
