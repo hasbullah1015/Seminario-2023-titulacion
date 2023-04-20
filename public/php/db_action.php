@@ -13,7 +13,7 @@ if($id && $nombre && $categoria && $opc){
             echo 'Ya existe un producto con el id:';  
         }
         else echo 'Se añadió el producto';
-        mysqli_query($connection,"INSERT INTO producto ( idProducto, nombre, categoria, cantidad ) values (idProducto = '$id', nombre = '$nombre', categoria = '$categoria', cantidad=0");
+        mysqli_query($connection,"INSERT INTO producto ( idProducto, nombre, categoria, cantidad ) values (idProducto = '$id', nombre = '$nombre', categoria = '$categoria', cantidad='0'");
         
     }
     
