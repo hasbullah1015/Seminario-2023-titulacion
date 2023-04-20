@@ -75,8 +75,7 @@ function pdf_generator(){
         const new_form = document.createElement("form");
         const submit = document.createElement("input");
         
-        new_form.setAttribute('method',"get");
-        new_form.setAttribute('action',"product_manager.php");    
+ 
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
 
