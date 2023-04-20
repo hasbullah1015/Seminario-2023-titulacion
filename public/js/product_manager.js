@@ -74,7 +74,7 @@ function form_generator(){
 function pdf_generator(){
         const new_form = document.createElement("form");
         const submit = document.createElement("input");
-
+        
         new_form.setAttribute('method',"get");
         new_form.setAttribute('action',"product_manager.php");    
         submit.setAttribute('type',"submit");
@@ -84,10 +84,15 @@ function pdf_generator(){
         new_form.appendChild(submit);
         form_module.appendChild(new_form);
 
+        submit.addEventListener("click",pdfPrint);
+
+
 
 
 
 }
-
+function pdfPrint(){
+        alert ("Hello World!");
+}
 
 //añadir clase slide
