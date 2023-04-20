@@ -5,8 +5,16 @@ $categoria=strtolower($_REQUEST['categoria']);
 $opc=strtolower($_REQUEST['opc']);
 
 if($id && $nombre && $categoria && $opc){
+
     if($opc=="insert"){
-        echo 'insert';
+        $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id'");
+        $resultado=mysqli_num_rows($sqlquery_consulta);
+        if($resultado>0){
+            echo 'no insert :c xd';
+           
+        }
+        else echo 'insert c:';
+        
     }
     if($opc=="drop"){
         echo 'drop';
