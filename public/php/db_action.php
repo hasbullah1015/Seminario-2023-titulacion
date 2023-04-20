@@ -10,10 +10,10 @@ if($id && $nombre && $categoria && $opc){
         $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id'");
         $resultado=mysqli_num_rows($sqlquery_consulta);
         if($resultado>0){
-            echo 'no insert :c xd';
+            echo 'Ya existe un producto con el id:'+ $id ;
            
         }
-        else echo 'insert c:';
+        else echo 'insert';
         
     }
     if($opc=="drop"){
