@@ -84,7 +84,7 @@ function pdf_generator(){
         new_form.appendChild(submit);
         form_module.appendChild(new_form);
 
-        submit.addEventListener("click",pdfPrint);
+        document.getElementById("sent").addEventListener("click",pdfPrint);
 
 
 
