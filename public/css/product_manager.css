@@ -103,7 +103,7 @@ input:hover{
 form .opcSecc{
     display: flex;
     flex-direction: inherit;
-    border-color: gray;
+    border-color: white;
 
 }
 

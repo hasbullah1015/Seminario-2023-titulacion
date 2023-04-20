@@ -57,6 +57,13 @@
         <div class="row" id="qr_form_mod">
             <div class="col-sm-12 col-md-6 "id="qr_mod"></div>
             <div class="col-sm-12 col-md-6" id="form_mod"></div>
+            <?php 
+                $nombre=strtolower($_REQUEST['nombre']);
+                if($nombre){
+                    echo 'hola loco';
+                }
+            ?>
+                
         </div>
         <?php 
             //echo dbGestor(); 

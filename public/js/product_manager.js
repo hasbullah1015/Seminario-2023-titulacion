@@ -81,6 +81,7 @@ function pdf_generator(){
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
 
+
         new_form.appendChild(submit);
         form_module.appendChild(new_form);
 
