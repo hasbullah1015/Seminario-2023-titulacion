@@ -59,10 +59,10 @@
             <div class="col-sm-12 col-md-6" id="form_mod">
             <?php 
                 $nombre=strtolower($_REQUEST['opc']);
-                if($opc="insert"){
+                if($opc=="insert"){
                     echo 'insert';
                 }
-                if($opc="drop"){
+                if($opc=="drop"){
                     echo 'drop';
                 }
             ?>
