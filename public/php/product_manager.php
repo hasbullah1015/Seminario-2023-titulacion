@@ -58,9 +58,12 @@
             <div class="col-sm-12 col-md-6 "id="qr_mod"></div>
             <div class="col-sm-12 col-md-6" id="form_mod">
             <?php 
-                $nombre=strtolower($_REQUEST['nombre']);
-                if($nombre){
-                    echo 'hola loco';
+                $nombre=strtolower($_REQUEST['opc']);
+                if($opc="insert"){
+                    echo 'insert';
+                }
+                if($opc="drop"){
+                    echo 'drop';
                 }
             ?>
             </div>    
