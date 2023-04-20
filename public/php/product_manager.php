@@ -58,13 +58,8 @@
             <div class="col-sm-12 col-md-6 "id="qr_mod"></div>
             <div class="col-sm-12 col-md-6" id="form_mod">
             <?php 
-                $opc=strtolower($_REQUEST['opc']);
-                if($opc=="insert"){
-                    echo 'insert';
-                }
-                if($opc=="drop"){
-                    echo 'drop';
-                }
+                include ("db_action.php");
+             
             ?>
             </div>    
         </div>
