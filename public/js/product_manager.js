@@ -72,20 +72,17 @@ function form_generator(){
 }
 
 function pdf_generator(){
-        const new_form = document.createElement("form");
         const submit = document.createElement("input");
         
  
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
 
-
-        new_form.appendChild(submit);
-        form_module.appendChild(new_form);
+        form_module.appendChild(submit);
 
         document.getElementById("sent").addEventListener("click",pdfPrint);
 
-
+S
 
 
 
