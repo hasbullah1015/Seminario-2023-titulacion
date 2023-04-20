@@ -19,7 +19,8 @@ if($id && $nombre && $categoria && $opc){
     if($opc=="drop"){
         if($resultado>0){
             $sqlquery_drop=mysqli_query($connection,"DELETE FROM producto WHERE idProducto = '$id' AND nombre = '$nombre' AND categoria = '$categoria'");
-            if($sqlquery_drop){
+            $drop_result=mysqli_num_rows($sqlquery_drop);
+            if($drop_result>0){
                 echo 'Se eliminó el producto';
             }
             echo 'No se eliminó el producto, datos erroneos';
