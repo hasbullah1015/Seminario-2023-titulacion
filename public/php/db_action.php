@@ -23,7 +23,7 @@ if($id && $nombre && $categoria && $opc){
             if($drop_result>0){
                 echo 'Se eliminó el producto';
             }
-            echo 'No se eliminó el producto, datos erroneos';
+            else echo 'No se eliminó el producto, datos erroneos';
   
         }
         else echo 'No existe un producto con ese ID';
