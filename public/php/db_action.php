@@ -20,8 +20,9 @@ if($id && $nombre && $categoria && $opc){
         if($resultado>0){
             $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id' AND nombre = '$nombre' AND categoria = '$categoria'");
             $drop_result=mysqli_num_rows( $sqlquery_consulta);
+
             if( $drop_result>0){
-                $mysqli_query($connection,"DELETE FROM producto WHERE idProducto = '$id' AND nombre = '$nombre' AND categoria = '$categoria'");
+               // $mysqli_query($connection,"DELETE FROM producto WHERE idProducto = '$id' AND nombre = '$nombre' AND categoria = '$categoria'");
                 echo 'Se eliminó el producto';
             }
             else echo 'No se eliminó el producto, datos erroneos';
