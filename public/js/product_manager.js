@@ -89,16 +89,20 @@ function pdf_print(){
         var img64 = document.querySelector('#qr_mod img').src;
 
         var doc = new jsPDF();
-        doc.text(60,10, 'SISTEMA DE COnTROL DE INVENTARIO');
-        doc.text(40,20, "--------------------------------------------------------------------------");
+        doc.text(60,20, 'SISTEMA DE COnTROL DE INVENTARIO');
+        doc.text(40,30, "--------------------------------------------------------------------------");
+        doc.text(60,40, "***** DATOS DEL PRODUCTO: *****");
+        doc.text(20,50, "NOMBRE: ");
+        doc.text(50,50, product_name.innerText);
+        doc.text(20,60, "ID: ");
+        doc.text(30,60, product_id.innerText);
+  
+        doc.text(40,70, "--------------------------------------------------------------------------");
+        doc.text(60,80, "***** CODIGO QR *****");      
+        doc.addImage(img64, 'JPG', 80, 100, 50, 50, 'QR'); 
 
-        
-        doc.text(20,30, "NOMBRE: ");
-        doc.text(50,30, product_name.innerText);
-        doc.text(20,40, "ID: ");
-        doc.text(30,40, product_id.innerText);
-        doc.text(40,50, "--------------------------------------------------------------------------");
-        doc.addImage(img64, 'JPG', 80, 60, 50, 50, 'QR'); 
+        doc.text(40,110, "--------------------------------------------------------------------------");
+        doc.text(60,120, "***** RESPONSABLE *****");    
 
         
         doc.save('documento.pdf');
