@@ -84,13 +84,28 @@ function pdf_generator(){
 }
 function pdf_print(){
         alert ("PDF GENERADO:");
+
+
+        var img = document.querySelector('#qr_mod img');
+
+        img.onchange = function(){
+                let file = this.files[0];
+                let reader = new FileReader();
+                reader.onloadend = function(){
+                var imginfo = reader.result;
+                }
+                reader.readAsDataURL(file);
+            };
+
+
+
         var doc = new jsPDF();
         doc.text(20,10, 'SISTEMA DE COTROL DE INVENTARIO');
         doc.text(20,20, "NOMBRE: ");
         doc.text(60,20, product_name.innerText);
         doc.text(20,30, "ID: ");
         doc.text(60,30, product_id.innerText);
-        doc.addImage(je, 'JPEG', 20, 20);  
+        doc.addImage(imginfo, 'JPG', 25, 35, 150, 150, 'QR'); 
 
         
         doc.save('documento.pdf');
