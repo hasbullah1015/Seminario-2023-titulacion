@@ -94,7 +94,7 @@ function pdf_print(){
         doc.text(50,20, product_name.innerText);
         doc.text(20,30, "ID: ");
         doc.text(30,30, product_id.innerText);
-        doc.addImage(img64, 'JPG', 80, 35, 50, 50, 'QR'); 
+        doc.addImage(img64, 'JPG', 80, 75, 50, 50, 'QR'); 
         doc.text(40,45, "--------------------------------------------------------------------------");
 
         
