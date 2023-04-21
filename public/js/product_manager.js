@@ -82,7 +82,11 @@ function pdf_generator(){
 
 }
 function pdf_print(){
-        alert ("Hello World!");
+        alert ("PDF GENERADO:");
+        var doc = new jsPDF();
+        doc.text(20, 20, 'Hola mundo');
+        doc.text(20, 30, 'Vamos a generar un pdf desde el lado del cliente');
+        doc.save('documento.pdf');
 }
 
 //añadir clase slide
