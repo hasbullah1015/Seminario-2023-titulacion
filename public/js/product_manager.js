@@ -90,12 +90,15 @@ function pdf_print(){
 
         var doc = new jsPDF();
         doc.text(60,10, 'SISTEMA DE COnTROL DE INVENTARIO');
-        doc.text(20,20, "NOMBRE: ");
-        doc.text(50,20, product_name.innerText);
-        doc.text(20,30, "ID: ");
-        doc.text(30,30, product_id.innerText);
-        doc.addImage(img64, 'JPG', 80, 75, 50, 50, 'QR'); 
-        doc.text(40,45, "--------------------------------------------------------------------------");
+        doc.text(40,20, "--------------------------------------------------------------------------");
+
+        
+        doc.text(20,30, "NOMBRE: ");
+        doc.text(50,30, product_name.innerText);
+        doc.text(20,40, "ID: ");
+        doc.text(30,40, product_id.innerText);
+        doc.text(40,50, "--------------------------------------------------------------------------");
+        doc.addImage(img64, 'JPG', 80, 60, 50, 50, 'QR'); 
 
         
         doc.save('documento.pdf');
