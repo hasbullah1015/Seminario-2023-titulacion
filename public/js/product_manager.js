@@ -1,6 +1,6 @@
 
 const product_id = document.querySelector("#product_id");
-const name_id = document.querySelector("#product_name");
+const product_name = document.querySelector("#product_name");
 window.jsPDF = window.jspdf.jsPDF;
 
 const module = document.querySelector("#qr_form_mod");
@@ -85,8 +85,12 @@ function pdf_generator(){
 function pdf_print(){
         alert ("PDF GENERADO:");
         var doc = new jsPDF();
-        doc.text(20, 20, 'Hola mundo');
-        doc.text(20, 30, 'Vamos a generar un pdf desde el lado del cliente');
+        doc.text(20,10, 'SISTEMA DE COTROL DE INVENTARIO');
+        doc.text(20,20, "NOMBRE: ");
+        doc.text(40,20, product_name);
+        doc.text(20,30, "ID: ");
+        doc.text(20,30, product_id);
+        
         doc.save('documento.pdf');
 }
 
