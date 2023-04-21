@@ -85,19 +85,16 @@ function pdf_generator(){
 function pdf_print(){
         alert ("PDF GENERADO:");
 
-        var img = document.querySelector('#qr_mod img').src;
-
-
-
+        var img64 = document.querySelector('#qr_mod img').src;
 
         var doc = new jsPDF();
-        doc.text(20,10, 'SISTEMA DE COTROL DE INVENTARIO');
+        doc.text(80,10, 'SISTEMA DE COnTROL DE INVENTARIO');
         doc.text(20,20, "NOMBRE: ");
-        doc.text(30,20, product_name.innerText);
+        doc.text(50,20, product_name.innerText);
         doc.text(20,30, "ID: ");
         doc.text(30,30, product_id.innerText);
 
-        doc.addImage(img, 'JPG', 25, 35, 50, 50, 'QR'); 
+        doc.addImage(img64, 'JPG', 25, 35, 50, 50, 'QR'); 
 
         
         doc.save('documento.pdf');
