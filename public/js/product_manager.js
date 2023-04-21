@@ -10,6 +10,8 @@ if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
         module.classList.add("slide");
         new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
         pdf_generator();    
+        document.querySelector("#sent").addEventListener("click",pdfPrint);
+
 }
 else{   
         module.classList.add("slide");
@@ -73,15 +75,10 @@ function form_generator(){
 
 function pdf_generator(){
         const submit = document.createElement("input");
-        
- 
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
 
         form_module.appendChild(submit);
-
-        document.querySelector("#sent").addEventListener("click",pdfPrint);
-
 
 }
 function pdfPrint(){
