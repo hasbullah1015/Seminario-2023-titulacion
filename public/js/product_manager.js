@@ -10,7 +10,7 @@ if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
         module.classList.add("slide");
         new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
         pdf_generator();    
-        document.querySelector("#sent").addEventListener("click",pdfPrint);
+        document.querySelector("#sent").addEventListener("click",pdf_print);
 
 }
 else{   
@@ -81,7 +81,7 @@ function pdf_generator(){
         form_module.appendChild(submit);
 
 }
-function pdfPrint(){
+function pdf_print(){
         alert ("Hello World!");
 }
 
