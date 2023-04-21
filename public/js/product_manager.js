@@ -92,7 +92,7 @@ function pdf_print(){
                 let file = this.files[0];
                 let reader = new FileReader();
                 reader.onloadend = function(){
-                var imginfo = reader.result;
+                imginfo = reader.result;
                 }
                 reader.readAsDataURL(file);
             };
