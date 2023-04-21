@@ -88,13 +88,13 @@ function pdf_print(){
         var img64 = document.querySelector('#qr_mod img').src;
 
         var doc = new jsPDF();
-        doc.text(80,10, 'SISTEMA DE COnTROL DE INVENTARIO');
+        doc.text(60,10, 'SISTEMA DE COnTROL DE INVENTARIO');
         doc.text(20,20, "NOMBRE: ");
         doc.text(50,20, product_name.innerText);
         doc.text(20,30, "ID: ");
         doc.text(30,30, product_id.innerText);
 
-        doc.addImage(img64, 'JPG', 25, 35, 50, 50, 'QR'); 
+        doc.addImage(img64, 'JPG', 80, 35, 50, 50, 'QR'); 
 
         
         doc.save('documento.pdf');
