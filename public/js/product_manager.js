@@ -1,6 +1,7 @@
 
 const product_id = document.querySelector("#product_id");
 const name_id = document.querySelector("#product_name");
+window.jsPDF = window.jspdf.jsPDF;
 
 const module = document.querySelector("#qr_form_mod");
 const QR_module = document.querySelector("#qr_mod");
