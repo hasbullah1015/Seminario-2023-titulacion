@@ -9,7 +9,7 @@ const form_module = document.querySelector("#form_mod");
 
 if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
         module.classList.add("slide");
-        const je=new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
+        QRCode(QR_module, product_id.innerHTML); //generacíon de qr
         pdf_generator();    
         document.querySelector("#form_mod #sent").addEventListener("click",pdf_print);
 
@@ -85,17 +85,8 @@ function pdf_generator(){
 function pdf_print(){
         alert ("PDF GENERADO:");
 
-        var imginfo;
-        var img = document.querySelector('#qr_mod img');
+        var img = document.querySelector('#qr_mod img').src;
 
-        img.onchange = function(){
-                let file = this.files[0];
-                let reader = new FileReader();
-                reader.onloadend = function(){
-                imginfo = reader.result;
-                }
-                reader.readAsDataURL(file);
-            };
 
 
 
@@ -107,7 +98,7 @@ function pdf_print(){
         doc.text(60,30, product_id.innerText);
  
 
-        doc.addImage(imginfo, 'JPG', 25, 35, 150, 150, 'QR'); 
+        doc.addImage(img, 'JPG', 25, 35, 150, 150, 'QR'); 
 
         
         doc.save('documento.pdf');
