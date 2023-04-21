@@ -89,7 +89,7 @@ function pdf_print(){
         doc.text(20,20, "NOMBRE: ");
         doc.text(40,20, product_name.innerText);
         doc.text(20,30, "ID: ");
-        doc.text(20,30, product_id.innerText));
+        doc.text(20,30, product_id.innerText);
         
         doc.save('documento.pdf');
 }
