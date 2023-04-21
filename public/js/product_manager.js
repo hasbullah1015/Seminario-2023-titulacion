@@ -102,7 +102,9 @@ function pdf_print(){
         doc.addImage(img64, 'JPG', 80, 90, 50, 50, 'QR'); 
 
         doc.text(40,150, "--------------------------------------------------------------------------");
-        doc.text(80,160, "***** RESPONSABLE *****");    
+        doc.text(70,160, "***** RESPONSABLE *****");    
+        doc.text(20,50, "REGISTRÓ: ");
+
 
         
         doc.save('documento.pdf');
