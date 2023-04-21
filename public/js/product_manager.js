@@ -9,7 +9,7 @@ const form_module = document.querySelector("#form_mod");
 
 if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
         module.classList.add("slide");
-        new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
+        const je=new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
         pdf_generator();    
         document.querySelector("#form_mod #sent").addEventListener("click",pdf_print);
 
@@ -87,9 +87,11 @@ function pdf_print(){
         var doc = new jsPDF();
         doc.text(20,10, 'SISTEMA DE COTROL DE INVENTARIO');
         doc.text(20,20, "NOMBRE: ");
-        doc.text(40,20, product_name.innerText);
+        doc.text(60,20, product_name.innerText);
         doc.text(20,30, "ID: ");
-        doc.text(20,30, product_id.innerText);
+        doc.text(60,30, product_id.innerText);
+        doc.addImage(je, 'JPEG', 20, 20);  
+
         
         doc.save('documento.pdf');
 }
