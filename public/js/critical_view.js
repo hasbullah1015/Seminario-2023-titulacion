@@ -28,8 +28,8 @@ fetch(url)
 
 const mostrar = (articulos) =>{
     articulos.forEach(element => {
-        myChart.data['labels'].push(element.descripcion)
-        myChart.data['datasets'][0].data.push(element.stock)
+        myChart.data['labels'].push(element.nombre)
+        myChart.data['datasets'][0].data.push(element.cantidad)
         myChart.update()
     });
     console.log(myChart.data)
