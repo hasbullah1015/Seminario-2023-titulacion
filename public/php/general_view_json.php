@@ -6,7 +6,7 @@
             header('https://seminario2023.website/public/php/inventario.php');
         }
 
-        if(strtolower($_REQUEST['busqueda'])){
+        if(strtolower($_REQUEST['enviar'])){
             echo 'hola locoooo';
         }
 
