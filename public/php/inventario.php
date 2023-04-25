@@ -42,7 +42,7 @@
             <?php 
                 $busqueda=strtolower($_REQUEST['busqueda']);
                 $por_pagina=2;
-                $sqlquery_registros =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%'");
+                $sqlquery_registros =mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' OR marca LIKE '%$busqueda%' ");
                 $cantidad_registros=mysqli_num_rows($sqlquery_registros);
                 if(empty($_GET['pagina'])){
                     $pagina= 1;
@@ -54,7 +54,7 @@
 
                 $desde =($pagina-1)*$por_pagina;
                 $total_paginas=ceil($cantidad_registros/$por_pagina);
-                $sqlquery=mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' LIMIT $desde,$por_pagina");
+                $sqlquery=mysqli_query($connection,"SELECT * FROM producto WHERE nombre LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' OR marca LIKE '%$busqueda%' LIMIT $desde,$por_pagina");
                 $cantidad_resultados=mysqli_num_rows($sqlquery);
                 
             ?>
@@ -64,7 +64,8 @@
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">categoria</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Marca</th>
                     <th scope="col">cantidad</th>
                 </tr>
                 <?php
@@ -75,7 +76,9 @@
                             <td class="data_id"><?php echo $datos['idProducto'];  ?></td>
                             <td class="data_name"><?php echo $datos['nombre'];  ?></td>
                             <td class="data_category"><?php echo $datos['categoria'];  ?></td>
+                            <td class="data_brand"><?php echo $datos['marca'];  ?></td>
                             <td class="data_amount"><?php echo $datos['cantidad'];  ?></td>
+
                         </tr>
                 <?php
                         }

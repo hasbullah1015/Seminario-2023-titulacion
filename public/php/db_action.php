@@ -33,9 +33,6 @@ if($id && $nombre && $categoria && $opc){
     }
 }
 
-
-
-
 else{
     echo 'Ingresa los datos completos: ';
 }
