@@ -6,11 +6,15 @@
             header('https://seminario2023.website/public/php/inventario.php');
         }
 
-        if(strtolower($_REQUEST['enviar'])){
+        if(strtolower($_REQUEST['enviar'])=='general'){
             echo 'hola locoooo';
         }
 
-        else echo 'adios loco xd';        
+        if(strtolower($_REQUEST['enviar'])=='critical'){
+            echo 'adio locoooo';
+        }
+
+       // else echo 'adios loco xd';        
 
 
 ?>
