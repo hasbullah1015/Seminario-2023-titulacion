@@ -18,9 +18,9 @@
         if(strtolower($_REQUEST['enviar'])=='critical'){
             echo 'adio locoooo';
         }
-
+        while ($datos){
         echo json_encode($datos);
-
+        }
 
        // else echo 'adios loco xd';        
 
