@@ -25,6 +25,7 @@ user_portrait.appendChild(photo); //insertamos en el nodo padre (div)  la imagen
 
 
 function  general_view(){
+    
 
 }
 

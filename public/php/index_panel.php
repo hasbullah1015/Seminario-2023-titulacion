@@ -41,10 +41,14 @@
         </div> 
         <div class="row">
                 <div class="slide col-sm-12 col-md-6">
-                    <button type="button"  id="btn_general_view">Vista General</button>
+                    <form action="index_panel.php" method="get">
+                        <input id="sent" type="submit" name="enviar" value ="general">
+                    </form>
                 </div>
                 <div class="slide col-sm-12 col-md-6">
-                    <button type="button"  id="btn_critical_view">Vista Stock</button>
+                    <form action="index_panel.php" method="get">
+                        <input id="sent" type="submit" name="enviar" value ="critical">
+                    </form>
                 </div>
         </div>
 
