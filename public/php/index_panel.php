@@ -41,13 +41,13 @@
         </div> 
         <div class="row">
                 <div class="slide col-sm-12 col-md-6">
-                    <form action="index_panel.php" method="post">
-                        <input id="sent" type="submit" name="enviar" value ="general">
+                    <form action="index_panel.php" method="post" value ="general">
+                        <input id="sent" type="submit" name="enviar" >
                     </form>
                 </div>
                 <div class="slide col-sm-12 col-md-6">
-                    <form action="index_panel.php" method="post">
-                        <input id="sent" type="submit" name="enviar" value ="critical">
+                    <form action="index_panel.php" method="post"  value ="critical">
+                        <input id="sent" type="submit" name="enviar">
                     </form>
                 </div>
         </div>

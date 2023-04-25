@@ -111,8 +111,6 @@ function pdf_print(){
         doc.text(40,150, "--------------------------------------------------------------------------");
         doc.text(70,160, "***** RESPONSABLE *****");    
         doc.text(20,170, "REGISTRÓ: ");
-
-
         
         doc.save('documento.pdf');
 }
