@@ -42,12 +42,12 @@
         <div class="row">
                 <div class="slide col-sm-12 col-md-6">
                     <form action="index_panel.php" method="post" value ="general">
-                        <input id="sent" type="submit" name="enviar" >
+                        <input id="sent_gral" type="submit" name="enviar" >
                     </form>
                 </div>
                 <div class="slide col-sm-12 col-md-6">
                     <form action="index_panel.php" method="post"  value ="critical">
-                        <input id="sent" type="submit" name="enviar">
+                        <input id="sent_crtcl" type="submit" name="enviar">
                     </form>
                 </div>
         </div>
