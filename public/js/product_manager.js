@@ -23,8 +23,9 @@ else{
 function form_generator(){
     const new_form = document.createElement("form");
     const id_input = document.createElement("input");
-       const name_input=document.createElement("input");
+    const name_input=document.createElement("input");
     const category = document.createElement("input");
+    const brand = document.createElement("input");
     const drop_opc = document.createElement("input");
     const insert_opc = document.createElement("input");
     const submit = document.createElement("input");
@@ -50,6 +51,11 @@ function form_generator(){
     category.setAttribute('placeholder',"inserte categoria");
     category.setAttribute('name',"categoria");
 
+    category.setAttribute('type',"text");
+    category.setAttribute('placeholder',"inserte marca");
+    category.setAttribute('name',"marca");
+    
+
     drop_opc.setAttribute('type',"radio");
     drop_opc.setAttribute('name',"opc");
     drop_opc.setAttribute('value',"drop");
@@ -66,6 +72,7 @@ function form_generator(){
     new_form.appendChild(id_input);   
     new_form.appendChild(name_input);    
     new_form.appendChild(category);
+    new_form.appendChild(brand);
     new_form.appendChild(label1);
     new_form.appendChild(insert_opc);
     new_form.appendChild(label2);
