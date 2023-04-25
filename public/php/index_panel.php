@@ -41,12 +41,12 @@
         </div> 
         <div class="row">
                 <div class="slide col-sm-12 col-md-6">
-                    <form action="index_panel.php" method="get">
+                    <form action="index_panel.php" method="post">
                         <input id="sent" type="submit" name="enviar" value ="general">
                     </form>
                 </div>
                 <div class="slide col-sm-12 col-md-6">
-                    <form action="index_panel.php" method="get">
+                    <form action="index_panel.php" method="post">
                         <input id="sent" type="submit" name="enviar" value ="critical">
                     </form>
                 </div>
