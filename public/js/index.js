@@ -24,5 +24,13 @@ user_portrait.appendChild(photo); //insertamos en el nodo padre (div)  la imagen
 //console.log(url);
 
 
+function  general_view(){
+
+}
+
+function  critical_view(){
+
+}
+
 
 
