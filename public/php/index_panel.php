@@ -44,7 +44,7 @@
                     <button type="button"  id="btn_general_view">Vista General</button>
                 </div>
                 <div class="slide col-sm-12 col-md-6">
-                    <button type="button"  id="critical_view">Vista Stock</button>
+                    <button type="button"  id="btn_critical_view">Vista Stock</button>
                 </div>
         </div>
 
