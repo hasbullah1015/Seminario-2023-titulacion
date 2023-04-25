@@ -10,7 +10,9 @@
             $cantidad_registros=mysqli_num_rows($sqlquery_registros_gral);
             if($cantidad_registros>0)
             {
-                $datos = $sqlquery_registros_gral ->fetch_array(MYSQLI_ASSOC);
+                while($datos = $sqlquery ->fetch_array(MYSQLI_ASSOC)) {
+                echo json_encode($datos);
+                }
             }
 
         }
@@ -18,11 +20,10 @@
         if(strtolower($_REQUEST['enviar'])=='critical'){
             echo 'adio locoooo';
         }
-        while ($datos){
-        echo json_encode($datos);
-        }
 
-       // else echo 'adios loco xd';        
+
+
+
 
 
 ?>
