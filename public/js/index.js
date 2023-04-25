@@ -2,8 +2,8 @@
 $("#pie_pagina").load("/public/html/footer.html");
 $("#encabezado").load("/public/html/header.html");
 
-document.querySelector("#btn_general_view").addEventListener("click",general_view);
-document.querySelector("#btn_critical_view").addEventListener("click",critical_view);
+//document.querySelector("#btn_general_view").addEventListener("click",general_view);
+//document.querySelector("#btn_critical_view").addEventListener("click",critical_view);
 
 
 
@@ -21,10 +21,13 @@ photo.id="user_photo";
 
 user_portrait.appendChild(photo); //insertamos en el nodo padre (div)  la imagen creada
 
+
+
+
 //console.log(url);
 
 
-function  general_view(){
+/*function  general_view(){
     
 
 }
@@ -32,6 +35,6 @@ function  general_view(){
 function  critical_view(){
 
 }
-
+*/
 
 
