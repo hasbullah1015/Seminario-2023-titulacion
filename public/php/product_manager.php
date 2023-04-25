@@ -60,7 +60,6 @@
             <div class="col-sm-12 col-md-6" id="form_mod">
             <?php 
                 include ("db_action.php");
-             
             ?>
             </div>    
         </div>

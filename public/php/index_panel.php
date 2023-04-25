@@ -57,7 +57,7 @@
 
         <div class="row">
             <div class="slide">
-            aqui va la grafica
+            <canvas id="myChart" style="position: relative; height: 40vh; width: 80vw;"></canvas>
             </div>
            
         </div>
@@ -67,6 +67,8 @@
     <footer id="pie_pagina" class="mt-auto">
     </footer>
     <script src="/public/js/index.js"></script>
+    <script defer src="/public/js/critical_view.js"></script>
+
 
 </body>
 </html>
