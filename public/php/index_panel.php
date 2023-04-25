@@ -41,13 +41,18 @@
         </div> 
         <div class="row">
                 <div class="slide col-sm-12 col-md-6">
-                <button type="button">Click Me!</button>
+                    <button type="button"  id="btn_general_view">Vista General</button>
                 </div>
-                <div class="slide col-sm-12 col-md-6">b</div>
+                <div class="slide col-sm-12 col-md-6">
+                    <button type="button"  id="critical_view">Vista Stock</button>
+                </div>
         </div>
 
         <div class="row">
+            <div class="slide">
             aqui va la grafica
+            </div>
+           
         </div>
     </div>
 
