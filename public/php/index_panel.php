@@ -26,7 +26,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 col-md-10 col-lg-10">
+            <div class="col-sm-12 col-md-12 col-lg-12">
                 <h2>Datos Personales</h2>
                 <div class="container slide">
                     <div class="row" id="userPortrait"></div>
