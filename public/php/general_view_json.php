@@ -10,8 +10,10 @@
             $cantidad_registros=mysqli_num_rows($sqlquery_registros_gral);
             if($cantidad_registros>0)
             {
-                $datos = $sqlquery_registros_gral ->fetch_array(MYSQLI_ASSOC);
-                echo json_encode($datos);
+                while($datos = $sqlquery_registros_gral ->fetch_array(MYSQLI_ASSOC)){
+                    echo json_encode($datos);
+                }
+
             }
         }
 
