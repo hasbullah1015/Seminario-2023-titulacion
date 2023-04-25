@@ -26,7 +26,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="col-sm-10 col-md-10 col-lg-10">
                 <h2>Datos Personales</h2>
                 <div class="container slide">
                     <div class="row" id="userPortrait"></div>
@@ -37,12 +37,7 @@
                 
             </div>
 
-            <div class="col-sm-12 col-md-8 col-lg-8">
-                <h2>Información</h2>
-                <div class="container slide">
 
-                </div>
-            </div>
         </div> 
         <div class="row">
                 <div class="slide col-sm-12 col-md-6">a</div>
