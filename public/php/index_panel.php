@@ -49,6 +49,9 @@
                     <button type="button"  id="btn_critical_view">Vista Stock</button>
                 </div>
         </div>
+        <?php
+                include("general_view_json.php");
+        ?>
 
         <div class="row">
             <div class="slide">
