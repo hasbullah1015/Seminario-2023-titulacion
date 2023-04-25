@@ -1,4 +1,4 @@
-var ctx = document.getElementById('myChart')
+var ctx = document.querySelector(".slide #myChart");
 var myChart = new Chart(ctx, {
     type:'bar',
     data:{
