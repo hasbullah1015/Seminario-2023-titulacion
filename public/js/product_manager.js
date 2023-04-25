@@ -51,9 +51,9 @@ function form_generator(){
     category.setAttribute('placeholder',"inserte categoria");
     category.setAttribute('name',"categoria");
 
-    category.setAttribute('type',"text");
-    category.setAttribute('placeholder',"inserte marca");
-    category.setAttribute('name',"marca");
+    brand.setAttribute('type',"text");
+    brand.setAttribute('placeholder',"inserte marca");
+    brand.setAttribute('name',"marca");
     
 
     drop_opc.setAttribute('type',"radio");
