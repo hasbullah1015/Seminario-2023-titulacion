@@ -18,7 +18,7 @@ var myChart = new Chart(ctx, {
     }
 })
 
-let url = 'https://seminario2023.website/public/php/index_panel.php?enviar=general'
+let url = 'https://seminario2023.website/public/php/general_view_json.php?enviar=general'
 
 fetch(url)
     .then( response => response.json() )
