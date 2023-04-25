@@ -10,7 +10,7 @@
             $cantidad_registros=mysqli_num_rows($sqlquery_registros_gral);
             if($cantidad_registros>0)
             {
-                $datos = $sqlquery ->fetch_array(MYSQLI_ASSOC);
+                $datos = $sqlquery_registros_gral ->fetch_array(MYSQLI_ASSOC);
             }
 
         }
