@@ -27,7 +27,7 @@ function general_view(){
 
 
 
-    let url = 'https://seminario2023.website/public/php/general_view_json.php'
+    let url = 'https://seminario2023.website/public/php/general_view_json?enviar=general.php'
 
     fetch(url)
         .then( response => response.json() )
