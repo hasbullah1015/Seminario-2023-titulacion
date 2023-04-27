@@ -1,3 +1,9 @@
+
+const btn_general_view=document.querySelector("#general_view");
+const btn_critical_view=document.querySelector("#critical_view");
+
+
+
 var ctx = document.querySelector(".slide #myChart");
 var myChart = new Chart(ctx, {
     type:'bar',

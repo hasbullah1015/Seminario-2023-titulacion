@@ -42,14 +42,10 @@
         </div> 
         <div class="row">
                 <div class="slide col-sm-12 col-md-6">
-                    <form action="index_panel.php" method="get">
-                        <input id="sent" type="submit" name="enviar" value="general">
-                    </form>
+                    <button id="general_view">GENERAL</button>
                 </div>
                 <div class="slide col-sm-12 col-md-6">
-                    <form action="index_panel.php" method="get">
-                        <input id="sent" type="submit" name="enviar" value="critical">
-                    </form>                
+                    <button id="critical_view">Producto por terminar</button>           
                 </div>
         </div>
         <?php
@@ -58,7 +54,7 @@
 
         <div class="row">
             <div class="slide">
-            <canvas id="myChart" style="position: relative; height: 40vh; width: 80vw;"></canvas>
+                <canvas id="myChart" style="position: relative; height: 40vh; width: 80vw;"></canvas>
             </div>
            
         </div>
