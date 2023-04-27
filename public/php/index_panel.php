@@ -4,8 +4,6 @@
     $id=$_SESSION['id'];
     $rol=$_SESSION['rol'];
 
-    include("databaseconnection.php");
-    $connection=conectar();
 ?>
 
 <!DOCTYPE html>
