@@ -10,7 +10,7 @@
             if($cantidad_registros>0)
             {
                 while($datos = $sqlquery_registros_gral ->fetch_array(MYSQLI_ASSOC)){
-                    echo json_encode($datos);
+                    json_encode($datos);
                 }
 
             }
@@ -22,7 +22,7 @@
             if($cantidad_registros>0)
             {
                 while($datos = $sqlquery_registros_crtcl ->fetch_array(MYSQLI_ASSOC)){
-                    echo json_encode($datos);
+                    json_encode($datos);
                 }
 
             }
