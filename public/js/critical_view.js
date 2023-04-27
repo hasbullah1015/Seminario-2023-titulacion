@@ -2,7 +2,17 @@
 const btn_general_view=document.querySelector("#general_view");
 const btn_critical_view=document.querySelector("#critical_view");
 
-
+class ChartJSAsset extends AssetBundle
+{
+    public $sourcePath = null;
+    public $baseUrl = 'https://cdn.jsdelivr.net/npm/chart.js@3.6.0';
+    public $js = [
+        ['dist/chart.min.js', 'integrity' => 'sha256-7lWo7cjrrponRJcS6bc8isfsPDwSKoaYfGIHgSheQkk='],
+    ];
+    public $jsOptions = [
+        'crossorigin' => 'anonymous',
+    ];
+}
 
 var ctx = document.querySelector(".slide #myChart");
 var myChart = new Chart(ctx, {
