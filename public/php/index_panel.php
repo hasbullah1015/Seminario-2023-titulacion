@@ -64,7 +64,7 @@
     <footer id="pie_pagina" class="mt-auto">
     </footer>
     <script src="/public/js/index.js"></script>
-    <script Wsrc="/public/js/critical_view.js"></script>
+    <script src="/public/js/critical_view.js"></script>
 
 
 </body>
