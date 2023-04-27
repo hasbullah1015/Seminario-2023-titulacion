@@ -38,8 +38,6 @@ function general_view(){
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
             myChart.data['labels'].push(element.nombre)
-            myChart.data['labels'].push(element.categoria)
-
             myChart.data['datasets'][0].data.push(element.cantidad)
             myChart.update()
         });
