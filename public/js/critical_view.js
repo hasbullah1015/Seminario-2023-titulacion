@@ -27,13 +27,12 @@ function general_view(){
 
 
 
-    let url = 'https://seminario2023.website/public/php/general_view_json?enviar=general.php'
+    let url = 'https://seminario2023.website/public/php/general_view_json.php'
 
     fetch(url)
         .then( response => response.json() )
         .then( datos => mostrar(datos) )
         .catch( error => console.log(error) )
-
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
