@@ -57,7 +57,7 @@
 
         <div class="row">
             <div class="slide">
-                <canvas id="myChart" style="position: relative; height: 40vh; width: 80vw;"></canvas>
+                <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;"></canvas>
             </div>
            
         </div>
