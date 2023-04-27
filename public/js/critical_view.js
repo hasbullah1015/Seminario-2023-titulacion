@@ -25,20 +25,3 @@ var myChart = new Chart(ctx, {
 })
 
 
-
-let url = 'https://seminario2023.website/public/php/general_view_json.php?enviar=general'
-
-fetch(url)
-    .then( response => response.json() )
-    .then( datos => mostrar(datos) )
-    .catch( error => console.log(error) )
-
-
-const mostrar = (articulos) =>{
-    articulos.forEach(element => {
-        myChart.data['labels'].push(element.nombre)
-        myChart.data['datasets'][0].data.push(element.cantidad)
-        myChart.update()
-    });
-    console.log(myChart.data)
-}    
