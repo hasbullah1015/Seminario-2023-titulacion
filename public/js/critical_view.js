@@ -2,6 +2,7 @@
 const btn_general_view=document.querySelector("#general_view");
 const btn_critical_view=document.querySelector("#critical_view");
 
+import Chart from 'chart.js/auto';
 
 
 var ctx = document.querySelector(".slide #myChart");
