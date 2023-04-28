@@ -40,6 +40,6 @@ function general_view(){
             myChart.data['datasets'][0].data.push(element.cantidad)
             myChart.update()
         });
-        console.log(myChart.data)
+        //console.log(myChart.data)
     }    
 }
