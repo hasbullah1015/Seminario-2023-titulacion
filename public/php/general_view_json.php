@@ -9,7 +9,7 @@
     while ($data = mysqli_fetch_assoc($sqlquery_registros_gral)){
         $valores[]=$data;
     }
-    echo json_encode($valores);
+    return json_encode($valores);
 
 
 ?>
