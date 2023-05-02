@@ -11,7 +11,7 @@ function general_view(){
         data:{
             datasets: [{
                 label: 'Stock de Productos',
-                backgroundColor: ['#6bf1ab','#63d69f', '#438c6c', '#509c7f', '#1f794e', '#34444c', '#90CAF9', '#64B5F6', '#42A5F5', '#2196F3', '#0D47A1'],
+                backgroundColor: ['#0E52FC','#FC0E36', '0EFC61'],
                 borderColor: ['black'], 
                 borderWidth:1
             }]
