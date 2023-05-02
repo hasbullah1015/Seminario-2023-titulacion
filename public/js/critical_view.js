@@ -38,7 +38,7 @@ function general_view(){
         articulos.forEach(element => {
             myChart.data['labels'].push(element.nombre)
             myChart.data['datasets'][0].data.push(element.cantidad)
-            myChart.data['datasets'][1].data.push(element.total_salida)
+            myChart.data['datasets'][0].data.push(element.total_salida)
             myChart.update()
         });
         //console.log(myChart.data)
