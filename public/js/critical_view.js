@@ -5,6 +5,9 @@ const btn_critical=document.querySelector("#critical_view");
 btn_general.addEventListener("click",general_view);
 btn_critical=addEventListener("click", critical_view);
 
+    let url = 'https://seminario2023.website/public/php/general_view_json.php';
+
+
 
 
 function critical_view(){
@@ -28,7 +31,6 @@ function critical_view(){
         }
     })
 
-    let url = 'https://seminario2023.website/public/php/general_view_json.php'
 
     fetch(url)
         .then( response => response.json() )
@@ -69,7 +71,6 @@ function general_view(){
         }
     })
 
-    let url = 'https://seminario2023.website/public/php/general_view_json.php'
 
     fetch(url)
         .then( response => response.json() )
