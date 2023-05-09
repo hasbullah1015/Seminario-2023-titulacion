@@ -5,18 +5,20 @@ const btn_critical=document.querySelector("#critical_view");
 btn_general.addEventListener("click",general_view);
 btn_critical.addEventListener("click", critical_view);
 
-    let url = 'https://seminario2023.website/public/php/general_view_json.php';
+let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
-    var ctx = document.querySelector(".slide #myChart");
-    var myChart = new Chart(ctx, {
-        type:'bar',
-        data:{
-            datasets: [{
-                label: 'Stock de Productos',
-                backgroundColor: ['#0E52FC','#FC0E36', '#0EFC61'],
-                borderColor: ['black'], 
-                borderWidth:1
-            }]
+
+var ctx = document.querySelector(".slide #myChart");
+
+var myChart = new Chart(ctx, {
+    type:'bar',
+    data:{
+        datasets: [{
+            label: 'Stock de Productos',
+            backgroundColor: ['#0E52FC','#FC0E36', '#0EFC61'],
+            borderColor: ['black'], 
+            borderWidth:1
+        }]
         },
         options:{
             scales:{
@@ -25,16 +27,10 @@ btn_critical.addEventListener("click", critical_view);
                 }
             }
         }
-    })
-
-
-
+})
 
 
 function critical_view(){
-
-
-
     myChart.clear();
     fetch(url)
         .then( response => response.json() )
@@ -55,9 +51,7 @@ function critical_view(){
 
 
 function general_view(){
-
     myChart.clear();
-        
     fetch(url)
         .then( response => response.json() )
         .then( datos => mostrar(datos) )
