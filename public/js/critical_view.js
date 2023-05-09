@@ -27,6 +27,7 @@ function general_view(){
         }
     })
 
+    let url = 'https://seminario2023.website/public/php/general_view_json.php'
 
     fetch(url)
         .then( response => response.json() )
@@ -66,6 +67,7 @@ function critical_view(){
         }
     })
 
+    let url = 'https://seminario2023.website/public/php/general_view_json.php'
 
     fetch(url)
         .then( response => response.json() )
@@ -82,4 +84,3 @@ function critical_view(){
     }    
 }
 
-let url = 'https://seminario2023.website/public/php/general_view_json.php'
