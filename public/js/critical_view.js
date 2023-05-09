@@ -37,7 +37,6 @@ function general_view(){
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
             myChart.data['labels'].push(element.nombre)
-            myChart.data['datasets'][0].data.push(element.cantidad)
             myChart.data['datasets'][0].data.push(element.total_salida)
             myChart.update()
         });
