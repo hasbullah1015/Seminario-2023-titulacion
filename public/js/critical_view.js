@@ -40,6 +40,7 @@ function critical_view(){
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
+            myChart.clear()
             myChart.data['labels'].push(element.nombre)
             myChart.data['datasets'][0].data.push(element.total_salida)
             myChart.update()
@@ -60,6 +61,7 @@ function general_view(){
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
+            myChart.clear()
             myChart.data['labels'].push(element.nombre)
             myChart.data['datasets'][0].data.push(element.total_entrada)
             myChart.update()
