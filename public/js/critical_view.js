@@ -6,7 +6,7 @@ btn_general.addEventListener("click",general_view);
 btn_critical=addEventListener("click", critical_view);
 
     let url = 'https://seminario2023.website/public/php/general_view_json.php';
-    
+
     var ctx = document.querySelector(".slide #myChart");
     var myChart = new Chart(ctx, {
         type:'bar',
@@ -41,7 +41,7 @@ function critical_view(){
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
             myChart.data['labels'].push(element.nombre)
-            myChart.data['datasets'][0].data.push(element.total_salida)
+            myChart.data['datasets'][1].data.push(element.total_salida)
             myChart.update()
         });
         //console.log(myChart.data)
