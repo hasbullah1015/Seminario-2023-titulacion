@@ -6,11 +6,7 @@ btn_general.addEventListener("click",general_view);
 btn_critical=addEventListener("click", critical_view);
 
     let url = 'https://seminario2023.website/public/php/general_view_json.php';
-
-
-
-
-function critical_view(){
+    
     var ctx = document.querySelector(".slide #myChart");
     var myChart = new Chart(ctx, {
         type:'bar',
@@ -32,6 +28,11 @@ function critical_view(){
     })
 
 
+
+
+function critical_view(){
+
+
     fetch(url)
         .then( response => response.json() )
         .then( datos => mostrar(datos) )
@@ -51,26 +52,6 @@ function critical_view(){
 
 
 function general_view(){
-    var ctx = document.querySelector(".slide #myChart");
-    var myChart2 = new Chart(ctx, {
-        type:'bar',
-        data:{
-            datasets: [{
-                label: 'Stock de Productos',
-                backgroundColor: ['#0E52FC','#FC0E36', '#0EFC61'],
-                borderColor: ['black'], 
-                borderWidth:1
-            }]
-        },
-        options:{
-            scales:{
-                y:{
-                    beginAtZero:true
-                }
-            }
-        }
-    })
-
 
     fetch(url)
         .then( response => response.json() )
@@ -79,9 +60,9 @@ function general_view(){
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
-            myChart2.data['labels'].push(element.nombre)
-            myChart2.data['datasets'][0].data.push(element.total_entrada)
-            myChart2.update()
+            myChart.data['labels'].push(element.nombre)
+            myChart.data['datasets'][0].data.push(element.total_entrada)
+            myChart.update()
         });
         //console.log(myChart.data)
     }    
