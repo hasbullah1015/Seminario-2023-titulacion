@@ -140,7 +140,7 @@ video{
 
 
 #back_data{
-display: none;
+display: none !important;
 
 }
 
