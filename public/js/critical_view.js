@@ -13,7 +13,6 @@ btn_critical.addEventListener("click", critical_view);
 
 
 function critical_view(){
-    myChart.destroy();
 
 
     var ctx = document.querySelector(".slide #myChart");
@@ -35,6 +34,12 @@ function critical_view(){
             }
         }
     })
+
+    
+if (myChart) {
+	myChart.clear();
+	myChart.destroy();
+}
 
 
     fetch(url)
@@ -56,7 +61,6 @@ function critical_view(){
 
 
 function general_view(){
-    myChart.destroy();
 
     var ctx = document.querySelector(".slide #myChart");
     var myChart = new Chart(ctx, {
@@ -77,6 +81,12 @@ function general_view(){
             }
         }
     })
+
+        
+if (myChart) {
+	myChart.clear();
+	myChart.destroy();
+}
 
     fetch(url)
         .then( response => response.json() )
