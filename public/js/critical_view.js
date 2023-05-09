@@ -31,8 +31,7 @@ btn_critical.addEventListener("click", critical_view);
 
 
 function critical_view(){
-
-
+    myChart.clear();
     fetch(url)
         .then( response => response.json() )
         .then( datos => mostrar(datos) )
@@ -40,7 +39,6 @@ function critical_view(){
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
-            myChart.clear()
             myChart.data['labels'].push(element.nombre)
             myChart.data['datasets'][0].data.push(element.total_salida)
             myChart.update()
@@ -53,7 +51,7 @@ function critical_view(){
 
 
 function general_view(){
-
+    myChart.clear();
     fetch(url)
         .then( response => response.json() )
         .then( datos => mostrar(datos) )
@@ -61,7 +59,6 @@ function general_view(){
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
-            myChart.clear()
             myChart.data['labels'].push(element.nombre)
             myChart.data['datasets'][0].data.push(element.total_entrada)
             myChart.update()
