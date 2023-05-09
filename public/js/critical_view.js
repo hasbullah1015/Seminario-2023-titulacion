@@ -50,7 +50,7 @@ function critical_view(){
 
 function general_view(){
     var ctx = document.querySelector(".slide #myChart");
-    var myChart = new Chart(ctx, {
+    var myChart2 = new Chart(ctx, {
         type:'bar',
         data:{
             datasets: [{
@@ -78,9 +78,9 @@ function general_view(){
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
-            myChart.data['labels'].push(element.nombre)
-            myChart.data['datasets'][0].data.push(element.total_entrada)
-            myChart.update()
+            myChart2.data['labels'].push(element.nombre)
+            myChart2.data['datasets'][0].data.push(element.total_entrada)
+            myChart2.update()
         });
         //console.log(myChart.data)
     }    
