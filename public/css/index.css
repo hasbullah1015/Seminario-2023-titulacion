@@ -138,6 +138,12 @@ video{
     }
 }
 
+
+#back_data{
+display: none;
+
+}
+
 @media (orientation : portrait) {
 
     body{

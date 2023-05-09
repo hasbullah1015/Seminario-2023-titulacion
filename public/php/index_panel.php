@@ -51,9 +51,13 @@
                     <button id="critical_view">Producto por terminar</button>           
                 </div>
         </div>
-        <?php
-                include("general_view_json.php");
-        ?>
+
+        <div id="back-data">
+            <?php
+                    include("general_view_json.php");
+            ?>
+        </div>
+
 
         <div class="row">
             <div class="slide">
