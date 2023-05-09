@@ -6,10 +6,25 @@ btn_general.addEventListener("click",general_view);
 btn_critical.addEventListener("click", critical_view);
 
     let url = 'https://seminario2023.website/public/php/general_view_json.php';
-
-
-
     var ctx = document.querySelector(".slide #myChart");
+    var myChart = new Chart(ctx, {
+        type:'bar',
+        data:{
+            datasets: [{
+                label: 'Stock de Productos',
+                backgroundColor: ['#0E52FC','#FC0E36', '#0EFC61'],
+                borderColor: ['black'], 
+                borderWidth:1
+            }]
+        },
+        options:{
+            scales:{
+                y:{
+                    beginAtZero:true
+                }
+            }
+        }
+    })
 
 
 function critical_view(){
@@ -48,7 +63,6 @@ function critical_view(){
             myChart.data['datasets'][0].data.push(element.total_salida)
             myChart.update()
         });
-        //console.log(myChart.data)
     }    
 }
 
@@ -89,7 +103,6 @@ function general_view(){
             myChart.data['datasets'][0].data.push(element.total_entrada)
             myChart.update()
         });
-        //console.log(myChart.data)
     }    
 }
 
