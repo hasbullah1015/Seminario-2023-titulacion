@@ -114,6 +114,10 @@ input
 }
 
 
+#back-data{
+    display: none !important;
+    
+    }
 
 
 @media (orientation:landscape) {
@@ -139,10 +143,6 @@ video{
 }
 
 
-#back-data{
-display: none !important;
-
-}
 
 @media (orientation : portrait) {
 
