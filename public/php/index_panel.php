@@ -63,7 +63,7 @@
             <div class="slide">
                 <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;">
             
-                <  <p>Test de mensaje de prueba</p>
+                  <p>Test de mensaje de prueba</p>
                 </canvas>
             </div>
            
