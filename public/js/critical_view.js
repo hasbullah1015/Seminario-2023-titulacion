@@ -13,7 +13,7 @@ btn_critical.addEventListener("click", critical_view);
 
 
 function draw_chart(){
-    var myChart = new Chart(ctx, {
+    let myChart = new Chart(ctx, {
         type:'bar',
         data:{
             datasets: [{
@@ -46,6 +46,7 @@ function draw_chart(){
 }
 
 function critical_view(){
+    myChart.clear();
     draw_chart();
     fetch(url)
     .then( response => response.json() )
