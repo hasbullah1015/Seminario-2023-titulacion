@@ -4,7 +4,6 @@ const btn_critical=document.querySelector("#critical_view");
 
 let ctx = document.querySelector(".slide #myChart");
 
-
 btn_general.addEventListener("click",general_view);
 btn_critical.addEventListener("click", critical_view);
 

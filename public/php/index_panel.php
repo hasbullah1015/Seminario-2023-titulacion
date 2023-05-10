@@ -61,7 +61,10 @@
 
         <div class="row">
             <div class="slide">
-                <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;"></canvas>
+                <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;">
+            
+                <  <p>Test de mensaje de prueba</p>
+                </canvas>
             </div>
            
         </div>
@@ -71,7 +74,7 @@
     <footer id="pie_pagina" class="mt-auto">
     </footer>
     <script src="/public/js/index.js"></script>
-    <script type="module" src="/public/js/panels_view.js"></script>
+    <script type="module" src="/public/js/panel_view.js"></script>
 
 
 </body>
