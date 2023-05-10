@@ -52,13 +52,6 @@
                 </div>
         </div>
 
-        <div id="back-data">
-            <?php
-                    include("general_view_json.php");
-            ?>
-        </div>
-
-
         <div class="row">
             <div class="slide">
             <p>Test de mensaje de prueba</p>
