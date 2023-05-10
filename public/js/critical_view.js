@@ -44,8 +44,6 @@ function draw_chart(){
 }
 
 function critical_view(){
-
-    myChart.clear();
     myChart.destroy();
     draw_chart();
     fetch(url)
@@ -65,7 +63,6 @@ function critical_view(){
 
 
 function general_view(){
-    myChart.clear();
     myChart.destroy();
     draw_chart();
     fetch(url)
