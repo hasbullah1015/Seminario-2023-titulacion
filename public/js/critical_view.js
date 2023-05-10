@@ -2,11 +2,13 @@
 const btn_general=document.querySelector("#general_view");
 const btn_critical=document.querySelector("#critical_view");
 
+let ctx = document.querySelector(".slide #myChart");
+
+
 btn_general.addEventListener("click",general_view);
 btn_critical.addEventListener("click", critical_view);
 
     let url = 'https://seminario2023.website/public/php/general_view_json.php';
-    var ctx = document.querySelector(".slide #myChart");
 
 
 
