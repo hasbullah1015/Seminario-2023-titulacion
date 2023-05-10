@@ -47,7 +47,6 @@ function draw_chart(){
 
 function critical_view(){
     draw_chart();
-    myChart.clear();
     fetch(url)
     .then( response => response.json() )
     .then( datos => mostrar(datos) )
