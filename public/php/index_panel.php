@@ -52,8 +52,10 @@
                 </div>
         </div>
 
+   
+
         <div class="row">
-            <div>
+            <div class="slide">
             <p>Test de mensaje de prueba</p>
 
                 <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;"></canvas>
