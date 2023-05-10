@@ -10,7 +10,7 @@ let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
 
 function draw_chart_entrada(){
-    document.querySelector(".slide #myChart").remove();
+    document.querySelector("#myChart").remove();
     const ctx = document.querySelector(".slide #myChart");
     var myChart = new Chart(ctx, {
         type:'bar',
@@ -48,7 +48,7 @@ function draw_chart_entrada(){
 
 
 function draw_chart_salida(){
-    document.querySelector(".slide #myChart").remove();
+    document.querySelector("#myChart").remove();
     const ctx = document.querySelector(".slide #myChart");
     var myChart = new Chart(ctx, {
         type:'doughnut',
