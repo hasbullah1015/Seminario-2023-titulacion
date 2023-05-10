@@ -58,7 +58,10 @@ function critical_view(){
 
 
 function general_view(){
-
+    fetch(url)
+    .then( response => response.json() )
+    .then( datos => mostrar(datos) )
+    .catch( error => console.log(error) )
         
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
