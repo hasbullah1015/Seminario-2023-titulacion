@@ -47,10 +47,6 @@ function draw_chart(){
 
 function critical_view(){
     draw_chart();
-    fetch(url)
-    .then( response => response.json() )
-    .then( datos => mostrar(datos) )
-    .catch( error => console.log(error) )
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
@@ -65,10 +61,7 @@ function critical_view(){
 
 function general_view(){
     draw_chart();
-    fetch(url)
-    .then( response => response.json() )
-    .then( datos => mostrar(datos) )
-    .catch( error => console.log(error) )
+
         
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
