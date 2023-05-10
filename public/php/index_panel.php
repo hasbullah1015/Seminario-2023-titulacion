@@ -44,11 +44,11 @@
 
         </div> 
         <div class="row">
-                <div class="slide col-sm-12 col-md-6">
-                    <button id="general_view">GENERAL</button>
+                <div class="slide col-sm-12 col-md-6"id="general_view" >
+                    ENTRADAS
                 </div>
-                <div class="slide col-sm-12 col-md-6">
-                    <button id="critical_view">Producto por terminar</button>           
+                <div class="slide col-sm-12 col-md-6" id="critical_view">
+                    SALIDAS         
                 </div>
         </div>
 
