@@ -32,6 +32,13 @@ btn_critical.addEventListener("click", critical_view);
         .then( datos => mostrar(datos) )
         .catch( error => console.log(error) )
 
+    const mostrar = (articulos) =>{
+        articulos.forEach(element => {
+            myChart.data['labels'].push(element.nombre)
+            myChart.update()
+        });
+    }   
+
 
 function critical_view(){
 
