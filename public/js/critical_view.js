@@ -8,11 +8,11 @@ let ctx = document.querySelector(".slide #myChart");
 btn_general.addEventListener("click",general_view);
 btn_critical.addEventListener("click", critical_view);
 
-    let url = 'https://seminario2023.website/public/php/general_view_json.php';
+let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
 
 
-function draw_chart(){
+function draw_chart_salida(){
     let myChart = new Chart(ctx, {
         type:'bar',
         data:{
@@ -40,20 +40,14 @@ function draw_chart(){
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
             myChart.data['labels'].push(element.nombre)
+            myChart.data['datasets'][0].data.push(element.total_salida)
             myChart.update()
         });
     }   
 }
 
 function critical_view(){
-    draw_chart();
-
-    const mostrar = (articulos) =>{
-        articulos.forEach(element => {
-            myChart.data['datasets'][0].data.push(element.total_salida)
-            myChart.update()
-        });
-    }    
+    draw_chart_salida();  
 }
 
 
