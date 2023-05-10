@@ -12,8 +12,7 @@ let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
 function draw_chart_entrada(){
     
-    if(myChart)
-        myChart.destroy();
+    if(myChart){ myChart.destroy();}
     let myChart = new Chart(ctx, {
         type:'bar',
         data:{
@@ -50,8 +49,8 @@ function draw_chart_entrada(){
 
 
 function draw_chart_salida(){
-    if(myChart)
-        myChart.destroy();
+    if(myChart){myChart.destroy();}
+   
     let myChart = new Chart(ctx, {
         type:'doughnut',
         data:{
