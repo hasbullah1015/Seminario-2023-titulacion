@@ -53,7 +53,7 @@ function draw_chart_salida(){
         data:{
             datasets: [{
                 label: 'Stock de Productos',
-                backgroundColor: ['#0E52FC','#FC0E36', '#0EFC61'],
+                backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
                 borderColor: ['black'], 
                 borderWidth:1
             }]
