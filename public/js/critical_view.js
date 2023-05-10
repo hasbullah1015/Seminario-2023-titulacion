@@ -62,7 +62,6 @@ function critical_view(){
 
 
 function general_view(){
-    myChart.destroy();
     draw_chart();
     fetch(url)
     .then( response => response.json() )
