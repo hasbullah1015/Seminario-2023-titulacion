@@ -26,36 +26,14 @@ btn_critical.addEventListener("click", critical_view);
         }
     })
 
-
-function critical_view(){
-
-    myChart.destroy();
-    var myChart = new Chart(ctx, {
-        type:'bar',
-        data:{
-            datasets: [{
-                label: 'Stock de Productos',
-                backgroundColor: ['#0E52FC','#FC0E36', '#0EFC61'],
-                borderColor: ['black'], 
-                borderWidth:1
-            }]
-        },
-        options:{
-            scales:{
-                y:{
-                    beginAtZero:true
-                }
-            }
-        }
-    })
-
-
-
-
+    
     fetch(url)
         .then( response => response.json() )
         .then( datos => mostrar(datos) )
         .catch( error => console.log(error) )
+
+
+function critical_view(){
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
@@ -69,33 +47,8 @@ function critical_view(){
 
 
 function general_view(){
-    myChart.destroy();
-    var myChart = new Chart(ctx, {
-        type:'bar',
-        data:{
-            datasets: [{
-                label: 'Stock de Productos',
-                backgroundColor: ['#0E52FC','#FC0E36', '#0EFC61'],
-                borderColor: ['black'], 
-                borderWidth:1
-            }]
-        },
-        options:{
-            scales:{
-                y:{
-                    beginAtZero:true
-                }
-            }
-        }
-    })
 
         
-
-    fetch(url)
-        .then( response => response.json() )
-        .then( datos => mostrar(datos) )
-        .catch( error => console.log(error) )
-
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
             myChart.data['datasets'][0].data.push(element.total_entrada)
