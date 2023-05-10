@@ -41,6 +41,8 @@ btn_critical.addEventListener("click", critical_view);
 
 function critical_view(){
 
+    myChart.clear();
+
     fetch(url)
     .then( response => response.json() )
     .then( datos => mostrar(datos) )
@@ -58,6 +60,8 @@ function critical_view(){
 
 
 function general_view(){
+    myChart.clear();
+    
     fetch(url)
     .then( response => response.json() )
     .then( datos => mostrar(datos) )
