@@ -48,7 +48,7 @@ function draw_chart_entrada(){
 
 
 function draw_chart_salida(){
-    document.querySelector(".slide canvas").innerHTML='';
+    document.querySelector(".slide #myChart").innerHTML='';
     const ctx = document.querySelector(".slide #myChart");
     var myChart2 = new Chart(ctx, {
         type:'doughnut',
