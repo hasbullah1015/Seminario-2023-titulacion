@@ -49,7 +49,7 @@ function draw_chart_entrada(){
 
 function draw_chart_salida(){
     let myChart = new Chart(ctx, {
-        type:'bar',
+        type:'doughnut',
         data:{
             datasets: [{
                 label: 'Stock de Productos',
