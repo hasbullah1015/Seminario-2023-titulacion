@@ -85,6 +85,7 @@ function draw_chart_salida(){
 
 
 function critical_view(){
+    document.querySelector(".slide #myChart");
     document.querySelector("#intro_message").innerHTML='';
     draw_chart_salida();  
 }
