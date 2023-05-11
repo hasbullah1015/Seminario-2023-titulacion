@@ -13,7 +13,7 @@ function draw_chart_entrada(){
     const ctx = document.querySelector(".slide #myChart");
     if(!myChart){ 
         var myChart = new Chart(ctx, {
-            type:'doughnut',
+            type:'bar',
             data:{
                 datasets: [{
                     label: 'Stock de Productos',
