@@ -2,6 +2,9 @@
 const btn_general=document.querySelector("#general_view");
 const btn_critical=document.querySelector("#critical_view");
 
+var video = document.querySelector("video");
+
+
 
 btn_general.addEventListener("click",general_view);
 btn_critical.addEventListener("click", critical_view);
@@ -85,6 +88,7 @@ function draw_chart_salida(){
 
 
 function critical_view(){
+    video.className='video_';
     document.querySelector(".slide #myChart");
     document.querySelector("#intro_message").innerHTML='';
     draw_chart_salida();  
@@ -94,6 +98,7 @@ function critical_view(){
 
 
 function general_view(){
+    video.className='video_';
     document.querySelector("#intro_message").innerHTML='';
     draw_chart_entrada();  
 }

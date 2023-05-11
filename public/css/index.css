@@ -131,9 +131,12 @@ input
 
 
 video{
-        min-height: 200vh;
+        min-height: 120vh;
  }
 
+ .video_{
+    min-height: 200vh;
+}
 #user_photo{
         border-radius: 20%;
         height: 120px;
