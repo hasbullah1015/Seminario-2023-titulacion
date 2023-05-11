@@ -131,7 +131,7 @@ input
 
 
 video{
-        min-height: 120vh;
+        min-height: 200vh;
  }
 
 #user_photo{
@@ -154,7 +154,7 @@ video{
     Footer {margin-top:auto;}
 
     video{
-        min-height: 200vh;
+        min-height: 120vh;
     }   
     #user_photo{
         border-radius: 50%;
