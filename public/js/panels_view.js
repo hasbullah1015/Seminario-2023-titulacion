@@ -82,7 +82,8 @@ function draw_chart_salida(){
 }
 
 function critical_view(){
-    document.querySelector("#intro_message").remove();
+    if(document.querySelector("#intro_message"))
+        document.querySelector("#intro_message").remove();
     draw_chart_salida();  
 }
 
@@ -90,7 +91,8 @@ function critical_view(){
 
 
 function general_view(){
-    document.querySelector("#intro_message").remove();
+    if(document.querySelector("#intro_message"))
+        document.querySelector("#intro_message").remove();
     draw_chart_entrada();  
 }
 
