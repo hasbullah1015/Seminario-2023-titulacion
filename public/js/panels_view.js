@@ -8,11 +8,15 @@ btn_critical.addEventListener("click", critical_view);
 
 let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
+let myChart, myChart2;
+
+
 
 function draw_chart_entrada(){
     const ctx = document.querySelector(".slide #myChart");
     if(!myChart){ 
-        var myChart = new Chart(ctx, {
+        myChart2.destroy();
+        myChart = new Chart(ctx, {
             type:'doughnut',
             data:{
                 datasets: [{
@@ -52,7 +56,8 @@ function draw_chart_salida(){
     
     
     if(!myChart2){ 
-        var myChart2 = new Chart(ctx, {
+        myChart1.destroy();
+        myChart2 = new Chart(ctx, {
             type:'doughnut',
             data:{
                 datasets: [{
