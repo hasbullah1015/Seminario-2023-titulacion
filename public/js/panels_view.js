@@ -8,33 +8,28 @@ btn_critical.addEventListener("click", critical_view);
 
 let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
-let myChart, myChart2;
-
-
 
 function draw_chart_entrada(){
     const ctx = document.querySelector(".slide #myChart");
-    if(!myChart){ 
-        myChart2.destroy();
-        myChart = new Chart(ctx, {
-            type:'doughnut',
-            data:{
-                datasets: [{
-                    label: 'Stock de Productos',
-                    backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
-                    borderColor: ['black'], 
-                    borderWidth:1
-                }]
-            },
-            options:{
-                scales:{
-                    y:{
-                        beginAtZero:true
-                    }
+    var myChart = new Chart(ctx, {
+        type:'bar',
+        data:{
+            datasets: [{
+                label: 'Stock de Productos',
+                backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
+                borderColor: ['black'], 
+                borderWidth:1
+            }]
+        },
+        options:{
+            scales:{
+                y:{
+                    beginAtZero:true
                 }
             }
-        })
-    }
+        }
+    })
+
     fetch(url)
         .then( response => response.json() )
         .then( datos => mostrar(datos) )
@@ -53,29 +48,24 @@ function draw_chart_entrada(){
 
 function draw_chart_salida(){
     const ctx = document.querySelector(".slide #myChart");
-    
-    
-    if(!myChart2){ 
-        myChart1.destroy();
-        myChart2 = new Chart(ctx, {
-            type:'doughnut',
-            data:{
-                datasets: [{
-                    label: 'Stock de Productos',
-                    backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
-                    borderColor: ['black'], 
-                    borderWidth:1
-                }]
-            },
-            options:{
-                scales:{
-                    y:{
-                        beginAtZero:true
-                    }
+    var myChart2 = new Chart(ctx, {
+        type:'doughnut',
+        data:{
+            datasets: [{
+                label: 'Stock de Productos',
+                backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
+                borderColor: ['black'], 
+                borderWidth:1
+            }]
+        },
+        options:{
+            scales:{
+                y:{
+                    beginAtZero:true
                 }
             }
-        })
-    }
+        }
+    })
 
     fetch(url)
         .then( response => response.json() )
@@ -90,6 +80,9 @@ function draw_chart_salida(){
         });
     }   
 }
+
+
+
 
 function critical_view(){
     document.querySelector("#intro_message").innerHTML='';
