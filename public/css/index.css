@@ -154,7 +154,7 @@ video{
     Footer {margin-top:auto;}
 
     video{
-        min-height: 120vh;
+        min-height: 200vh;
     }   
     #user_photo{
         border-radius: 50%;
