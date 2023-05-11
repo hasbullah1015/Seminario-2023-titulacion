@@ -55,8 +55,8 @@
    
 
         <div class="row">
-            <div class="slide" id="intro_message">
-            <p>Test de mensaje de prueba</p>
+            <div class="slide" >
+            <p id="intro_message">Test de mensaje de prueba</p>
 
                 <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;"></canvas>
             </div>
