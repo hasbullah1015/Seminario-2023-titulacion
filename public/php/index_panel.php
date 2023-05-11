@@ -67,8 +67,7 @@
                 <p>Rivera Ruiz Alejandro</p>
                 <p>V. 1.0</p>
             </div>
-
-                <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;"></canvas>
+            <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;"></canvas>
             </div>
            
         </div>
