@@ -58,9 +58,9 @@
             <div class="slide" >
             <div id="intro_message">
                 <h1 style="text-align:center;">GESTOR DE PRODUCTO</h1>
-                <p>Sistema CRUD MEDIANTE JAVASCRIPT, PHP Y PYTHON CON INTERFAZ GRAFICA HTML PARA EL MANEJO DE INVENTARIO</p>
-
-
+                <br>
+                <p>Sistema CRUD MEDIANTE JAVASCRIPT, PHP Y PYTHON CON INTERFAZ GRAFICA HTML PARA EL MANEJO DE INVENTARIO</p> 
+                <br>
                 <p style="text-align:center;">PRESENTAN:</p>
                 <p>Otero Gomez Davio</p>
                 <p>Garcia Cordova Santiago U.</p>
