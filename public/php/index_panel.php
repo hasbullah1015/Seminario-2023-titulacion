@@ -61,10 +61,10 @@
                 <p>Sistema CRUD MEDIANTE JAVASCRIPT, PHP Y PYTHON CON INTERFAZ GRAFICA HTML </p>
 
 
-
-                <p>OTERO GOMEZ DAVID</p>
-                <p>GARCIA CORDOBA SANTIAGO U.</p>
-                <p>RIVERA RUIZ ALEJANDRO</p>
+                <p>PRESENTAN:</p>
+                <p>Otero Gomez Davio</p>
+                <p>Garcia Cordova Santiago U.</p>
+                <p>Rivera Ruiz Alejandro</p>
                 <p>V. 1.0</p>
             </div>
 
