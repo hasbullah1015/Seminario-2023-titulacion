@@ -58,12 +58,14 @@
             <div class="slide" >
             <div id="intro_message">
                 <h1>GESTOR DE INVENTARIO </h1>
+                <p>Sistema CRUD MEDIANTE JAVASCRIPT, PHP Y PYTHON CON INTERFAZ GRAFICA HTML </p>
+
 
 
                 <p>OTERO GOMEZ DAVID</p>
                 <p>GARCIA CORDOBA SANTIAGO U.</p>
                 <p>RIVERA RUIZ ALEJANDRO</p>
-                <p>V1.0</p>
+                <p>V. 1.0</p>
             </div>
 
                 <canvas id="myChart" style="position: relative; height: 40vh; width: 100vw;"></canvas>
