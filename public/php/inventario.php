@@ -58,7 +58,7 @@
                 $cantidad_resultados=mysqli_num_rows($sqlquery);
                 
             ?>
-
+            <br>
             <div  class="slide table-responsive">
                 <table class="table">
                 <tr>
