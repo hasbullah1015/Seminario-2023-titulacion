@@ -84,20 +84,28 @@ input:hover{
     
 }
 
+form{
+    margin: 10px;
+}
+
 #sent{
-    background-color: red;
-    border-radius: 10px  ;
+    background-color: transparent;
+    color: black !important ;
 
 }
-
-#form_mod form{
-    display:flex !important;
-    flex-direction: column !important; /* para poner los div en vertical*/
-    margin: 10px;
+input {
+    align-items: center;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.6);
+    border: 0px;
+    color: white !important;
 }
 
-#form_mod form input{
-    margin: 10px;
+input:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0px;
+    border-bottom: solid rgb(2, 2, 2) 1px !important;
+    color: #000000 !important;
 }
 
 form .opcSecc{
