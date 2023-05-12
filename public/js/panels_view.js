@@ -5,7 +5,6 @@ const btn_critical=document.querySelector("#critical_view");
 var video = document.querySelector("video");
 
 
-
 btn_general.addEventListener("click",general_view);
 btn_critical.addEventListener("click", critical_view);
 
