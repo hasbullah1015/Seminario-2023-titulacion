@@ -27,12 +27,11 @@
 }
 
 #search_bar{
-    margin:0px 20px 0px;
     background-color: transparent;
+}
 
-
-
-
+#sent{
+    background-color: transparent;
 }
 
 video{
