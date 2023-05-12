@@ -61,12 +61,14 @@ function draw_chart_salida(){
         type:'bar',
         data:{
             datasets: [{
-                borderRadius: 400,
                 label: 'Stock de Salida',
                 backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
+                borderRadius: 30,
+                borderSkipped: false,
             }]
         },
         options:{
+            responsive: true,
             scales:{
                 y:{
                     beginAtZero:true
