@@ -26,14 +26,19 @@
     text-align: center;
 }
 
-#search_bar{
-    background-color: transparent;
-}
+
 
 #sent{
     background-color: transparent;
+
 }
 
+input:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0px;
+    border-bottom: solid rgb(2, 2, 2) 1px !important;
+    color: #000000 !important;
+}
 video{
     position: absolute;
     top: 0;
