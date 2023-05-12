@@ -30,7 +30,7 @@
 
 #sent{
     background-color: transparent;
-    color: black;
+    color: black !important ;
 
 }
 input {
