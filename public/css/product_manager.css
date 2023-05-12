@@ -104,6 +104,10 @@ video{
     z-index: 0;
 }
 
+img{
+    display: flex !important;
+}
+
 .dataWarning{
     background-color: rgba(255, 0, 0, 0.6);
     color: white;
