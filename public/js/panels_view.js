@@ -25,7 +25,8 @@ function draw_chart_entrada(){
                 label: 'Stock de Entrada',
                 backgroundColor: ['#2b97fa','#c501e2','#2ef8a0', '#e7c500','#f82d97','#e830ce','#a7fd2a','#9a27f7','#ff0571','#ff0534','#c6e602','#00fff6','#2b97fa','#c501e2','#2ef8a0', '#e7c500','#f82d97','#e830ce','#a7fd2a','#9a27f7','#ff0571','#ff0534','#c6e602','#00fff6',],
                 borderColor: ['black'], 
-                borderWidth:1
+                borderWidth:1,
+                borderRadius: {topLeft: 10, topRight:10 }
             }]
         },
         options:{
