@@ -13,7 +13,8 @@ let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
 
 function draw_chart_entrada(){
-    btn_critical.classList.add('opcSelect');
+    btn_general.classList.add('opcSelect');
+    btn_critical.classList.remove('opcSelect');
     const ctx = document.querySelector(".slide #myChart");
     var myChart = new Chart(ctx, {
         type:'bar',
@@ -51,6 +52,8 @@ function draw_chart_entrada(){
 
 
 function draw_chart_salida(){
+    btn_critical.classList.add('opcSelect');
+    btn_general.classList.remove('opcSelect');
     const ctx = document.querySelector(".slide #myChart");
     var myChart2 = new Chart(ctx, {
         type:'doughnut',
