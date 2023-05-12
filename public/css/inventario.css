@@ -21,6 +21,10 @@
     
 }
 
+td:hover{
+    background-color:rgba(0, 89, 255, 0.6)
+}
+
 #buscador{
     align-items: center;
     text-align: center;
