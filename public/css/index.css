@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     position: relative;
+    min-height: 100vh;
+
 }
 
 h1{
@@ -135,11 +137,11 @@ input
 
 
 video{
-        min-height: 105vh;
+        min-height: 100vh;
  }
 
  .video_{
-    min-height: 105vh;
+    min-height: 100vh;
 }
 #user_photo{
         border-radius: 20%;
