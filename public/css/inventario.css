@@ -47,7 +47,7 @@ input {
     border: 0px;
     color: white !important;
 
-    background-color: rgba(20, 20, 20, 0.6);
+    background-color: rgba(20, 20, 20, 0.6) !important;
 }
 
 input:hover {
