@@ -65,7 +65,6 @@ function draw_chart_salida(){
                 label: 'Stock de Salida',
                 backgroundColor: ['#2b97fa','#c501e2','#2ef8a0', '#e7c500','#f82d97','#e830ce','#a7fd2a','#9a27f7','#ff0571','#ff0534','#c6e602','#00fff6','#2b97fa','#c501e2','#2ef8a0', '#e7c500','#f82d97','#e830ce','#a7fd2a','#9a27f7','#ff0571','#ff0534','#c6e602','#00fff6',],
                  borderWidth:1,
-                 backgroundColor: transparentize(0.5),
                 borderRadius: {topLeft: 5, topRight:5 },
             }]
         },
