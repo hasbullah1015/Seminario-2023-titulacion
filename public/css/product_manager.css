@@ -29,28 +29,6 @@
 }
 
 
-form button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #000000;
-    border: 20px;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-}
-
-
-form button:hover {
-    padding-right: 25px;
-    background-color: #ffffff;
-    color: black;
-    border-radius: 24px;
-}
 
 #buscador{
     align-items: center;
