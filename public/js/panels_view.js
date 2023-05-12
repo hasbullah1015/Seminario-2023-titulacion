@@ -15,7 +15,7 @@ var myChart = new Chart(ctx, {});
 
 
 function draw_chart_entrada(){
-    myChart.clear();
+    myChart.destroy();
     btn_general.classList.add('opcSelect');
     btn_critical.classList.remove('opcSelect');
     myChart = new Chart(ctx, {
@@ -56,7 +56,7 @@ function draw_chart_entrada(){
 function draw_chart_salida(){
     btn_critical.classList.add('opcSelect');
     btn_general.classList.remove('opcSelect');
-    myChart.clear();
+    myChart.destroy();
     myChart = new Chart(ctx, {
         type:'doughnut',
         data:{
