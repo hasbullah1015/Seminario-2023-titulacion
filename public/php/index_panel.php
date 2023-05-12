@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/public/css/index.css" type="text/css">
     <link rel="stylesheet" href="/public/css/header_style.css" type="text/css">
     <link rel="stylesheet" href="/public/css/footer_style.css" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
 
 </head>
 
