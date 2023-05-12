@@ -21,8 +21,8 @@
     
 }
 
-td:hover{
-    background-color:rgba(0, 89, 255, 0.6) !important;
+tr:hover{
+    background-color:rgba(0, 255, 170, 0.6) !important;
 }
 
 #buscador{
