@@ -134,12 +134,8 @@ input
     Footer {margin-top:auto;} /* separar footer del container principal?*/
 
 
-video{
-        min-height: 100vh;
- }
-
  .video_{
-    min-height: 140vh;
+    min-height: 160vh;
 }
 #user_photo{
         border-radius: 20%;
