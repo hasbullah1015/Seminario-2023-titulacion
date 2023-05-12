@@ -46,6 +46,8 @@ input {
     background-color: rgba(20, 20, 20, 0.6);
     border: 0px;
     color: white !important;
+
+    background-color: rgba(20, 20, 20, 0.6);
 }
 
 input:hover {

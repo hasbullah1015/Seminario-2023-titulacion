@@ -57,7 +57,7 @@ form{
 
 #sent{
     background-color:rgba(179, 0, 255, 0.6);
-    color: black !important ;
+    color: rgb(255, 255, 255) !important ;
 
 }
 input {
