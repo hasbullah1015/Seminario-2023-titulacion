@@ -22,7 +22,7 @@ function draw_chart_entrada(){
         type:'bar',
         data:{
             datasets: [{
-                label: 'Stock de Productos',
+                label: 'Stock de Entrada',
                 backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
                 borderColor: ['black'], 
                 borderWidth:1
@@ -58,10 +58,11 @@ function draw_chart_salida(){
     btn_general.classList.remove('opcSelect');
     myChart.destroy();
     myChart = new Chart(ctx, {
-        type:'line',
+        type:'bar',
         data:{
             datasets: [{
-                label: 'Stock de Productos',
+                borderRadius: Number.MAX_VALUE,
+                label: 'Stock de Salida',
                 backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
             }]
         },
