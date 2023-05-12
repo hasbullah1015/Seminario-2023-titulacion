@@ -86,6 +86,9 @@ input:hover{
 
 form{
     margin: 10px;
+    display:flex !important;
+    flex-direction: column !important; /* para poner los div en vertical*/
+    margin: 10px;
 }
 
 #sent{
@@ -107,6 +110,7 @@ input:hover {
     border-bottom: solid rgb(2, 2, 2) 1px !important;
     color: #000000 !important;
 }
+
 
 form .opcSecc{
     display: flex;
