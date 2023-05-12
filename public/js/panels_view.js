@@ -62,7 +62,7 @@ function draw_chart_salida(){
         data:{
             datasets: [{
                 label: 'Stock de Salida',
-                backgroundColor: ['#0C134F','#1D267D', '#5C469C','#D4ADFC','#3A1078','#4E31AA','#2F58CD','#3795BD'],
+                backgroundColor: ['#c501e2','#2ef8a0', '#e7c500','#f82d97','#e830ce','#c501e2','#9a27f7','#ff0571'],
                 borderRadius: 30,
                 borderSkipped: false,
             }]
