@@ -100,8 +100,8 @@ input {
     align-items: center;
     text-align: center;
     background-color: rgba(20, 20, 20, 0.6);
-    border: 0px;
     color: white !important;
+    margin: 10px;
 }
 
 input:hover {
