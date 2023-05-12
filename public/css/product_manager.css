@@ -52,22 +52,6 @@ form button:hover {
     border-radius: 24px;
 }
 
-input {
-        align-items: center;
-        text-align: center;
-        background-color: rgba(20, 20, 20, 0.6);
-        border: 0px;
-        border-bottom: solid rgb(0, 0, 0) 1px; 
-        color: #FFFFFF !important;
-}
-
-input:hover{
-        background-color: rgba(255, 255, 255, 0.6);
-        border: 0px;
-        border-bottom: solid rgb(2, 2, 2) 1px !important; 
-        color: #000000 !important;
- }
-
 #buscador{
     align-items: center;
     text-align: center;
