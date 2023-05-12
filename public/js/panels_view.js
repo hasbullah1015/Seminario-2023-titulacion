@@ -10,12 +10,15 @@ btn_critical.addEventListener("click", critical_view);
 
 let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
+const ctx = document.querySelector(".slide #myChart");
+var myChart = new Chart(ctx, {});
+
 
 function draw_chart_entrada(){
+    myChart.clear();
     btn_general.classList.add('opcSelect');
     btn_critical.classList.remove('opcSelect');
-    const ctx = document.querySelector(".slide #myChart");
-    var myChart = new Chart(ctx, {
+    myChart = new Chart(ctx, {
         type:'bar',
         data:{
             datasets: [{
@@ -53,8 +56,8 @@ function draw_chart_entrada(){
 function draw_chart_salida(){
     btn_critical.classList.add('opcSelect');
     btn_general.classList.remove('opcSelect');
-    const ctx = document.querySelector(".slide #myChart");
-    var myChart2 = new Chart(ctx, {
+    myChart.clear();
+    myChart = new Chart(ctx, {
         type:'doughnut',
         data:{
             datasets: [{
@@ -80,9 +83,9 @@ function draw_chart_salida(){
 
     const mostrar = (articulos) =>{
         articulos.forEach(element => {
-            myChart2.data['labels'].push(element.nombre)
-            myChart2.data['datasets'][0].data.push(element.total_salida)
-            myChart2.update()
+            myChart.data['labels'].push(element.nombre)
+            myChart.data['datasets'][0].data.push(element.total_salida)
+            myChart.update()
         });
     }   
 }
