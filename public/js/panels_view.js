@@ -58,7 +58,7 @@ function draw_chart_salida(){
     btn_general.classList.remove('opcSelect');
     myChart.destroy();
     myChart = new Chart(ctx, {
-        type:'doughnut',
+        type:'line',
         data:{
             datasets: [{
                 label: 'Stock de Productos',
