@@ -27,6 +27,9 @@
 }
 
 
+form{
+    margin: 10px;
+}
 
 #sent{
     background-color: transparent;
