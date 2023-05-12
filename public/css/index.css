@@ -103,6 +103,10 @@ input
         color: #000000 !important;
     }
 
+    .opcSelect{
+        background-color: rgb(217, 249, 0.6);
+    }
+
 #buscador{
     align-items: center;
     text-align: center;

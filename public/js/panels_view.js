@@ -13,6 +13,7 @@ let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
 
 function draw_chart_entrada(){
+    btn_critical.classList.add('opcSelect');
     const ctx = document.querySelector(".slide #myChart");
     var myChart = new Chart(ctx, {
         type:'bar',
