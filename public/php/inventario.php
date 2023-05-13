@@ -102,10 +102,10 @@
         </div>
     </div>
     <br>
-    <footer id="pie_pagina" class="mt-auto">
-    </footer>
-    <script src="/public/js/inventario.js"></script>
-    <script src="/public/js/index.js"></script>
+    <footer id="pie_pagina" class="mt-auto"></footer>
+    
+<script src="/public/js/inventario.js"></script>
+<script src="/public/js/index.js"></script>
 </body>
 </html>
 

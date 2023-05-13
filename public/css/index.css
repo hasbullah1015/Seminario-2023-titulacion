@@ -130,14 +130,18 @@ input
 
 
 @media (orientation:landscape) {
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+ }
+ Footer {margin-top:auto;} /* separar footer del container principal?*/
 
-    body{
-        min-height:100vh;
-        display:flex;
-        flex-direction:column;
-    }
-    Footer {margin-top:auto;} /* separar footer del container principal?*/
-
+#myChart{
+    position: relative;
+    height: 10vh;
+     width: 100vw;
+}
 
 video{
         min-height: 100vh;
@@ -164,6 +168,12 @@ video{
         flex-direction:column;
     }
     Footer {margin-top:auto;}
+
+    #myChart{
+        position: relative;
+        height: 30vh;
+         width: 100vw;
+    }
 
     video{
         min-height: 120vh;

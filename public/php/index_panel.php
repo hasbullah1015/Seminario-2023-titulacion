@@ -48,6 +48,7 @@
 
 
         </div> 
+
         <div class="row">
                 <div class="slide col-sm-12 col-md-6"id="general_view" >
                     ENTRADAS
@@ -66,14 +67,13 @@
                 <p>Sistema CRUD MEDIANTE JAVASCRIPT, PHP Y PYTHON CON INTERFAZ GRAFICA HTML PARA EL MANEJO DE INVENTARIO</p> 
                 <br>
                 <p style="text-align:center;">PRESENTAN:</p>
-                <p>Otero Gomez Davio</p>
+                <p>Otero Gomez David</p>
                 <p>Garcia Cordova Santiago U.</p>
                 <p>Rivera Ruiz Alejandro</p>
                 <p>V. 1.0</p>
             </div>
-            <canvas id="myChart" style="position: relative; height: 10vh; width: 100vw;"></canvas>
-            </div>
-           
+            <canvas id="myChart" ></canvas>
+            </div> 
         </div>
     </div>
 
