@@ -18,7 +18,7 @@
 
     }
     else{
-        header('https://seminario2023.website');
+        header('Location: https://seminario2023.website/public/index.php');
 
     }
     mysqli_close($connection);
