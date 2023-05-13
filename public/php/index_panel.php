@@ -1,9 +1,15 @@
 <?php 
     session_start();
-    $user=$_SESSION['username'];
-    $id=$_SESSION['id'];
-    $rol=$_SESSION['rol'];
 
+    if (empty($_SESSION["username"])) {
+        header('Location: https://seminario2023.website/index.php');
+
+    }
+    else{
+        $user=$_SESSION['username'];
+        $id=$_SESSION['id'];
+        $rol=$_SESSION['rol'];
+    }
 ?>
 
 <!DOCTYPE html>

@@ -5,7 +5,7 @@
     $pswd = $_POST['password'];
     
     $sqlquery =mysqli_query($connection,"SELECT * FROM  administracion WHERE usr = '$user' AND pass ='$pswd'"); //realizar la validación en la db mediante la conexioón
-   
+
 
     if($sqlquery->num_rows > 0){ //se realizá la validación (si hay al menos un usuario)
         session_start(); //crear inicio de sesion
@@ -19,7 +19,8 @@
     }
     else{
         header('Location: https://seminario2023.website/index.php');
+        mysqli_close($connection);
+
 
     }
-    mysqli_close($connection);
 ?>
