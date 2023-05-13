@@ -1,7 +1,19 @@
+<?php 
+    session_start();
 
-<?php
+    if (empty($_SESSION["username"])) {
+        header('Location: https://seminario2023.website/index.php');
+
+    }
+    else{
         include("databaseconnection.php");
         $connection=conectar();
+    }
+?>
+
+
+<?php
+
 
         if(empty($busqueda)){
             header('https://seminario2023.website/public/php/inventario.php');

@@ -2,10 +2,6 @@
 $("#pie_pagina").load("/public/html/footer.html");
 $("#encabezado").load("/public/html/header.html");
 
-//document.querySelector("#btn_general_view").addEventListener("click",general_view);
-//document.querySelector("#btn_critical_view").addEventListener("click",critical_view);
-
-
 
 
 const user_portrait = document.querySelector("#userPortrait"); // seleccionamos el div donde se inserta la imagen

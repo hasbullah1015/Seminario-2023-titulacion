@@ -2,7 +2,7 @@
 const btn_general=document.querySelector("#general_view");
 const btn_critical=document.querySelector("#critical_view");
 
-var video = document.querySelector("video");
+const video = document.querySelector("video");
 
 
 btn_general.addEventListener("click",general_view);
@@ -12,7 +12,6 @@ let url = 'https://seminario2023.website/public/php/general_view_json.php';
 
 const ctx = document.querySelector(".slide #myChart");
 var myChart = new Chart(ctx, {});
-
 
 function draw_chart_entrada(){
     myChart.destroy();
