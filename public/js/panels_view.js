@@ -96,7 +96,6 @@ function draw_chart_salida(){
 
 function critical_view(){
     video.className='video_';
-    document.querySelector(".slide #myChart");
     document.querySelector("#intro_message").innerHTML='';
     draw_chart_salida();  
 }

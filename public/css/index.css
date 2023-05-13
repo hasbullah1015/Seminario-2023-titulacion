@@ -139,8 +139,8 @@ body{
 
 #myChart{
     position: relative;
-    height: 10vh;
-     width: 100vw;
+    height: 10vh !important;
+     width: 100vw !important;
 }
 
 video{
@@ -171,8 +171,8 @@ video{
 
     #myChart{
         position: relative;
-        height: 50vh;
-         width: 100vw;
+        height: 50vh !important;
+         width: 100vw !important;
     }
 
     video{
