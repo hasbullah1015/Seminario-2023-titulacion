@@ -139,7 +139,7 @@ body{
 
 #myChart{
     position: relative;
-    height: 10vh !important;
+    height: 10vh;
      width: 100vh;
 }
 
