@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es-mx">    
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +20,6 @@
             <b><h1 class="display-1">Bienvenido,</h1></b><br>
             <h2 class="display-2">Por favor, ingrese su usuario y contraseña:</h2><br>
         </div>   
-
         <div class="row">
             <div class="col-sm-3 col-md-3 mx-auto slide">
                 <br>
