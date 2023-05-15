@@ -1,4 +1,7 @@
 
+let navegador = navigator.userAgent;
+console.log(navegador);
+
 const btn_general=document.querySelector("#general_view");
 const btn_critical=document.querySelector("#critical_view");
 
