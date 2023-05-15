@@ -21,7 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/public/css/index.css" type="text/css">
     <link rel="stylesheet" href="/public/css/header_style.css" type="text/css">
     <link rel="stylesheet" href="/public/css/footer_style.css" type="text/css">
@@ -80,7 +80,7 @@
 
     <footer id="pie_pagina" class="mt-auto">
     </footer>
-    <script src="/public/js/index.js"></script>
+    <script defer src="/public/js/index.js"></script>
     <script defer type="module" src="/public/js/panels_view.js"></script>
 
 
