@@ -154,6 +154,28 @@ min-height: 110vh;
 
 }
 
+@media (max-width : 1400px){
+
+    #myChart{
+        position: relative;
+        height: 50vh !important;
+        width: 100% !important;
+    }
+    
+    video{
+        min-height: 100vh;
+    }
+    
+    .video_{
+    min-height: 120vh;
+    }
+    
+    }
+
+
+
+
+
 
 @media (orientation:landscape) {
 body{
