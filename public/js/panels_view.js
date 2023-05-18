@@ -99,7 +99,7 @@ function draw_chart_salida(){
 
 function critical_view(){
     video.className='video_';
-    document.querySelector(".slide #myChart").classList.remove('chartOff');
+    document.querySelector(".slide #myChart").classList.add('chartOn');
     document.querySelector("#intro_message").innerHTML='';
     draw_chart_salida();  
 }

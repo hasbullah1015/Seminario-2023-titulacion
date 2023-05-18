@@ -128,8 +128,8 @@ input
     
     }
     
-.chartOff{
-    display: none !important;
+.chartOn{
+    display:flex !important;
 }
 
 @media (orientation:landscape) {
@@ -141,6 +141,7 @@ body{
  Footer {margin-top:auto;} /* separar footer del container principal?*/
 
 #myChart{
+    display: none;
     position: relative;
     height: 10vh;
      width: 100vh;
