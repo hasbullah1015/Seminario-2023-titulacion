@@ -158,6 +158,9 @@ video{
     }
 }
 
+#pie_pagina{
+    display: none;
+}
 
 
 @media (orientation : portrait) {
