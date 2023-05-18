@@ -1,4 +1,4 @@
-* { 
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,6 @@
 
 body{
     min-height: 100vh;
-
 }
 
 h1{
@@ -134,26 +133,36 @@ input
     display:flex !important;
 }
 
+footer {margin-top:auto;} /* separar footer del container principal?*/
+
+
+@media (max-width : 2100px){
+
+#myChart{
+    position: relative;
+    height: 50vh !important;
+    width: 100% !important;
+}
+
+video{
+    min-height: 100vh;
+}
+
+.video_{
+min-height: 104vh;
+}
+
+}
+
+
 @media (orientation:landscape) {
 body{
     min-height:100vh;
     display:flex;
     flex-direction:column;
- }
- Footer {margin-top:auto;} /* separar footer del container principal?*/
-
-#myChart{
-    position: relative;
-    height: 50vh !important;
-     width: 100% !important;
 }
-video{
-        min-height: 100vh;
- }
 
- .video_{
-    min-height: 104vh;
-}
+
 #user_photo{
         border-radius: 20%;
         height: 120px;
@@ -164,9 +173,6 @@ video{
 
 
 
-
-
-
 @media (orientation : portrait) {
 
     body{
@@ -174,7 +180,6 @@ video{
         display:flex;
         flex-direction:column;
     }
-    Footer {margin-top:auto;}
 
     #myChart{
         position: relative;
