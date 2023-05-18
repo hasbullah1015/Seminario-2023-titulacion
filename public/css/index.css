@@ -159,7 +159,7 @@ video{
 }
 
 #myChart{
-    display: none;
+    display: none !important;
 }
 
 
