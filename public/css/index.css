@@ -145,11 +145,11 @@ footer {margin-top:auto;} /* separar footer del container principal?*/
 }
 
 video{
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .video_{
-min-height: 110vh;
+height: 110vh;
 }
 
 }
@@ -163,11 +163,11 @@ min-height: 110vh;
     }
     
     video{
-        min-height: 105vh;
+        height: 105vh;
     }
     
     .video_{
-    min-height: 120vh;
+        height: 120vh;
     }
     
     }
