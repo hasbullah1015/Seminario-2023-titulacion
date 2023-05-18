@@ -133,7 +133,7 @@ input
     display:flex !important;
 }
 
-footer {margin-top:auto;} /* separar footer del container principal?*/
+footer {margin-top:auto; padding:auto;} /* separar footer del container principal?*/
 
 
 @media (max-width : 2100px){
