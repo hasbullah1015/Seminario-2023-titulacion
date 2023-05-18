@@ -64,7 +64,7 @@
             <div id="intro_message">
                 <h1 style="text-align:center;">GESTOR DE PRODUCTO</h1>
                 <br>
-                <p>Sistema CRUD MEDIANTE JAVASCRIPT, PHP Y PYTHON CON INTERFAZ GRAFICA HTML PARA EL MANEJO DE INVENTARIO</p> 
+                <p>Sistema CRUD ELABORADO MEDIANTE JAVASCRIPT, PHP Y PYTHON CON INTERFAZ GRAFICA HTML Y CSS PARA EL MANEJO DE INVENTARIO MEDIANTE CODIGO QR </p> 
                 <br>
                 <p style="text-align:center;">PRESENTAN:</p>
                 <p>Otero Gomez David</p>
