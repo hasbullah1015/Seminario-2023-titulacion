@@ -141,7 +141,7 @@ body{
  Footer {margin-top:auto;} /* separar footer del container principal?*/
 
 #myChart{
-    display: none;
+    display: none !important;
     position: relative;
     height: 10vh;
      width: 100vh;
