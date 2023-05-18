@@ -144,8 +144,8 @@ body{
 
 #myChart{
     position: relative;
-    height: 10vh;
-     width: 100vh;
+    height: 10vh !important;
+     width: 100vh !important;
 }
 video{
         min-height: 100vh;
