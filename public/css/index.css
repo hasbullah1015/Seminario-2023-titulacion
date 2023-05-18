@@ -162,7 +162,7 @@ video{
     display: none !important;
 }
 
-#charton{
+.charton{
     display: flex !important;
 }
 
