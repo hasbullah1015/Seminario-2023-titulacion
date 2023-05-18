@@ -162,6 +162,10 @@ video{
     display: none !important;
 }
 
+#charton{
+    display: flex !important;
+}
+
 
 @media (orientation : portrait) {
 
