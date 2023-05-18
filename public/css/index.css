@@ -127,7 +127,9 @@ input
     display: none !important;
     
     }
-    
+.chartOff{
+    display:none !important;
+}
 .chartOn{
     display:flex !important;
 }
@@ -141,7 +143,6 @@ body{
  Footer {margin-top:auto;} /* separar footer del container principal?*/
 
 #myChart{
-    display: none !important;
     position: relative;
     height: 10vh;
      width: 100vh;

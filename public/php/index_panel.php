@@ -72,7 +72,7 @@
                 <p>Rivera Ruiz Alejandro</p>
                 <p>V. 1.0</p>
             </div>
-            <canvas id="myChart"></canvas>
+            <canvas id="myChart" class="chartOff"></canvas>
             </div> 
         </div>
     </div>
