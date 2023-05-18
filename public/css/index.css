@@ -127,7 +127,10 @@ input
     display: none !important;
     
     }
-
+    
+.chartOff{
+    display: none !important;
+}
 
 @media (orientation:landscape) {
 body{
@@ -142,7 +145,6 @@ body{
     height: 10vh;
      width: 100vh;
 }
-
 video{
         min-height: 100vh;
  }
@@ -159,10 +161,7 @@ video{
 }
 
 
-.chartOff{
-    display: none !important;
 
-}
 
 
 
