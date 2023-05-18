@@ -28,8 +28,8 @@ footer h4{
 
 #logo-footer{
     width: 120px;
-    height: 140ox;
-    margin-top: 50px;
+    height: 140px;
+    padding: 20px;
 }
 
 @media (orientation : portrait) {
