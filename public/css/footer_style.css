@@ -31,7 +31,10 @@ footer h4{
     padding: 20px;
     justify-content: center;
     top: 20px;
+    position: relative;
+    z-index:1 ;
     }
+
 
 @media (orientation : portrait) {
 
