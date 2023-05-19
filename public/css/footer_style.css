@@ -31,8 +31,7 @@ footer h4{
     padding: 20px;
     justify-content: center;
     top: 20px;
-    fill: white;
-}
+    }
 
 @media (orientation : portrait) {
 
