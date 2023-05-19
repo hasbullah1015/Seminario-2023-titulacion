@@ -14,7 +14,7 @@ header{
 
 
 a #site-icon{
-    display: flex;
+    display: flex !important; 
     max-width: 100% !important;
     margin: 2px;
     justify-content: center;
