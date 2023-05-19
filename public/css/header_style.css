@@ -12,6 +12,9 @@ header{
     border-radius: 15%;
 }
 
+a{
+    position: relative;
+}
 
 #site-icon{
     max-width: 10% !important;
