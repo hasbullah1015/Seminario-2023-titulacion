@@ -13,8 +13,8 @@ header{
 }
 
 
-#site-logo{
-    max-width: 100%;
+a #site-logo{
+    max-width: 100% !important;
     margin: 2px;
     justify-content: center;
     position: relative;
