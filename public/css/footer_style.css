@@ -3,8 +3,8 @@ footer{
 }
 
 div hr{
-   size: 20px !important;
-    
+    border-top: 3px solid;
+    opacity: 1;    
 }
 
 #linkedin:hover{
