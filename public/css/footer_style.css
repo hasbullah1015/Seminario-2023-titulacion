@@ -27,11 +27,11 @@ footer h4{
 }
 
 #logo-footer{
-    width: 30%;
-    height: 40%;
+    max-width: 30%;
     padding: 20px;
     justify-content: center;
     top: 20px;
+    color: white;
 }
 
 @media (orientation : portrait) {
