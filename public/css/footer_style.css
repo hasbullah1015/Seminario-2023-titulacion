@@ -2,8 +2,8 @@ footer{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.box hr{
-    height: 2px;
+div hr{
+    height: 20px !important;
 }
 
 #linkedin:hover{
