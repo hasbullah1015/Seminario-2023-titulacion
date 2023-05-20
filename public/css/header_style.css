@@ -12,9 +12,8 @@ header{
     border-radius: 15%;
 }
 
-.site-icon{
+a{
     position: relative !important;
-    display: contents !important;
 }
 
 #site-icon{
@@ -23,5 +22,7 @@ header{
     justify-content: center;
     position: relative;
     z-index:1 ;
+    display: contents;
+
 }
 
