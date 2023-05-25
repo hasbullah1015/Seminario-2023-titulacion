@@ -144,7 +144,7 @@ function pdf_print(){
 
         doc.text(20,240, "FECHA: ");
         doc.text(41,240,date.toDateString());
-        doc.text(100,240,date.getHours().toString()+' : ');
+        doc.text(90,240,date.getHours().toString()+' : '+date.getMinutes().toString()+' : '+date.getSeconds().toString()+);
 
 
         
