@@ -48,7 +48,9 @@
     
 }
 
-
+#action_label{
+    font-size: 30px;
+}
 
 #action_label #userName {
     display:inherit;
