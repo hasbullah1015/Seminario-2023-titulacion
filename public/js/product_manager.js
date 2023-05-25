@@ -39,7 +39,7 @@ else{
 
 function form_generator(){
 
-if(userROL.innerHTML == '(a)'){
+if(userROL.INN == '(a)'){
         userMessage.innerHTML ='Ingrese los datos correctos: ';
 
 
@@ -103,12 +103,14 @@ if(userROL.innerHTML == '(a)'){
     form_module.appendChild(new_form);
     }
     else{
-        userMessage.innerHTML ='Imprime el código QR mediante el ID';
+        userMessage.innerHTML ='Solicita el código QR Ingresando el ID';
+
 
     }
 }
 
 function pdf_generator(){
+        userMessage.innerHTML ='Imprime el código QR ';
         const submit = document.createElement("input");
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
