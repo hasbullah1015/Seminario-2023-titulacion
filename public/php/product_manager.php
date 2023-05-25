@@ -8,6 +8,9 @@
     else{
         include("databaseconnection.php");
         $connection=conectar();
+        $user=$_SESSION['username'];
+        $id=$_SESSION['id'];
+        $rol=$_SESSION['rol'];
     }
 ?>
 
