@@ -39,7 +39,7 @@ else{
 
 function form_generator(){
 
-if(userROL.INN =='(A)'){
+if(userROL.innerHTML =='(A)'){
         userMessage.innerHTML ='Ingrese los datos correctos: ';
 
 
