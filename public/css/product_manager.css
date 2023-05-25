@@ -48,6 +48,12 @@
     
 }
 
+#userName{
+    display:flex;
+    color:rgba(179, 0, 255, 0.6) ;
+    font-size: 10px;
+}
+
 form{
     margin: 10px;
     display:flex !important;
