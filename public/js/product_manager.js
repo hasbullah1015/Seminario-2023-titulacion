@@ -9,15 +9,6 @@ const userMessage = document.querySelector("#userMessage");
 
 
 
-
-
-let date = new Date().toDateString();
-
-
-
-
-
-
 window.jsPDF = window.jspdf.jsPDF;
 
 const module = document.querySelector("#qr_form_mod");
@@ -122,7 +113,9 @@ function pdf_generator(){
 function pdf_print(){
         alert ("PDF GENERADO:");
 
-        var img64 = document.querySelector('#qr_mod img').src;
+        let img64 = document.querySelector('#qr_mod img').src;
+        let date = new Date().toDateString();
+
 
         var doc = new jsPDF();
         doc.text(60,20, 'SISTEMA DE CONTROL DE INVENTARIO');
