@@ -123,28 +123,20 @@ function pdf_print(){
         doc.text(60,20, 'SISTEMA DE CONTROL DE INVENTARIO');
         doc.text(40,30, "--------------------------------------------------------------------------");
         doc.text(60,40, "***** DATOS DEL PRODUCTO: *****");
-        doc.text(20,50, "ID: ");
-        doc.text(30,60,'* '+product_id.innerText );
-        doc.text(20,70, "NOMBRE: ");
-        doc.text(30,80, '* '+product_name.innerText);
-        doc.text(20,90, "CATEGORIA: ");
-        doc.text(30,100, '* '+category_name.innerText);
-        doc.text(20,110, "MARCA: ");
-        doc.text(30,120, '* '+ brand_name.innerText);
+        doc.text(20,50, "ID: "+product_id.innerText );
+        doc.text(20,60, "NOMBRE: "+product_name.innerText);
+        doc.text(20,70, "CATEGORIA: "+category_name.innerText);
+        doc.text(20,80, "MARCA: "+ brand_name.innerText);
   
-        doc.text(40,130, "--------------------------------------------------------------------------");
-        doc.text(80,140, "***** CODIGO QR *****");      
+        doc.text(40,90, "--------------------------------------------------------------------------");
+        doc.text(80,100, "***** CODIGO QR *****");      
         doc.addImage(img64, 'JPG', 85, 145, 50, 50, 'QR'); 
 
         doc.text(40,210, "--------------------------------------------------------------------------");
         doc.text(70,220, "***** RESPONSABLE *****");    
-        doc.text(20,230, "REGISTRÓ: ");
-        doc.text(50,230, userName.innerText);
+        doc.text(20,230, "REGISTRÓ: "+userName.innerText);
 
-
-        doc.text(20,240, "FECHA: ");
-        doc.text(41,240,date.toDateString());
-        doc.text(90,240,date.getHours().toString()+' : '+date.getMinutes().toString()+' : '+date.getSeconds().toString());
+        doc.text(20,240, "FECHA: "+date.toDateString()+' '+date.getHours().toString()+date.getMinutes().toString()+' : '+date.getSeconds().toString()+' hrs');
 
 
         
