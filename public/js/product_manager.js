@@ -122,17 +122,17 @@ function pdf_print(){
         doc.text(40,30, "--------------------------------------------------------------------------");
         doc.text(60,40, "***** DATOS DEL PRODUCTO: *****");
         doc.text(20,50, "ID: ");
-        doc.text(30,60,product_id.innerText );
+        doc.text(30,60,'* '+product_id.innerText );
         doc.text(20,70, "NOMBRE: ");
-        doc.text(30,80, '-'+product_name.innerText);
+        doc.text(30,80, '* '+product_name.innerText);
         doc.text(20,90, "CATEGORIA: ");
-        doc.text(30,100, category_name.innerText);
+        doc.text(30,100, '* '+category_name.innerText);
         doc.text(20,110, "MARCA: ");
-        doc.text(30,120, brand_name.innerText);
+        doc.text(30,120, '* '+ brand_name.innerText);
   
         doc.text(40,130, "--------------------------------------------------------------------------");
         doc.text(80,140, "***** CODIGO QR *****");      
-        doc.addImage(img64, 'JPG', 80, 160, 50, 50, 'QR'); 
+        doc.addImage(img64, 'JPG', 80, 130, 50, 50, 'QR'); 
 
         doc.text(40,190, "--------------------------------------------------------------------------");
         doc.text(70,200, "***** RESPONSABLE *****");    
