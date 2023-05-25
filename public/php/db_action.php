@@ -38,6 +38,6 @@ if($id && $nombre && $categoria && $opc && $brand){
 }
 
 else{
-    echo '<span id="action_label"> <p id="userName"> '.$user.' </p> Ingresa los datos correcots </span>';
+    echo '<span id="action_label"> <p id="userName"> '.$user.' ('.$rol.')'.' </p>, Ingresa los datos correcots </span>';
 }
 ?>
