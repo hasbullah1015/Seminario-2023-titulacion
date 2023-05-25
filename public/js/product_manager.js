@@ -114,7 +114,7 @@ function pdf_print(){
         doc.text(20,60, "NOMBRE: ");
         doc.text(50,60, product_name.innerText);
         doc.text(20,70, "CATEGORIA: ");
-        doc.text(50,70, category_name.innerText);
+        doc.text(70,70, category_name.innerText);
         doc.text(20,80, "MARCA: ");
         doc.text(50,80, brand_name.innerText);
   
@@ -125,8 +125,9 @@ function pdf_print(){
         doc.text(40,150, "--------------------------------------------------------------------------");
         doc.text(70,160, "***** RESPONSABLE *****");    
         doc.text(20,170, "REGISTRÓ: ");
-        doc.text(20,170, "FECHA: ");
-        doc.text(70,170,date);
+
+        doc.text(20,190, "FECHA: ");
+        doc.text(70,190,date);
 
         
         doc.save('documento.pdf');
