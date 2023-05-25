@@ -38,7 +38,7 @@ if($id && $nombre && $categoria && $opc && $brand){
 }
 
 else{
-    echo '<span> gholaaa </span>'
+    echo '<span> gholaaa </span>';
     echo $user.' Ingresa los datos completos: ';
 }
 ?>
