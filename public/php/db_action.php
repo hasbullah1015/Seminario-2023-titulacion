@@ -38,6 +38,6 @@ if($id && $nombre && $categoria && $opc && $brand){
 }
 
 else{
-    echo 'Ingresa los datos completos: ';
+    echo $user.' Ingresa los datos completos: ';
 }
 ?>
