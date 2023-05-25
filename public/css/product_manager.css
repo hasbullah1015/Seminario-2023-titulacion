@@ -48,13 +48,11 @@
     
 }
 
-#userName{
+#action_label{
     display:inherit;
 }
 
-#userRol {
-    display:inherit;
-}
+
 
 form{
     margin: 10px;
