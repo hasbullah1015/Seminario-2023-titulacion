@@ -139,7 +139,7 @@ function pdf_print(){
         doc.text(40,210, "--------------------------------------------------------------------------");
         doc.text(70,220, "***** RESPONSABLE *****");    
         doc.text(20,230, "REGISTRÓ: ");
-        doc.text(40,230, userName);
+        doc.text(40,230, userName.innerText);
 
 
         doc.text(20,240, "FECHA: ");
