@@ -132,11 +132,11 @@ function pdf_print(){
         doc.text(80,100, "***** CODIGO QR *****");      
         doc.addImage(img64, 'JPG', 70, 110, 80, 80, 'QR'); 
 
-        doc.text(40,180, "--------------------------------------------------------------------------");
-        doc.text(70,220, "***** RESPONSABLE *****");    
-        doc.text(20,230, "REGISTRÓ: "+userName.innerText);
+        doc.text(40,200, "--------------------------------------------------------------------------");
+        doc.text(70,210, "***** RESPONSABLE *****");    
+        doc.text(20,220, "REGISTRÓ: "+userName.innerText);
 
-        doc.text(20,240, "FECHA: "+date.toDateString()+' '+date.getHours()+' : '.toString()+date.getMinutes().toString()+' : '+date.getSeconds().toString()+' hrs');
+        doc.text(20,230, "FECHA: "+date.toDateString()+' '+date.getHours()+' : '.toString()+date.getMinutes().toString()+' : '+date.getSeconds().toString()+' hrs');
 
 
         
