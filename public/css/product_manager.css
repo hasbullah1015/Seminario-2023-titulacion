@@ -52,6 +52,10 @@
     display:inherit;
 }
 
+#userRol{
+    display:inherit;
+}
+
 form{
     margin: 10px;
     display:flex !important;
