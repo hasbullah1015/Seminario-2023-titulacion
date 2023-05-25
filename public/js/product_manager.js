@@ -1,6 +1,13 @@
 
 const product_id = document.querySelector("#product_id");
 const product_name = document.querySelector("#product_name");
+const category_name = document.querySelector("#category_name");
+const brand_name = document.querySelector("#brand_name");
+
+
+
+
+
 window.jsPDF = window.jspdf.jsPDF;
 
 const module = document.querySelector("#qr_form_mod");
@@ -99,10 +106,14 @@ function pdf_print(){
         doc.text(60,20, 'SISTEMA DE COnTROL DE INVENTARIO');
         doc.text(40,30, "--------------------------------------------------------------------------");
         doc.text(60,40, "***** DATOS DEL PRODUCTO: *****");
-        doc.text(20,50, "NOMBRE: ");
-        doc.text(50,50, product_name.innerText);
-        doc.text(20,60, "ID: ");
-        doc.text(30,60, product_id.innerText);
+        doc.text(20,50, "ID: ");
+        doc.text(50,50,product_id.innerText );
+        doc.text(20,60, "NOMBRE: ");
+        doc.text(30,60, product_name.innerText);
+        doc.text(20,70, "CATEGORIA: ");
+        doc.text(30,70, category_name.innerText);
+        doc.text(20,80, "MARCA: ");
+        doc.text(30,80, brand_name.innerText);
   
         doc.text(40,70, "--------------------------------------------------------------------------");
         doc.text(80,80, "***** CODIGO QR *****");      
