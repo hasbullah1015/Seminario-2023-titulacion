@@ -38,7 +38,7 @@ if($id && $nombre && $categoria && $opc && $brand){
 }
 
 else{
-    echo '<span id="action_label"> <p id="userName"> '.$user.'</p>'.'<p id="userROL" >'.' ('.$rol.')'.'</p>'. ', <p id="userMessage"> </p> </span>' ;
+    echo '<span id="action_label"> <p id="userName">'.$user.'</p>'.'<p id="userROL" >'.'('.$rol.')'.'</p>'. ', <p id="userMessage"> </p> </span>' ;
 
     if($rol=="(a)"){', Ingresa los datos correctos';
     }else 'Genera tu código QR';
