@@ -4,6 +4,9 @@ const product_name = document.querySelector("#product_name");
 const category_name = document.querySelector("#category_name");
 const brand_name = document.querySelector("#brand_name");
 
+let date = new Date().toDateString();
+
+
 
 
 
@@ -115,13 +118,16 @@ function pdf_print(){
         doc.text(20,80, "MARCA: ");
         doc.text(30,80, brand_name.innerText);
   
-        doc.text(40,70, "--------------------------------------------------------------------------");
-        doc.text(80,80, "***** CODIGO QR *****");      
+        doc.text(40,90, "--------------------------------------------------------------------------");
+        doc.text(80,100, "***** CODIGO QR *****");      
         doc.addImage(img64, 'JPG', 80, 90, 50, 50, 'QR'); 
 
         doc.text(40,150, "--------------------------------------------------------------------------");
         doc.text(70,160, "***** RESPONSABLE *****");    
         doc.text(20,170, "REGISTRÓ: ");
+        doc.text(20,170, "FECHA: ");
+        doc.text(40,170,date);
+
         
         doc.save('documento.pdf');
 }
