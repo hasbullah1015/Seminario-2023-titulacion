@@ -48,11 +48,15 @@
     
 }
 
-#action_label{
+
+
+#action_labe #userName {
     display:inherit;
 }
 
-
+#action_labe #userRol {
+    display:inherit;
+}
 
 form{
     margin: 10px;
