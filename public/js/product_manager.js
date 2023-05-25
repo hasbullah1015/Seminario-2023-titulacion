@@ -106,17 +106,17 @@ function pdf_print(){
         var img64 = document.querySelector('#qr_mod img').src;
 
         var doc = new jsPDF();
-        doc.text(60,20, 'SISTEMA DE COnTROL DE INVENTARIO');
+        doc.text(60,20, 'SISTEMA DE CONTROL DE INVENTARIO');
         doc.text(40,30, "--------------------------------------------------------------------------");
         doc.text(60,40, "***** DATOS DEL PRODUCTO: *****");
         doc.text(20,50, "ID: ");
-        doc.text(50,50,product_id.innerText );
+        doc.text(35,50,product_id.innerText );
         doc.text(20,60, "NOMBRE: ");
-        doc.text(30,60, product_name.innerText);
+        doc.text(50,60, product_name.innerText);
         doc.text(20,70, "CATEGORIA: ");
-        doc.text(30,70, category_name.innerText);
+        doc.text(50,70, category_name.innerText);
         doc.text(20,80, "MARCA: ");
-        doc.text(30,80, brand_name.innerText);
+        doc.text(50,80, brand_name.innerText);
   
         doc.text(40,90, "--------------------------------------------------------------------------");
         doc.text(80,100, "***** CODIGO QR *****");      
@@ -126,7 +126,7 @@ function pdf_print(){
         doc.text(70,160, "***** RESPONSABLE *****");    
         doc.text(20,170, "REGISTRÓ: ");
         doc.text(20,170, "FECHA: ");
-        doc.text(40,170,date);
+        doc.text(70,170,date);
 
         
         doc.save('documento.pdf');
