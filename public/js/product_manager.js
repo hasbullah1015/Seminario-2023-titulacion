@@ -3,6 +3,13 @@ const product_id = document.querySelector("#product_id");
 const product_name = document.querySelector("#product_name");
 const category_name = document.querySelector("#category_name");
 const brand_name = document.querySelector("#brand_name");
+const userROL = document.querySelector("#userROL");
+const userMessage = document.querySelector("#userMessage");
+
+
+
+
+
 
 let date = new Date().toDateString();
 
@@ -31,6 +38,11 @@ else{
 
 
 function form_generator(){
+
+if(userROL == '(a)'){
+        userMessage.innerHTML ='Ingrese los datos correctos: ';
+
+
     const new_form = document.createElement("form");
     const id_input = document.createElement("input");
     const name_input=document.createElement("input");
@@ -89,6 +101,11 @@ function form_generator(){
     new_form.appendChild(drop_opc);    
     new_form.appendChild(submit);
     form_module.appendChild(new_form);
+    }
+    else{
+        userMessage.innerHTML ='Imprime el código QR mediante el ID';
+
+    }
 }
 
 function pdf_generator(){
