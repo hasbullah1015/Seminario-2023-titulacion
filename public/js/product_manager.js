@@ -4,6 +4,8 @@ const product_name = document.querySelector("#product_name");
 const category_name = document.querySelector("#category_name");
 const brand_name = document.querySelector("#brand_name");
 const userROL = document.querySelector("#userROL");
+const userName = document.querySelector("#userName");
+
 const userMessage = document.querySelector("#userMessage");
 
 
@@ -137,9 +139,11 @@ function pdf_print(){
         doc.text(40,210, "--------------------------------------------------------------------------");
         doc.text(70,220, "***** RESPONSABLE *****");    
         doc.text(20,230, "REGISTRÓ: ");
+        doc.text(40,230, userName);
+
 
         doc.text(20,240, "FECHA: ");
-        doc.text(30,240,date);
+        doc.text(40,240,date);
 
         
         doc.save('documento.pdf');
