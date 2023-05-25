@@ -124,7 +124,7 @@ function pdf_print(){
         doc.text(20,50, "ID: ");
         doc.text(30,60,product_id.innerText );
         doc.text(20,70, "NOMBRE: ");
-        doc.text(30,80, product_name.innerText);
+        doc.text(30,80, '-'+product_name.innerText);
         doc.text(20,90, "CATEGORIA: ");
         doc.text(30,100, category_name.innerText);
         doc.text(20,110, "MARCA: ");
