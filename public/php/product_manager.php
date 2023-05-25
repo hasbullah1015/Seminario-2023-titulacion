@@ -47,7 +47,7 @@
                 </form>
                 <?php 
                     $busqueda=strtolower($_REQUEST['busqueda']);
-                    $sqlquery_busqueda=mysqli_query($connection,"SELECT idProducto, nombre FROM producto WHERE idProducto = '$busqueda'");
+                    $sqlquery_busqueda=mysqli_query($connection,"SELECT idProducto, nombre, categoria, marca FROM producto WHERE idProducto = '$busqueda'");
                     $resultado=mysqli_num_rows($sqlquery_busqueda);     
                 ?>  
             </div>
@@ -61,6 +61,11 @@
                 <div class="label" id="product_id"><?php if($resultado>0){ echo $datos['idProducto'];} else{ echo 'n/d';}?></div> 
                 <div class="label">Nombre:</div>
                 <div id="product_name" class="label"><?php if($resultado>0){ echo $datos['nombre']; } else{ echo 'n/d';}?></div>
+                <div class="label">Categoria:</div>
+                <div id="category_name" class="label"><?php if($resultado>0){ echo $datos['categoria']; } else{ echo 'n/d';}?></div>
+                <div class="label">Marca:</div>
+                <div id="brand_name" class="label"><?php if($resultado>0){ echo $datos['marca']; } else{ echo 'n/d';}?></div>
+
             </div>
         </div>
 
