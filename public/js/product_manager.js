@@ -116,7 +116,7 @@ function pdf_print(){
         alert ("PDF GENERADO:");
 
         let img64 = document.querySelector('#qr_mod img').src;
-        let date = new Date().toDateString();
+        let date = new Date();
 
 
         var doc = new jsPDF();
@@ -139,7 +139,7 @@ function pdf_print(){
         doc.text(40,210, "--------------------------------------------------------------------------");
         doc.text(70,220, "***** RESPONSABLE *****");    
         doc.text(20,230, "REGISTRÓ: ");
-        doc.text(40,230, userName.innerText);
+        doc.text(50,230, userName.innerText);
 
 
         doc.text(20,240, "FECHA: ");
