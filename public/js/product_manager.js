@@ -122,24 +122,24 @@ function pdf_print(){
         doc.text(40,30, "--------------------------------------------------------------------------");
         doc.text(60,40, "***** DATOS DEL PRODUCTO: *****");
         doc.text(20,50, "ID: ");
-        doc.text(35,50,product_id.innerText );
-        doc.text(20,60, "NOMBRE: ");
-        doc.text(50,60, product_name.innerText);
-        doc.text(20,70, "CATEGORIA: ");
-        doc.text(70,70, category_name.innerText);
-        doc.text(20,80, "MARCA: ");
-        doc.text(50,80, brand_name.innerText);
+        doc.text(20,60,product_id.innerText );
+        doc.text(20,70, "NOMBRE: ");
+        doc.text(20,80, product_name.innerText);
+        doc.text(20,90, "CATEGORIA: ");
+        doc.text(20,100, category_name.innerText);
+        doc.text(20,110, "MARCA: ");
+        doc.text(20,120, brand_name.innerText);
   
-        doc.text(40,90, "--------------------------------------------------------------------------");
-        doc.text(80,100, "***** CODIGO QR *****");      
+        doc.text(40,130, "--------------------------------------------------------------------------");
+        doc.text(80,140, "***** CODIGO QR *****");      
         doc.addImage(img64, 'JPG', 80, 90, 50, 50, 'QR'); 
 
-        doc.text(40,150, "--------------------------------------------------------------------------");
-        doc.text(70,160, "***** RESPONSABLE *****");    
-        doc.text(20,170, "REGISTRÓ: ");
+        doc.text(40,190, "--------------------------------------------------------------------------");
+        doc.text(70,200, "***** RESPONSABLE *****");    
+        doc.text(20,210, "REGISTRÓ: ");
 
-        doc.text(20,190, "FECHA: ");
-        doc.text(70,190,date);
+        doc.text(20,220, "FECHA: ");
+        doc.text(20,230,date);
 
         
         doc.save('documento.pdf');
