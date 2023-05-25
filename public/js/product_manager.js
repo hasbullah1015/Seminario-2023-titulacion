@@ -136,11 +136,11 @@ function pdf_print(){
         doc.text(70,210, "***** RESPONSABLE *****");    
         doc.text(20,220, "REGISTRÓ: "+userName.innerText);
 
-        doc.text(20,230, "FECHA: "+date.toDateString()+'   '+date.getHours()+':'.toString()+date.getMinutes().toString()+':'+date.getSeconds().toString()+' hrs');
+        doc.text(20,230, "FECHA: "+date.toDateString()+' / '+date.getHours()+':'.toString()+date.getMinutes().toString()+':'+date.getSeconds().toString()+' hrs');
 
 
         
-        doc.save('documento.pdf');
+        doc.save(product_id.innerText+'/'+userName.innerText+'/'+date.toDateString()+'.pdf');
 }
 
 //añadir clase slide
