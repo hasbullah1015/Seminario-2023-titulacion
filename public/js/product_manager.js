@@ -143,7 +143,7 @@ function pdf_print(){
 
 
         doc.text(20,240, "FECHA: ");
-        doc.text(40,240,date);
+        doc.text(40,240,date.toDateString());
 
         
         doc.save('documento.pdf');
