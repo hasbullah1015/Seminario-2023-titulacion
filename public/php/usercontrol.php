@@ -28,8 +28,6 @@
     <link rel="stylesheet" href="/public/css/inventario.css" type="text/css">
     <link rel="stylesheet" href="/public/css/header_style.css" type="text/css">
     <link rel="stylesheet" href="/public/css/footer_style.css" type="text/css">
-    <link rel="stylesheet" href="/public/css/usercontrol.css" type="text/css">
-
 
 </head>
 
@@ -49,5 +47,7 @@
     <footer id="pie_pagina" class="mt-auto"></footer>
     
 <script defer src="/public/js/usercontrol.js"></script>
+<link rel="stylesheet" href="/public/css/usercontrol.css" type="text/css">
+
 </body>
 </html>
