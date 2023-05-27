@@ -40,7 +40,6 @@ function form_generator(typeUser){
         formSection.appendChild(newForm);
 
         insertOpc.addEventListener("click",insert_user);
-        dropOpc.addEventListener("click",drop_user);
 
 
         function  insert_user (){
