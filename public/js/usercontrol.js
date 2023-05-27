@@ -14,10 +14,9 @@ function form_generator(typeUser){
         const rol = document.createElement("input");
         const insertOpc = document.createElement("input");
         const dropOpc = document.createElement("input");
-        const label1 = document.createElement("label");
-        label1.innerHTML="Añadir usuario";
-        const label2 = document.createElement("label");
-        label2.innerHTML="Eliminar usuario";
+        const submit = document.createElement("input");
+
+
 
 
         newForm.setAttribute('method',"post");
