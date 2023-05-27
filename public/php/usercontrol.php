@@ -41,8 +41,8 @@
 
             <div  class="slide">
                 <span> Bienvenido, <?php echo $user ?> ( <?php echo $rol ?>) </span><br><br>
-                <div id="form-section" style="slide col-md-6 col-sm-12">hola</div>
-                <div id="data-seccion" style="slide col-md-6 col-sm-12">loco</div>
+                <div id="form-section" class="slide col-md-6 col-sm-12">hola</div>
+                <div id="data-seccion" class="slide col-md-6 col-sm-12">loco</div>
             </div>
 
         </div>
