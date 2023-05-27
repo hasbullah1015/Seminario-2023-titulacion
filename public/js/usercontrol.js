@@ -35,10 +35,10 @@ function form_generator(typeUser){
         pswd.setAttribute('placeholder',"inserte contraseña");
         pswd.setAttribute('name',"pswd");
         
-        droOpc.setAttribute('type',"radio");
-        droOpc.setAttribute('name',"opc");
-        droOpc.setAttribute('value',"drop");
-        droOpc.setAttribute('class',"opcSecc")
+        dropOpc.setAttribute('type',"radio");
+        dropOpc.setAttribute('name',"opc");
+        dropOpc.setAttribute('value',"drop");
+        dropOpc.setAttribute('class',"opcSecc")
         
         insertOpc.setAttribute('type',"radio");
         insertOpc.setAttribute('name',"opc");
