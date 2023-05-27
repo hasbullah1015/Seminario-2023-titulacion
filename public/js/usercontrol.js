@@ -15,7 +15,7 @@ function form_generator(typeUser){
 
         newForm.setAttribute('method',"post");
         newForm.setAttribute('action',"usercontrol.php");
-        newForm.setAttribute('id',"_id")
+        newForm.setAttribute('id',"_newform")
 
 
         id.setAttribute('type',"text");
@@ -59,7 +59,7 @@ function form_generator(typeUser){
             pswd.setAttribute('name',"pswd");
 
     
-            document.getElementById('_id').appendChild(name);
+            document.getElementById('_newform').getElementById('_insert').appendChild(name);
 
     
         }
