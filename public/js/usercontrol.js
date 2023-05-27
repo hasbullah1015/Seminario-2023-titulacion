@@ -12,6 +12,10 @@ function form_generator(typeUser){
         const insertOpc = document.createElement("input");
         const dropOpc = document.createElement("input");
         const submit = document.createElement("input");
+        const name = document.createElement("input");
+        const  pswd = document.createElement("input");
+        const rol = document.createElement("select");
+
 
         newForm.setAttribute('method',"post");
         newForm.setAttribute('action',"usercontrol.php");
@@ -32,6 +36,14 @@ function form_generator(typeUser){
         insertOpc.setAttribute('value',"insert");
         insertOpc.setAttribute('class',"opcSecc");
 
+        name.setAttribute('type',"text");
+        name.setAttribute('placeholder',"inserte nombre");
+        name.setAttribute('name',"_name");
+
+        pswd.setAttribute('type',"password");
+        pswd.setAttribute('placeholder',"inserte contraseña");
+        pswd.setAttribute('name',"pswd");
+
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
 
@@ -44,23 +56,9 @@ function form_generator(typeUser){
 
 
         function  insert_user (){
-            const name = document.createElement("input");
-            const  pswd = document.createElement("input");
-            const rol = document.createElement("select");
-
-
-            name.setAttribute('type',"text");
-            name.setAttribute('placeholder',"inserte nombre");
-            name.setAttribute('name',"_name");
-
-            pswd.setAttribute('type',"password");
-            pswd.setAttribute('placeholder',"inserte contraseña");
-            pswd.setAttribute('name',"pswd");
-
     
             document.getElementById('_newform').appendChild(name);
             document.getElementById('_newform').appendChild(submit);
-
 
     
         }
