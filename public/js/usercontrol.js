@@ -17,7 +17,7 @@ function form_generator(typeUser){
         const rol = document.createElement("select");
 
 
-        newForm.setAttribute('method',"post");
+        newForm.setAttribute('method',"get");
         newForm.setAttribute('action',"usercontrol.php");
         newForm.setAttribute('id',"_newform")
 
