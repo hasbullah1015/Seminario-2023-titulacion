@@ -2,6 +2,7 @@ const form =  document.querySelector("#form-section");
 const data = document.querySelector("#data-section");
 const typeUser = document.querySelector("#typeUser").innerHTML;
 
+form_generator(typeUser);
 
 function form_generator(typeUser){
 
