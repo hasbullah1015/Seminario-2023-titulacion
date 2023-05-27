@@ -41,10 +41,9 @@
 
 
             <div  class="slide">
-                <div id="form-section" style="col-md-6 col-sm-12">
-                <span> Bienvenido <?php echo $user ?> ( <?php echo $rol ?>)
-                </div>
-                <div id="data-seccion" style="col-md-6 col-sm-12"></div>
+                <span> Bienvenido, <?php echo $user ?> ( <?php echo $rol ?>) </span><br>
+                <div id="form-section" style="col-md-6 col-sm-12">hola</div>
+                <div id="data-seccion" style="col-md-6 col-sm-12">loco</div>
 
 
             </div>
