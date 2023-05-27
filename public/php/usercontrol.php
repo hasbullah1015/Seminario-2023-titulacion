@@ -51,5 +51,3 @@
 <script defer src="/public/js/usercontrol.js"></script>
 </body>
 </html>
-
- 

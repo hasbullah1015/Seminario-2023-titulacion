@@ -6,8 +6,8 @@ form{
 }
 
 #sent{
-    background-color:#F4D03F;
-    color: rgb(255, 255, 255) !important ;
+    background-color:#F4D03F !important;
+    color: rgb(0, 0, 0) !important ;
 
 }
 input {
