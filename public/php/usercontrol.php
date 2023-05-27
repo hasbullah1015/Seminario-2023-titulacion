@@ -40,7 +40,7 @@
             <h1>Control de usuarios: </h1> <hr id="div-line"  style="margin: 0px 0px 10px;">
 
             <div  class="slide">
-                <span style="display:block;"> Bienvenido, <?php echo $user ?> ( <?php echo $rol ?>) </span><br><br>
+                <h2> Bienvenido, <?php echo $user ?> ( <?php echo $rol ?>) </h2><br><br>
                 <div id="form-section" class="col-md-6 col-sm-12">hola</div>
                 <div id="data-seccion" class="col-md-6 col-sm-12">loco</div>
             </div>
