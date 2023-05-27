@@ -57,7 +57,7 @@ function form_generator(typeUser){
             pswd.setAttribute('name',"pswd");
 
             const optionA = document.createElement("option").setAttribute("value","value1");
-            const optionAText = document.createTextNode("Admin(A)");
+            const optionAText = document.createTextNode(Admin(A));
             optionA.appendChild(optionAText);
 
             rol.appendChild(optionA);
