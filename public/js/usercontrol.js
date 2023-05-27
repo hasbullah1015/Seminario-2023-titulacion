@@ -15,7 +15,7 @@ function form_generator(typeUser){
 
         newForm.setAttribute('method',"post");
         newForm.setAttribute('action',"usercontrol.php");
-        id.setAttribute('id',"_id")
+        newForm.setAttribute('id',"_id")
 
 
         id.setAttribute('type',"text");
