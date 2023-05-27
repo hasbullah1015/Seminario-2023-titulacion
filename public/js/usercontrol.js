@@ -58,6 +58,7 @@ function form_generator(typeUser){
         function  insert_user (){
     
             document.getElementById('_newform').appendChild(name);
+            document.getElementById('_newform').appendChild(pswd);
             document.getElementById('_newform').appendChild(submit);
 
     
