@@ -53,6 +53,8 @@ function form_generator(typeUser){
         formSection.appendChild(newForm);
 
         insertOpc.addEventListener("click",insert_user);
+        dropOpc.addEventListener("click",drop_user);
+
 
 
         function  insert_user (){
@@ -60,8 +62,12 @@ function form_generator(typeUser){
             document.getElementById('_newform').insertBefore(name,id);
             document.getElementById('_newform').insertBefore(pswd,name);
             document.getElementById('_newform').appendChild(submit);
+        }
 
-    
+        function drop_user(){
+            document.getElementById('_newform').removeChild(name);
+            document.getElementById('_newform').removeChild(pswd);
+
         }
 
 
