@@ -16,9 +16,6 @@ function form_generator(typeUser){
         const dropOpc = document.createElement("input");
         const submit = document.createElement("input");
 
-
-
-
         newForm.setAttribute('method',"post");
         newForm.setAttribute('action',"usercontrol.php");
 
@@ -42,7 +39,7 @@ function form_generator(typeUser){
         insertOpc.setAttribute('type',"radio");
         insertOpc.setAttribute('name',"opc");
         insertOpc.setAttribute('value',"insert");
-        insertOpc.setAttribute('class',"opcSecc")
+        insertOpc.setAttribute('class',"opcSecc");
 
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
