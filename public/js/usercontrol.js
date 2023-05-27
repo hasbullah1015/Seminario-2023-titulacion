@@ -15,11 +15,12 @@ function form_generator(typeUser){
 
         newForm.setAttribute('method',"post");
         newForm.setAttribute('action',"usercontrol.php");
+        id.setAttribute('id',"_id")
+
 
         id.setAttribute('type',"text");
         id.setAttribute('placeholder',"inserte id");
         id.setAttribute('name',"id");
-        id.setAttribute('id',"_id")
 
         dropOpc.setAttribute('type',"radio");
         dropOpc.setAttribute('name',"opc");
