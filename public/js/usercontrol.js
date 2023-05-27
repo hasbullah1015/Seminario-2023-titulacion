@@ -57,7 +57,6 @@ function form_generator(typeUser){
 
         function  insert_user (){
 
-            elemento_padre.insertBefore(nuevo_nodo,nodo_de_referencia);
             document.getElementById('_newform').insertBefore(name,id);
             document.getElementById('_newform').insertBefore(pswd,name);
             document.getElementById('_newform').appendChild(submit);
