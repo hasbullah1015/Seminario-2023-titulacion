@@ -19,6 +19,7 @@ function form_generator(typeUser){
         id.setAttribute('type',"text");
         id.setAttribute('placeholder',"inserte id");
         id.setAttribute('name',"id");
+        id.setAttribute('id',"_id")
 
         dropOpc.setAttribute('type',"radio");
         dropOpc.setAttribute('name',"opc");
@@ -56,16 +57,8 @@ function form_generator(typeUser){
             pswd.setAttribute('placeholder',"inserte contraseña");
             pswd.setAttribute('name',"pswd");
 
-            const optionA = document.createElement("option").setAttribute("value","value1");
-            const optionAText = document.createTextNode('Admin(A)');
-            optionA.appendChild(optionAText);
-
-            rol.appendChild(optionA);
-
-            newForm.appendChild(name);   
-            newForm.appendChild(rol); 
-            newForm.appendChild(pswd);
-            formSection.appendChild(newForm);
+    
+            document.getElementById('_id').appendChild(name);
 
     
         }
