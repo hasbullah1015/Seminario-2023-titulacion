@@ -46,9 +46,8 @@ function form_generator(typeUser){
 
         newForm.appendChild(id);   
         newForm.appendChild(name); 
-        newForm.appendChild(pswd); 
-        newForm.appendChild(name);
         newForm.appendChild(rol);
+        newForm.appendChild(pswd); 
         newForm.appendChild(insertOpc);
         newForm.appendChild(dropOpc);
         newForm.appendChild(submit);
