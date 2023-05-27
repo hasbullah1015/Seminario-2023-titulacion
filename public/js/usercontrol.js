@@ -38,7 +38,6 @@ function form_generator(typeUser){
         newForm.appendChild(id);   
         newForm.appendChild(insertOpc);
         newForm.appendChild(dropOpc);
-        newForm.appendChild(submit);
         formSection.appendChild(newForm);
 
         insertOpc.addEventListener("click",insert_user);
@@ -59,7 +58,9 @@ function form_generator(typeUser){
             pswd.setAttribute('name',"pswd");
 
     
-            document.getElementById('_newform').getElementById('_insert').appendChild(name);
+            document.getElementById('_newform').appendChild(name);
+            document.getElementById('_newform').appendChild(submit);
+
 
     
         }
