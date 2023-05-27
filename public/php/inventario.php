@@ -35,7 +35,7 @@
     </header>
     <div class="container">
         <div class="row">
-            <h1>Inventario: </h1> <hr id="div-line">
+            <h1>Inventario: </h1> <hr id="div-line" style="margin 0px 5px">
             <div class="row" id="buscador">
                 <form action="inventario.php" method="get">
                     <input id="search_bar" type="text" placeholder="busqueda" name="busqueda" value="<?php echo $busqueda; ?>" > <!-- id, producto, marca--> 
