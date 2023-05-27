@@ -6,17 +6,60 @@ form_generator(typeUser);
 
 function form_generator(typeUser){
 
-    if(typeUser==="(a)"){
+    if(typeUser==="(A)"){
         const newForm=document.createElement("form");
         const id = document.createElement("input");
-        const name = document.querySelector("input");
-        const rol = document.querySelector("input");
-        const  insertOpc = document.createElement("input");
+        const  pswd = document.createElement("input");
+        const name = document.createElement("input");
+        const rol = document.createElement("input");
+        const insertOpc = document.createElement("input");
         const dropOpc = document.createElement("input");
         const label1 = document.createElement("label");
         label1.innerHTML="Añadir usuario";
         const label2 = document.createElement("label");
         label2.innerHTML="Eliminar usuario";
+
+
+        newForm.setAttribute('method',"post");
+        newForm.setAttribute('action',"usercontrol.php");
+
+        id.setAttribute('type',"text");
+        id.setAttribute('placeholder',"inserte id");
+        id.setAttribute('name',"id");
+
+        name.setAttribute('type',"text");
+        name.setAttribute('placeholder',"inserte nombre");
+        name.setAttribute('name',"_name");
+
+        pswd.setAttribute('type',"password");
+        pswd.setAttribute('placeholder',"inserte contraseña");
+        pswd.setAttribute('name',"pswd");
+        
+        droOpc.setAttribute('type',"radio");
+        droOpc.setAttribute('name',"opc");
+        droOpc.setAttribute('value',"drop");
+        droOpc.setAttribute('class',"opcSecc")
+        
+        insertOpc.setAttribute('type',"radio");
+        insertOpc.setAttribute('name',"opc");
+        insertOpc.setAttribute('value',"insert");
+        insertOpc.setAttribute('class',"opcSecc")
+
+        submit.setAttribute('type',"submit");
+        submit.setAttribute('id',"sent");
+
+        newForm.appendChild(id);   
+        newForm.appendChild(name); 
+        newForm.appendChild(pswd); 
+        newForm.appendChild(name);
+        newForm.appendChild(rol);
+        newForm.appendChild(insertOpc);
+        newForm.appendChild(dropOpc);
+        newForm.appendChild(submit);
+        formSection.appendChild(newForm);
+
+
+
 
 
 
