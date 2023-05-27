@@ -14,7 +14,6 @@
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -28,6 +27,8 @@
     <link rel="stylesheet" href="/public/css/inventario.css" type="text/css">
     <link rel="stylesheet" href="/public/css/header_style.css" type="text/css">
     <link rel="stylesheet" href="/public/css/footer_style.css" type="text/css">
+    <script defer src="/public/js/index.js"></script>
+
 
 </head>
 
