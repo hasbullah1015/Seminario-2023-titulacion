@@ -15,6 +15,18 @@ function form_generator(typeUser){
         const user = document.createElement("input");
         const  pswd = document.createElement("input");
         const rol = document.createElement("select");
+        const opc1 = document.createElement("option");
+        const opc2 = document.createElement("option");
+        const opc1Text = document.createTextNode("Admin (A)");
+        const opc2Text = document.createTextNode("Monitor (B)");
+
+        opc1.setAttribute("value","A");
+        opc1.appendChild(opc1Text);
+        opc2.setAttribute("value","M");
+        opc2.appendChild(opc2Text);
+        rol.appendChild(opc1,opc2);
+
+
 
 
         newForm.setAttribute('method',"get");
@@ -58,9 +70,12 @@ function form_generator(typeUser){
 
 
         function  insert_user (){
-
-            document.getElementById('_newform').insertBefore(pswd,insertOpc);
+            document.getElementById('_newform').insertBefore(rol,insertOpc);
+            document.getElementById('_newform').insertBefore(pswd,rol);
             document.getElementById('_newform').insertBefore(user,pswd);
+            document.getElementById('_newform').appendChild(submit);
+
+
 
 
 
@@ -69,7 +84,7 @@ function form_generator(typeUser){
 
         function drop_user(){
             document.getElementById('_newform').appendChild(submit);
-            document.getElementById('_newform').removeChild(name);
+            document.getElementById('_newform').removeChild(user);
             document.getElementById('_newform').removeChild(pswd);
 
         }
