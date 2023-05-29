@@ -17,6 +17,10 @@ function form_generator(typeUser){
         const rol = document.createElement("select");
         const opc1 = document.createElement("option");
         const opc2 = document.createElement("option");
+        const text = document.createElement("option");
+
+
+        const opcText = document.createTextNode("Ingrese un rol");
         const opc1Text = document.createTextNode("Admin (A)");
         const opc2Text = document.createTextNode("Monitor (M)");
 
@@ -67,6 +71,7 @@ function form_generator(typeUser){
 
         function  insert_user (){
 
+            text.appendChild(opcText);
 
             opc1.setAttribute("name","rol");
             opc1.setAttribute("value","A");
@@ -76,7 +81,7 @@ function form_generator(typeUser){
             opc2.setAttribute("value","M");
             opc2.appendChild(opc2Text);
             rol.setAttribute('placeholder',"Seleccione rol");
-            rol.appendChild(opc1);rol.appendChild(opc2);
+            rol.appendChild(text);rol.appendChild(opc1);rol.appendChild(opc2);
 
             
 
