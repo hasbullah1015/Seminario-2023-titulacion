@@ -51,6 +51,8 @@ function form_generator(typeUser){
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
 
+        rol.setAttribute('name','rol');
+
         newForm.appendChild(id);   
         newForm.appendChild(insertOpc);
         newForm.appendChild(dropOpc);
@@ -58,6 +60,8 @@ function form_generator(typeUser){
 
         insertOpc.addEventListener("click",insert_user);
         dropOpc.addEventListener("click",drop_user);
+
+
 
 
 
@@ -71,10 +75,11 @@ function form_generator(typeUser){
             opc2.setAttribute("name","rol");
             opc2.setAttribute("value","M");
             opc2.appendChild(opc2Text);
+            rol.setAttribute('placeholder',"Seleccione rol");
             rol.appendChild(opc1);rol.appendChild(opc2);
 
             
-            
+
             document.getElementById('_newform').insertBefore(rol,insertOpc);
             document.getElementById('_newform').insertBefore(pswd,rol);
             document.getElementById('_newform').insertBefore(user,pswd);
