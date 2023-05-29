@@ -38,7 +38,7 @@ function form_generator(typeUser){
 
         name.setAttribute('type',"text");
         name.setAttribute('placeholder',"inserte nombre");
-        name.setAttribute('name',"_name");
+        name.setAttribute('name',"name");
 
         pswd.setAttribute('type',"password");
         pswd.setAttribute('placeholder',"inserte contraseña");
