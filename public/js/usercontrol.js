@@ -68,6 +68,9 @@ function form_generator(typeUser){
 
         function  insert_user (){
 
+            submit.setAttribute('value',"Agregar");
+
+
             text.appendChild(opcText);
             text.disabled = true;
             text.selected = true;
@@ -97,7 +100,10 @@ function form_generator(typeUser){
         }
 
         function drop_user(){
+
+
             document.getElementById('_newform').appendChild(submit);
+            submit.setAttribute('value',"Eliminar");
             document.getElementById('_newform').insertBefore(id,insertOpc);
             document.getElementById('_newform').removeChild(user);
             document.getElementById('_newform').removeChild(pswd);
