@@ -40,8 +40,7 @@
         <div class="row slide">
                 <h2> Bienvenido, <?php echo $user ?> <span id="typeUser">(<?php echo $rol ?>)</span> </h2><br><br>
                 <div id="form-section" class="col-md-6 col-sm-12">hola</div>
-                <div id="data-section" class="col-md-6 col-sm-12">loco</div>
-                <?php include ("db_action_usermanage.php"); ?>
+                <div id="data-section" class="col-md-6 col-sm-12"><?php include ("db_action_usermanage.php"); ?></div>
 <
         </div>
     </div>
