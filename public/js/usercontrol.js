@@ -59,7 +59,7 @@ function form_generator(typeUser){
 
         function  insert_user (){
 
-            document.getElementById('_newform').insertBefore(psws,insertOpc);
+            document.getElementById('_newform').insertBefore(pswd,insertOpc);
             document.getElementById('_newform').insertBefore(user,pswd);
 
 
