@@ -37,8 +37,8 @@ function form_generator(typeUser){
         insertOpc.setAttribute('class',"opcSecc");
 
         name.setAttribute('type',"text");
-        name.setAttribute('placeholder',"inserte nombre");
-        name.setAttribute('name',"name");
+        name.setAttribute('placeholder',"inserte usuario");
+        name.setAttribute('name',"user");
 
         pswd.setAttribute('type',"password");
         pswd.setAttribute('placeholder',"inserte contraseña");
@@ -59,9 +59,12 @@ function form_generator(typeUser){
 
         function  insert_user (){
 
-            document.getElementById('_newform').insertBefore(name,id);
-            document.getElementById('_newform').insertBefore(pswd,name);
             document.getElementById('_newform').appendChild(submit);
+            document.getElementById('_newform').insertBefore(name,submit);
+            document.getElementById('_newform').insertBefore(pswd,name);
+
+
+
         }
 
         function drop_user(){
