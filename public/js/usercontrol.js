@@ -24,7 +24,8 @@ function form_generator(typeUser){
         opc1.appendChild(opc1Text);
         opc2.setAttribute("value","M");
         opc2.appendChild(opc2Text);
-        rol.appendChild(opc1,opc2);
+        rol.appendChild(opc1);rol.appendChild(opc2);
+
 
 
 
