@@ -56,8 +56,7 @@ function form_generator(typeUser){
         submit.setAttribute('id',"sent");
 
         rol.setAttribute('name','rol');
-
-        newForm.appendChild(id);   
+   
         newForm.appendChild(insertOpc);
         newForm.appendChild(dropOpc);
         formSection.appendChild(newForm);
@@ -67,16 +66,12 @@ function form_generator(typeUser){
 
 
 
-
-
         function  insert_user (){
 
             text.appendChild(opcText);
             text.disabled = true;
             text.selected = true;
             
-
-
             opc1.setAttribute("name","rol");
             opc1.setAttribute("value","A");
             opc1.appendChild(opc1Text);
@@ -88,10 +83,13 @@ function form_generator(typeUser){
             rol.appendChild(text);rol.appendChild(opc1);rol.appendChild(opc2);
 
             
-
             document.getElementById('_newform').insertBefore(rol,insertOpc);
             document.getElementById('_newform').insertBefore(pswd,rol);
             document.getElementById('_newform').insertBefore(user,pswd);
+            document.getElementById('_newform').insertBefore(id,user);
+
+
+            .appendChild(id);
             document.getElementById('_newform').appendChild(submit);
 
 
@@ -103,8 +101,11 @@ function form_generator(typeUser){
 
         function drop_user(){
             document.getElementById('_newform').appendChild(submit);
+            document.getElementById('_newform').insertBefore(id,submit);
             document.getElementById('_newform').removeChild(user);
             document.getElementById('_newform').removeChild(pswd);
+            document.getElementById('_newform').removeChild(rol);
+
 
         }
 
