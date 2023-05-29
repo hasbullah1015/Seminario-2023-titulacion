@@ -67,6 +67,8 @@ function form_generator(typeUser){
         function drop_user(){
             document.getElementById('_newform').removeChild(name);
             document.getElementById('_newform').removeChild(pswd);
+            document.getElementById('_newform').appendChild(submit);
+
 
         }
 
