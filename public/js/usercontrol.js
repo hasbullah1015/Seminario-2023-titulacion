@@ -72,7 +72,9 @@ function form_generator(typeUser){
         function  insert_user (){
 
             text.appendChild(opcText);
-            text.setAttribute("disabled selected");
+            text.setAttribute("disabled");
+            text.setAttribute("selected");
+
 
             opc1.setAttribute("name","rol");
             opc1.setAttribute("value","A");
