@@ -18,18 +18,9 @@ function form_generator(typeUser){
         const opc1 = document.createElement("option");
         const opc2 = document.createElement("option");
         const opc1Text = document.createTextNode("Admin (A)");
-        const opc2Text = document.createTextNode("Monitor (B)");
+        const opc2Text = document.createTextNode("Monitor (M)");
 
-        opc1.setAttribute("value","A");
-        opc1.appendChild(opc1Text);
-        opc2.setAttribute("value","M");
-        opc2.appendChild(opc2Text);
-        rol.appendChild(opc1);rol.appendChild(opc2);
-
-
-
-
-
+       
         newForm.setAttribute('method',"get");
         newForm.setAttribute('action',"usercontrol.php");
         newForm.setAttribute('id',"_newform")
@@ -71,6 +62,19 @@ function form_generator(typeUser){
 
 
         function  insert_user (){
+
+
+            opc1.setAttribute("name","rol");
+            opc1.setAttribute("value","A");
+            opc1.appendChild(opc1Text);
+    
+            opc2.setAttribute("name","rol");
+            opc2.setAttribute("value","M");
+            opc2.appendChild(opc2Text);
+            rol.appendChild(opc1);rol.appendChild(opc2);
+
+            
+            
             document.getElementById('_newform').insertBefore(rol,insertOpc);
             document.getElementById('_newform').insertBefore(pswd,rol);
             document.getElementById('_newform').insertBefore(user,pswd);
