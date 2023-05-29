@@ -10,6 +10,7 @@
         $connection=conectar();
         $user=$_SESSION['username'];
         $rol=$_SESSION['rol'];
+        include ("db_action.php");
     }
 ?>
 
