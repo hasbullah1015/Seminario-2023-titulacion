@@ -12,7 +12,7 @@ function form_generator(typeUser){
         const insertOpc = document.createElement("input");
         const dropOpc = document.createElement("input");
         const submit = document.createElement("input");
-        const name = document.createElement("input");
+        const user = document.createElement("input");
         const  pswd = document.createElement("input");
         const rol = document.createElement("select");
 
@@ -36,9 +36,9 @@ function form_generator(typeUser){
         insertOpc.setAttribute('value',"insert");
         insertOpc.setAttribute('class',"opcSecc");
 
-        name.setAttribute('type',"text");
-        name.setAttribute('placeholder',"inserte usuario");
-        name.setAttribute('name',"user");
+        user.setAttribute('type',"text");
+        user.setAttribute('placeholder',"inserte usuario");
+        user.setAttribute('name',"user");
 
         pswd.setAttribute('type',"password");
         pswd.setAttribute('placeholder',"inserte contraseña");
@@ -59,9 +59,8 @@ function form_generator(typeUser){
 
         function  insert_user (){
 
-            document.getElementById('_newform').insertBefore(name,insertOpc);
-            document.getElementById('_newform').insertBefore(pswd,name);
-            document.getElementById('_newform').appendChild(submit);
+            document.getElementById('_newform').insertBefore(psws,insertOpc);
+            document.getElementById('_newform').insertBefore(user,pswd);
 
 
 
