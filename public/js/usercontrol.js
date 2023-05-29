@@ -87,9 +87,6 @@ function form_generator(typeUser){
             document.getElementById('_newform').insertBefore(pswd,rol);
             document.getElementById('_newform').insertBefore(user,pswd);
             document.getElementById('_newform').insertBefore(id,user);
-
-
-            .appendChild(id);
             document.getElementById('_newform').appendChild(submit);
 
 
