@@ -98,7 +98,7 @@ function form_generator(typeUser){
 
         function drop_user(){
             document.getElementById('_newform').appendChild(submit);
-            document.getElementById('_newform').insertBefore(id,submit);
+            document.getElementById('_newform').insertBefore(id,insertOpc);
             document.getElementById('_newform').removeChild(user);
             document.getElementById('_newform').removeChild(pswd);
             document.getElementById('_newform').removeChild(rol);
