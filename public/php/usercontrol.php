@@ -10,7 +10,6 @@
         $connection=conectar();
         $user=$_SESSION['username'];
         $rol=$_SESSION['rol'];
-        include ("db_action_usermanage.php");
     }
 ?>
 
@@ -42,6 +41,8 @@
                 <h2> Bienvenido, <?php echo $user ?> <span id="typeUser">(<?php echo $rol ?>)</span> </h2><br><br>
                 <div id="form-section" class="col-md-6 col-sm-12">hola</div>
                 <div id="data-section" class="col-md-6 col-sm-12">loco</div>
+                <?php include ("db_action_usermanage.php"); ?>
+<
         </div>
     </div>
     <br>
