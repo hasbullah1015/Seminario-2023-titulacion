@@ -1,4 +1,4 @@
-<¡<?php
+<?php
 
 $opc=strtolower($_REQUEST['opc']);
 $id=strtoupper($_REQUEST['id']);
