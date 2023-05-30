@@ -17,11 +17,7 @@ if($opc && $id && $user && $_rol  && $pswd){
             $sqlquery_consulta=mysqli_query($connection,"INSERT INTO administracion (idUser, usr, pass, rol) values ('$id', '$user', '$pswd', '$_rol')");
 
             echo 'Usuario agregado correctamente';
-
-
-
         }
-
 }
 
 if($opc && $id){

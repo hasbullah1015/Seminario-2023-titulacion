@@ -5,15 +5,16 @@ const typeUser = document.querySelector("#typeUser").innerHTML;
 form_generator(typeUser);
 
 function form_generator(typeUser){
+    const newForm=document.createElement("form");
+    const id = document.createElement("input");
+    const  pswd = document.createElement("input");
+
 
     if(typeUser==="(A)"){
-        const newForm=document.createElement("form");
-        const id = document.createElement("input");
         const insertOpc = document.createElement("input");
         const dropOpc = document.createElement("input");
         const submit = document.createElement("input");
         const user = document.createElement("input");
-        const  pswd = document.createElement("input");
         const rol = document.createElement("select");
         const opc1 = document.createElement("option");
         const opc2 = document.createElement("option");
