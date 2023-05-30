@@ -37,6 +37,7 @@ form{
     display:flex !important;
     flex-direction: column !important; /* para poner los div en vertical*/
     margin: 10px;
+    align-items: center;
 }
 
 #sent{
@@ -51,10 +52,11 @@ input, select {
     color: white !important;
     margin: 10px !important;
     border-radius: 20px !important;
+    width: 300px;
 }
 
 .btnSubmit{
-    width: 50px; !important;
+    width: 100px !important;
 }
 
 
