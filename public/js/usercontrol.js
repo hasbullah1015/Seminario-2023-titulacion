@@ -55,6 +55,7 @@ function form_generator(typeUser){
 
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
+        submit.classList.add("btnSubmit")
 
         rol.setAttribute('name','rol');
    

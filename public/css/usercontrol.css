@@ -53,6 +53,10 @@ input, select {
     border-radius: 20px !important;
 }
 
+.btnSubmit{
+    display: inline-flex !important;
+}
+
 
 form .opcSecc{
     display: flex;
