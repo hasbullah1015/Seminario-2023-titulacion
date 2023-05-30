@@ -54,7 +54,7 @@ input, select {
 }
 
 .btnSubmit{
-    display: inline-flex !important;
+    width: 50px; !important;
 }
 
 
