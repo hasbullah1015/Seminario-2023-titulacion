@@ -64,6 +64,8 @@ form .opcSecc{
     display: flex;
     flex-direction: inherit;
     border-color: white;
+    height: 20px;
+    width: 20px;
 
 }
 
