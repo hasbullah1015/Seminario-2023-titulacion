@@ -32,6 +32,16 @@ function form_generator(typeUser){
         labelInsert.setAttribute("for","insertOpc");
         labelInsert.innerHTML ='Agregar usuario'
 
+        
+        const labelDrop = document.createElement("label");
+        labelDrop.setAttribute("for","dropOpc");
+        labelDrop.innerHTML ='Eliminar usuario'
+
+                
+        const labelUpdatepswd = document.createElement("label");
+        labelDrop.setAttribute("for","pswdOpc");
+        labelDrop.innerHTML ='Actualizar contraseña'
+
 
        
         newForm.setAttribute('method',"get");
@@ -78,9 +88,11 @@ function form_generator(typeUser){
         rol.setAttribute('name','rol');
    
 
-        insertOpc.appendChild(labelInsert);
+        newForm.appendChild(labelInsert);
         newForm.appendChild(insertOpc);
+        newForm.appendChild(labelDrop);
         newForm.appendChild(dropOpc);
+        newForm.appendChild(labelUpdatepswd)
         newForm.appendChild(pswdOpc);
         formSection.appendChild(newForm);
 
