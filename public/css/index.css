@@ -142,14 +142,6 @@ footer {margin-top:auto;} /* separar footer del container principal?*/
     width: 100% !important;
 }
 
-video{
-    height: 100vh;
-}
-
-.video_{
-height: 110vh;
-}
-
 }
 
 @media (max-width : 1301px){
@@ -160,19 +152,7 @@ height: 110vh;
         width: 80% !important;
     }
     
-    video{
-        height: 176vh;
-    }
-    
-    .video_{
-        height: 167vh;
-    }
-    
-    }
-
-
-
-
+}
 
 
 @media (orientation:landscape) {
@@ -207,9 +187,7 @@ body{
          width: 100vh;
     }
 
-    video{
-        min-height: 120vh;
-    }   
+
     #user_photo{
         border-radius: 50%;
         height: 120px;
