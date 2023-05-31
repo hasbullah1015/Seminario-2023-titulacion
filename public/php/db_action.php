@@ -11,11 +11,9 @@ $rol=$_SESSION['rol'];
 $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id'");
 $resultado=mysqli_num_rows($sqlquery_consulta);
 
-echo '<span id="action_label"> <p id="userName">'.$user.'</p>'.'<p id="typeUser" >'.'('.$rol.')'.'</p>'. '<p id="userMessage"> </p> </span>' ;
+echo '<span id="action_label"> <p id="userName"> Bienvenido, '.$user.'</p>'.'<p id="typeUser" >'.'('.$rol.')'.'</p>'. '<p id="userMessage"> </p> </span>' ;
 
-if($rol=="A"){', Ingresa los datos correctos'; }
-
-else 'Genera tu código QR';
+if($rol!="A"){ echo 'Genera tu código Q'; }
 
 if($opc=="insert" && $id && $name && $type && $opc && $brand){
     if($resultado>0){
