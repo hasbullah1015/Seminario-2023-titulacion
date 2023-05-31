@@ -7,7 +7,7 @@ $_rol=strtoupper($_REQUEST['rol']);
 $pswd = $_REQUEST['pswd'];
 
 
-if($opc=='drop' && $id && $user && $_rol  && $pswd){
+if($opc=='insert' && () $id && $user && $_rol  && $pswd){
     echo 'Ingresa los datos solicitados para la gestión de usuarios';
         $sqlquery_consulta=mysqli_query($connection,"SELECT idUser FROM administracion WHERE idUser = '$id'");
         if(mysqli_num_rows($sqlquery_consulta)>0)
@@ -21,7 +21,7 @@ if($opc=='drop' && $id && $user && $_rol  && $pswd){
         }
 }
 
-if($opc="insert" && $id){
+if($opc="drop" && $id){
     $sqlquery_consulta=mysqli_query($connection,"SELECT idUser FROM administracion WHERE idUser = '$id'");
     if(mysqli_num_rows($sqlquery_consulta)>0)
     {
