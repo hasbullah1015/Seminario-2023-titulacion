@@ -3,7 +3,8 @@ const product_id = document.querySelector("#product_id");
 const product_name = document.querySelector("#product_name");
 const category_name = document.querySelector("#category_name");
 const brand_name = document.querySelector("#brand_name");
-const userROL = document.querySelector("#userROL");
+const typeUser = document.querySelector("#typeUser").innerHTML;
+
 const userName = document.querySelector("#userName");
 
 const userMessage = document.querySelector("#userMessage");
@@ -32,68 +33,95 @@ else{
 
 function form_generator(){
 
-if(userROL.innerHTML ==='(A)'){
-        userMessage.innerHTML ='Ingrese los datos correctos: ';
+if(typeUser ==='(A)'){
+        const insertOpc = document.createElement("input");
+        const dropOpc = document.createElement("input");
+        const pswdOpc = document.createElement("input");
+
+        const submit = document.createElement("input");
+        const user = document.createElement("input");
+        const rol = document.createElement("select");
+        const opc1 = document.createElement("option");
+        const opc2 = document.createElement("option");
+        const text = document.createElement("option");
 
 
-    const new_form = document.createElement("form");
-    const id_input = document.createElement("input");
-    const name_input=document.createElement("input");
-    const category = document.createElement("input");
-    const brand = document.createElement("input");
-    const drop_opc = document.createElement("input");
-    const insert_opc = document.createElement("input");
-    const submit = document.createElement("input");
-    const label1 = document.createElement("label");
-    label1.innerHTML="Añadir producto";
-    const label2 = document.createElement("label");
-    label2.innerHTML="Eliminar producto"
-    const label_status = document.createElement("label");
+        const opcText = document.createTextNode("Ingrese un rol");
+        const opc1Text = document.createTextNode("Admin (A)");
+        const opc2Text = document.createTextNode("Monitor (M)");
 
-    //asignación de atributos
-    new_form.setAttribute('method',"get");
-    new_form.setAttribute('action',"product_manager.php");
+        const labelInsert = document.createElement("label");
+        labelInsert.setAttribute("for","insertOpc");
+        labelInsert.innerHTML ='Agregar usuario'
 
-    id_input.setAttribute('type',"text");
-    id_input.setAttribute('placeholder',"inserte id");
-    id_input.setAttribute('name',"id");
+        
+        const labelDrop = document.createElement("label");
+        labelDrop.setAttribute("for","dropOpc");
+        labelDrop.innerHTML ='Eliminar usuario'
 
-    name_input.setAttribute('type',"text");
-    name_input.setAttribute('placeholder',"inserte nombre");
-    name_input.setAttribute('name',"nombre");
+                
+        const labelUpdatepswd = document.createElement("label");
+        labelUpdatepswd.setAttribute("for","pswdOpc");
+        labelUpdatepswd.innerHTML ='Actualizar contraseña'
 
-    category.setAttribute('type',"text");
-    category.setAttribute('placeholder',"inserte categoria");
-    category.setAttribute('name',"categoria");
 
-    brand.setAttribute('type',"text");
-    brand.setAttribute('placeholder',"inserte marca");
-    brand.setAttribute('name',"marca");
-    
+       
+        newForm.setAttribute('method',"get");
+        newForm.setAttribute('action',"usercontrol.php");
+        newForm.setAttribute('id',"_newform")
 
-    drop_opc.setAttribute('type',"radio");
-    drop_opc.setAttribute('name',"opc");
-    drop_opc.setAttribute('value',"drop");
-    drop_opc.setAttribute('class',"opcSecc")
-    
-    insert_opc.setAttribute('type',"radio");
-    insert_opc.setAttribute('name',"opc");
-    insert_opc.setAttribute('value',"insert");
-    insert_opc.setAttribute('class',"opcSecc")
 
-    submit.setAttribute('type',"submit");
-    submit.setAttribute('id',"sent");
+        id.setAttribute('type',"text");
+        id.setAttribute('placeholder',"inserte id");
+        id.setAttribute('name',"id");
 
-    new_form.appendChild(id_input);   
-    new_form.appendChild(name_input);    
-    new_form.appendChild(category);
-    new_form.appendChild(brand);
-    new_form.appendChild(label1);
-    new_form.appendChild(insert_opc);
-    new_form.appendChild(label2);
-    new_form.appendChild(drop_opc);    
-    new_form.appendChild(submit);
-    form_module.appendChild(new_form);
+        dropOpc.setAttribute('type',"radio");
+        dropOpc.setAttribute('name',"opc");
+        dropOpc.setAttribute('value',"drop");
+        dropOpc.setAttribute('class',"opcSecc")
+        dropOpc.setAttribute('id',"dropOpc")
+
+        
+        insertOpc.setAttribute('type',"radio");
+        insertOpc.setAttribute('name',"opc");
+        insertOpc.setAttribute('value',"insert");
+        insertOpc.setAttribute('class',"opcSecc");
+        insertOpc.setAttribute('id',"insertOpc");
+
+
+        pswdOpc.setAttribute('type',"radio");
+        pswdOpc.setAttribute('name',"opc");
+        pswdOpc.setAttribute('value',"pswd");
+        pswdOpc.setAttribute('class',"opcSecc");
+        pswdOpc.setAttribute('id', "pswdOpc");
+
+        user.setAttribute('type',"text");
+        user.setAttribute('placeholder',"inserte usuario");
+        user.setAttribute('name',"user");
+
+        pswd.setAttribute('type',"password");
+        pswd.setAttribute('placeholder',"inserte contraseña");
+        pswd.setAttribute('name',"pswd");
+
+        submit.setAttribute('type',"submit");
+        submit.setAttribute('id',"sent");
+        submit.classList.add('btnSubmit');
+
+        rol.setAttribute('name','rol');
+   
+
+        newForm.appendChild(labelInsert);
+        newForm.appendChild(insertOpc);
+        newForm.appendChild(labelDrop);
+        newForm.appendChild(dropOpc);
+        newForm.appendChild(labelUpdatepswd);
+        newForm.appendChild(pswdOpc);
+        formSection.appendChild(newForm);
+
+        insertOpc.addEventListener("click",insert_user);
+        dropOpc.addEventListener("click",drop_user);
+        pswdOpc.addEventListener("click",pswd_change);
+
     }
     else{
         userMessage.innerHTML ='Solicita el código QR Ingresando el ID';
