@@ -135,7 +135,7 @@ _videoinsertproduct{
 @media (orientation:landscape) {
 
     body{
-        min-height:120vh;
+
         display:flex;
         flex-direction:column;
     }
@@ -147,7 +147,7 @@ _videoinsertproduct{
 @media (orientation : portrait) {
 
     body{
-        min-height:100vh;
+
         display:flex;
         flex-direction:column;
     }
