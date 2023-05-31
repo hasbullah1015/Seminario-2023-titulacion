@@ -35,7 +35,13 @@ form{
     margin: 10px;
 }
 
+#sent{
+    background-color:rgba(0, 255, 170, 0.6) !important;
+    color: black !important ;
+    width: 150px;
 
+
+}
 input, select {
     align-items: center;
     text-align: center;
@@ -43,9 +49,7 @@ input, select {
     color: white !important;
     margin: 10px !important;
     border-radius: 20px !important;
-    width: 400px;
-    background-color:rgba(0, 255, 170, 0.6) !important;
-    color: black !important ;
+    width: 300px;
 
 }
 video{
