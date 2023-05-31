@@ -13,7 +13,7 @@ $resultado=mysqli_num_rows($sqlquery_consulta);
 
 echo '<span id="action_label"> <p id="userName">'.$user.'</p>'.'<p id="typeUser" >'.'('.$rol.')'.'</p>'. ', <p id="userMessage"> </p> </span>' ;
 
-if($rol=="(a)"){', Ingresa los datos correctos'; }
+if($rol=="A"){', Ingresa los datos correctos'; }
 
 else 'Genera tu código QR';
 

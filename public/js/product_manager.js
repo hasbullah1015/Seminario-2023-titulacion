@@ -32,7 +32,7 @@ else{
 
 function form_generator(typeUser){
 
-if(typeUser ==='A'){
+if(typeUser ==='(A)'){
         const newForm=document.createElement("form");
         const insertOpc = document.createElement("input");
         const dropOpc = document.createElement("input");
