@@ -58,7 +58,7 @@
             ?>
             <br>
             <div  class="slide table-responsive">
-              <form action="inventario.php" method="get">
+                <form action="inventario.php" method="get">
                     <input id="search_bar" type="text" placeholder="busqueda" name="busqueda" value="<?php echo $busqueda; ?>" > <!-- id, producto, marca--> 
                     <input id="sent" type="submit" name="enviar">
                 </form>
