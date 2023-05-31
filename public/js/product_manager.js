@@ -67,7 +67,7 @@ function form_generator(typeUser){
                 aux.setAttribute('name',"aux");         
                 
                 type.setAttribute('type',"text");
-                type.setAttribute('placeholder',"inserte nombre producto");
+                type.setAttribute('placeholder',"inserte categoria producto");
                 type.setAttribute('name',"name");
 
                 brand.setAttribute('type',"text");
