@@ -20,7 +20,7 @@ const form_module = document.querySelector("#form_mod");
 
 const submit = document.createElement("input");
 submit.setAttribute('type',"submit");
-submit.setAttribute('id',"_sent");
+submit.setAttribute('id',"sent");
 submit.classList.add('btnSubmit');
 
 const newForm=document.createElement("form");
@@ -198,6 +198,8 @@ function drop_product(){
         document.getElementById('_newform').removeChild(name);
         document.getElementById('_newform').removeChild(brand);
         document.getElementById('_newform').removeChild(type);
+
+
         document.getElementById('_newform').removeChild(aux);        
 
 

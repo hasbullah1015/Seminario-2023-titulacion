@@ -66,9 +66,8 @@ form{
     margin: 10px;
 }
 
-#sent{
+#_sent{
     background-color:rgba(179, 0, 255, 0.6);
-    color: rgb(255, 255, 255) !important ;
     width: 300px !important;
 
 
