@@ -5,7 +5,7 @@ $categoria=strtolower($_REQUEST['categoria']);
 $brand=strtolower($_REQUEST['marca']);
 $opc=strtolower($_REQUEST['opc']);
 $user=$_SESSION['username'];
-$id=$_SESSION['id'];
+$id=strtoupper($_REQUEST['id']);
 $rol=$_SESSION['rol'];
 
 $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id'");
