@@ -195,10 +195,10 @@ function drop_product(){
         document.getElementById('_newform').appendChild(submit);
         submit.setAttribute('value',"Eliminar");
         document.getElementById('_newform').insertBefore(id,insertOpc);
-        document.getElementById('_newform').removeChild(aux);        
+        document.getElementById('_newform').removeChild(name);
         document.getElementById('_newform').removeChild(brand);
         document.getElementById('_newform').removeChild(type);
-        document.getElementById('_newform').removeChild(name);
+        document.getElementById('_newform').removeChild(aux);        
 
 
 
