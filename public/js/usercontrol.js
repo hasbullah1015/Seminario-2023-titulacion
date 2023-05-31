@@ -92,7 +92,7 @@ function form_generator(typeUser){
         newForm.appendChild(insertOpc);
         newForm.appendChild(labelDrop);
         newForm.appendChild(dropOpc);
-        newForm.appendChild(labelUpdatepswd)
+        newForm.appendChild(labelUpdatepswd);
         newForm.appendChild(pswdOpc);
         formSection.appendChild(newForm);
 
