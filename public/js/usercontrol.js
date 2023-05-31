@@ -47,6 +47,8 @@ function form_generator(typeUser){
         insertOpc.setAttribute('name',"opc");
         insertOpc.setAttribute('value',"insert");
         insertOpc.setAttribute('class',"opcSecc");
+        insertOpc = document.createTextNode("Ingresar usuarios");
+
 
         pswdOpc.setAttribute('type',"radio");
         pswdOpc.setAttribute('name',"opc");
@@ -95,7 +97,6 @@ function form_generator(typeUser){
             opc2.setAttribute("name","rol");
             opc2.setAttribute("value","M");
             opc2.appendChild(opc2Text);
-            rol.setAttribute('placeholder',"Seleccione rol");
             rol.appendChild(text);rol.appendChild(opc1);rol.appendChild(opc2);
 
             
