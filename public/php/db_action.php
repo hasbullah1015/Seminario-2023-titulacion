@@ -1,8 +1,8 @@
 <?php
-$id=strtolower($_REQUEST['id']);
-$nombre=strtolower($_REQUEST['nombre']);
-$categoria=strtolower($_REQUEST['categoria']);
-$brand=strtolower($_REQUEST['marca']);
+$id=strtoupper($_REQUEST['id']);
+$nombre=strtoupper($_REQUEST['nombre']);
+$categoria=strtoupper($_REQUEST['categoria']);
+$brand=strtoupper($_REQUEST['marca']);
 $opc=strtolower($_REQUEST['opc']);
 $user=$_SESSION['username'];
 $id=strtoupper($_REQUEST['id']);
