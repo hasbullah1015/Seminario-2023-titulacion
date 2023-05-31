@@ -21,17 +21,14 @@ if($opc=='insert' && $id && $user && $_rol  && $pswd){
         }
 }
 
-if($opc="drop" && $id){
+if($opc=="drop" && $id){
     $sqlquery_consulta=mysqli_query($connection,"SELECT idUser FROM administracion WHERE idUser = '$id'");
     if(mysqli_num_rows($sqlquery_consulta)>0)
     {
         $sqlquery_consulta=mysqli_query($connection,"DELETE FROM administracion WHERE  idUser ='$id'");
         echo 'Usuario Eliminado correctamente';
-
-
     }
     else {
-
         echo 'No existe un usuario con ese ID, ingrese nuevamente';
     }
 }
