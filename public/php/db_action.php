@@ -5,7 +5,7 @@ $type=strtoupper($_REQUEST['type']);
 $brand=strtoupper($_REQUEST['brand']);
 $opc=strtolower($_REQUEST['opc']);
 $user=$_SESSION['username'];
-$id=strtoupper($_REQUEST['id']);
+$aux=strtoupper($_REQUEST['aux']);
 $rol=$_SESSION['rol'];
 
 $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id'");
@@ -30,6 +30,21 @@ if($opc=="drop" && $id){
         echo 'Se eliminó el producto';
     }
     else echo 'No se eliminó el producto, datos erroneos';
+}
+
+
+if($opc=="name" && $id && $aux){
+    if( $resultado>0){
+        echo 'Se actualizó el nombre';
+    }
+    else echo 'No se actualizó el nombre, datos erroneos';
+}
+
+if($opc=="id" && $id && $aux){
+    if( $resultado>0){
+        echo 'Se actualizó el ID';
+    }
+    else echo 'No se actualizó el ID, datos erroneos';
 }
 
 else echo 'Ingrese los datos correctamente ';
