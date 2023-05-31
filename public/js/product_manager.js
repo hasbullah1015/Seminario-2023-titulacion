@@ -111,7 +111,7 @@ function form_generator(typeUser){
                 newForm.appendChild(dropOpc);
                 newForm.appendChild(labelUpdatepswd);
                 newForm.appendChild(pswdOpc);
-                formSection.appendChild(newForm);
+                form_module.appendChild(newForm);
 
                 insertOpc.addEventListener("click",insert_user);
                 dropOpc.addEventListener("click",drop_user);
