@@ -23,6 +23,15 @@ submit.setAttribute('type',"submit");
 submit.setAttribute('id',"sent");
 submit.classList.add('btnSubmit');
 
+const newForm=document.createElement("form");
+const insertOpc = document.createElement("input");
+const dropOpc = document.createElement("input");
+const nameOpc = document.createElement("input");
+const id = document.createElement("input");
+const name = document.createElement("input");
+const type = document.createElement("input");
+const brand = document.createElement("input");
+
 
 
 if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
@@ -41,18 +50,6 @@ else{
 function form_generator(typeUser){
 
         if(typeUser ==='(A)'){
-                const newForm=document.createElement("form");
-                const insertOpc = document.createElement("input");
-                const dropOpc = document.createElement("input");
-                const nameOpc = document.createElement("input");
-                const submit = document.createElement("input");
-                const id = document.createElement("input");
-                const name = document.createElement("input");
-                const type = document.createElement("input");
-                const brand = document.createElement("input");
-
-
-
 
                 id.setAttribute('type',"text");
                 id.setAttribute('placeholder',"inserte id");
