@@ -32,4 +32,7 @@ if($opc=="drop" && $id){
     else echo 'No se eliminó el producto, datos erroneos';
 }
 
+else echo 'Ingrese los datos correctamente ';
+
+
 ?>
