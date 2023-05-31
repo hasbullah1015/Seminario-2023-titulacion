@@ -22,7 +22,7 @@ if($opc=="insert" && $id && $name && $type && $opc && $brand){
         echo 'Ya existe un producto con el id:';  
     }
     else echo 'Se añadió el producto';
-        mysqli_query($connection,"INSERT INTO producto ( idProducto, name, type, marca, cantidad ) values ('$id', '$name', '$type','$brand' ,'0')");
+        mysqli_query($connection,"INSERT INTO producto ( idProducto, nombre, categoria, marca, cantidad ) values ('$id', '$name', '$type','$brand' ,'0')");
 }
 
 
