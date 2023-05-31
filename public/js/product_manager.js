@@ -10,8 +10,6 @@ const userName = document.querySelector("#userName");
 const userMessage = document.querySelector("#userMessage");
 
 
-form_generator(typeUser);
-
 
 window.jsPDF = window.jspdf.jsPDF;
 
@@ -28,7 +26,7 @@ if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
 }
 else{   
         module.classList.add("slide");
-        form_generator();
+        form_generator(typeUser);
 }
 
 
