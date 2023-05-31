@@ -34,7 +34,7 @@ if($opc=="drop" && $id){
     }
 }
 
-if($opc=="pswd" && $id && pswd){
+if($opc=="pswd" && $id && $pswd){
     $sqlquery_consulta=mysqli_query($connection,"SELECT idUser FROM administracion WHERE idUser = '$id'");
     if(mysqli_num_rows($sqlquery_consulta)>0)
     {
