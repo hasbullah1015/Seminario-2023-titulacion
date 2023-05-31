@@ -29,8 +29,9 @@ function form_generator(typeUser){
         const opc2Text = document.createTextNode("Monitor (M)");
 
         const labelInsert = document.createElement("label");
-        labelInsert.setAttribute("for","dropOpc");
+        labelInsert.setAttribute("for","insertOpc");
         labelInsert.innerHTML ='Agregar usuario'
+
 
        
         newForm.setAttribute('method',"get");
@@ -47,6 +48,7 @@ function form_generator(typeUser){
         dropOpc.setAttribute('value',"drop");
         dropOpc.setAttribute('class',"opcSecc")
         dropOpc.setAttribute('id',"dropOpc")
+
         
         insertOpc.setAttribute('type',"radio");
         insertOpc.setAttribute('name',"opc");
@@ -75,6 +77,8 @@ function form_generator(typeUser){
 
         rol.setAttribute('name','rol');
    
+
+        newForm.appendChild(labelInsert);
         newForm.appendChild(insertOpc);
         newForm.appendChild(dropOpc);
         newForm.appendChild(pswdOpc);
