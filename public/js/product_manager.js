@@ -101,8 +101,7 @@ function form_generator(typeUser){
                 form_module.appendChild(newForm);
 
                 insertOpc.addEventListener("click",insert_product);
-                dropOpc.addEventListener("click",drop_user);
-                nameOpc.addEventListener("click",pswd_change);
+     
 
         }
         else{
@@ -161,7 +160,7 @@ function insert_product(){
         
         document.getElementById('_newform').appendChild(submit);
         submit.setAttribute('value',"Agregar");
-        document.getElementById('_newform').insertBefore(brand,labelInsert);
+        document.getElementById('_newform').insertBefore(brand,insertOpc);
         document.getElementById('_newform').insertBefore(type,brand);
         document.getElementById('_newform').insertBefore(name,type);
         document.getElementById('_newform').insertBefore(id,name);
