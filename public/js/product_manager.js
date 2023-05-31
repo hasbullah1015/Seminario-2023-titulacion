@@ -31,51 +31,46 @@ else{
 
 
 function form_generator(typeUser){
-        const id = document.createElement("input");
-
+        submit.setAttribute('value',"Agregar");
+        document.getElementById('_newform').insertBefore(rol,labelInsert);
 
         if(typeUser ==='(A)'){
                 const newForm=document.createElement("form");
                 const insertOpc = document.createElement("input");
                 const dropOpc = document.createElement("input");
-                const pswdOpc = document.createElement("input");
-
+                const nameOpc = document.createElement("input");
                 const submit = document.createElement("input");
-                const user = document.createElement("input");
-                const rol = document.createElement("select");
-                const opc1 = document.createElement("option");
-                const opc2 = document.createElement("option");
-                const text = document.createElement("option");
+                const id = document.createElement("input");
+                const name = document.createElement("input");
+                const type = document.createElement("input");
 
-
-                const opcText = document.createTextNode("Ingrese un rol");
-                const opc1Text = document.createTextNode("Admin (A)");
-                const opc2Text = document.createTextNode("Monitor (M)");
-
-                const labelInsert = document.createElement("label");
-                labelInsert.setAttribute("for","insertOpc");
-                labelInsert.innerHTML ='Agregar usuario'
-
-                
-                const labelDrop = document.createElement("label");
-                labelDrop.setAttribute("for","dropOpc");
-                labelDrop.innerHTML ='Eliminar usuario'
-
-                        
-                const labelUpdatepswd = document.createElement("label");
-                labelUpdatepswd.setAttribute("for","pswdOpc");
-                labelUpdatepswd.innerHTML ='Actualizar contraseña'
-
-
-        
-                newForm.setAttribute('method',"get");
-                newForm.setAttribute('action',"usercontrol.php");
-                newForm.setAttribute('id',"_newform")
 
 
                 id.setAttribute('type',"text");
                 id.setAttribute('placeholder',"inserte id");
                 id.setAttribute('name',"id");
+
+                
+                name.setAttribute('type',"text");
+                name.setAttribute('placeholder',"inserte nombre producto");
+                name.setAttribute('name',"name");
+
+                
+                
+                type.setAttribute('type',"text");
+                type.setAttribute('placeholder',"inserte nombre producto");
+                type.setAttribute('name',"name");
+
+                brand.setAttribute('type',"text");
+                brand.setAttribute('placeholder',"Inserte marca de producto");
+                brand.setAttribute('name',"brand");
+               
+              
+        
+                newForm.setAttribute('method',"get");
+                newForm.setAttribute('action',"product_manager.php");
+                newForm.setAttribute('id',"_newform")
+
 
                 dropOpc.setAttribute('type',"radio");
                 dropOpc.setAttribute('name',"opc");
@@ -91,31 +86,30 @@ function form_generator(typeUser){
                 insertOpc.setAttribute('id',"insertOpc");
 
 
-                pswdOpc.setAttribute('type',"radio");
-                pswdOpc.setAttribute('name',"opc");
-                pswdOpc.setAttribute('value',"pswd");
-                pswdOpc.setAttribute('class',"opcSecc");
-                pswdOpc.setAttribute('id', "pswdOpc");
+                nameOpc.setAttribute('type',"radio");
+                nameOpc.setAttribute('name',"opc");
+                nameOpc.setAttribute('value',"name");
+                nameOpc.setAttribute('class',"opcSecc");
+                nameOpc.setAttribute('id', "nameOpc");
 
 
                 submit.setAttribute('type',"submit");
                 submit.setAttribute('id',"sent");
                 submit.classList.add('btnSubmit');
 
-                rol.setAttribute('name','rol');
         
 
                 newForm.appendChild(labelInsert);
                 newForm.appendChild(insertOpc);
                 newForm.appendChild(labelDrop);
                 newForm.appendChild(dropOpc);
-                newForm.appendChild(labelUpdatepswd);
-                newForm.appendChild(pswdOpc);
+                newForm.appendChild(labelUpdatename);
+                newForm.appendChild(nameOpc);
                 form_module.appendChild(newForm);
 
-                insertOpc.addEventListener("click",insert_user);
+                insertOpc.addEventListener("click",insert_product);
                 dropOpc.addEventListener("click",drop_user);
-                pswdOpc.addEventListener("click",pswd_change);
+                nameOpc.addEventListener("click",pswd_change);
 
         }
         else{
@@ -167,3 +161,18 @@ function pdf_print(){
 }
 
 //añadir clase slide
+
+
+function insert_product(){
+
+        document.getElementById('_newform').insertBefore(brand,labelInsert);
+        document.getElementById('_newform').insertBefore(type,brand);
+        document.getElementById('_newform').insertBefore(name,type);
+        document.getElementById('_newform').insertBefore(id,name);
+
+
+
+
+
+
+        }
