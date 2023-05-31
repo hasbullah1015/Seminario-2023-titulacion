@@ -8,6 +8,7 @@ $pswd = $_REQUEST['pswd'];
 
 
 if($opc=='insert' && $id && $user && $_rol  && $pswd){
+    echo 'Ingresa los datos solicitados para la gestión de usuarios';
         $sqlquery_consulta=mysqli_query($connection,"SELECT idUser FROM administracion WHERE idUser = '$id'");
         if(mysqli_num_rows($sqlquery_consulta)>0)
         {
@@ -31,7 +32,4 @@ if($opc=="drop" && $id){
         echo 'No existe un usuario con ese ID, ingrese nuevamente';
     }
 }
-
-else
-    echo 'Ingresa los datos solicitados para la gestión de usuarios';
 ?>
