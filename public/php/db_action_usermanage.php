@@ -18,8 +18,6 @@ if($opc=='insert' && $id && $user && $_rol  && $pswd){
             echo 'Usuario agregado correctamente';
         }
 }
-else    
-    echo 'Ingresa los datos correctamente';
 
 
 if($opc=="drop" && $id){
@@ -44,5 +42,7 @@ if($opc=="pswd" && $id && $pswd){
         echo 'No existe un usuario con ese ID, ingrese nuevamente';
     }
 }
+else    
+    echo 'Ingresa los datos correctamente';
 
 ?>
