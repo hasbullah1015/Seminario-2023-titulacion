@@ -130,7 +130,7 @@ img{
 @media (orientation:landscape) {
 
     body{
-        min-height:fit-con;
+        min-height:fit-con !important;
         display:flex;
         flex-direction:column;
     }
@@ -147,7 +147,7 @@ img{
 @media (orientation : portrait) {
 
     body{
-        min-height:100vh
+        min-height:100vh;
         display:flex;
         flex-direction:column;
     }
