@@ -1,8 +1,8 @@
 <?php
 $id=strtoupper($_REQUEST['id']);
-$nombre=strtoupper($_REQUEST['nombre']);
-$categoria=strtoupper($_REQUEST['categoria']);
-$brand=strtoupper($_REQUEST['marca']);
+$name=strtoupper($_REQUEST['name']);
+$type=strtoupper($_REQUEST['type']);
+$brand=strtoupper($_REQUEST['brand']);
 $opc=strtolower($_REQUEST['opc']);
 $user=$_SESSION['username'];
 $id=strtoupper($_REQUEST['id']);
@@ -17,12 +17,12 @@ if($rol=="A"){', Ingresa los datos correctos'; }
 
 else 'Genera tu código QR';
 
-if($opc=="insert" && $id && $nombre && $categoria && $opc && $brand){
+if($opc=="insert" && $id && $name && $type && $opc && $brand){
     if($resultado>0){
         echo 'Ya existe un producto con el id:';  
     }
     else echo 'Se añadió el producto';
-        mysqli_query($connection,"INSERT INTO producto ( idProducto, nombre, categoria, marca, cantidad ) values ('$id', '$nombre', '$categoria','$brand' ,'0')");
+        mysqli_query($connection,"INSERT INTO producto ( idProducto, name, type, marca, cantidad ) values ('$id', '$name', '$type','$brand' ,'0')");
 }
 
 

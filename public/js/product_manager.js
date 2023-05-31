@@ -70,7 +70,7 @@ function form_generator(typeUser){
                 
                 type.setAttribute('type',"text");
                 type.setAttribute('placeholder',"inserte categoria producto");
-                type.setAttribute('name',"name");
+                type.setAttribute('name',"type");
 
                 brand.setAttribute('type',"text");
                 brand.setAttribute('placeholder',"Inserte marca de producto");
