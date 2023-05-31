@@ -185,14 +185,14 @@ function drop_product(){
 
 function name_update(){
 
-        document.getElementById('_newform').removeChild(brand);
-        document.getElementById('_newform').removeChild(type);
-        document.getElementById('_newform').removeChild(name);
-
 
         document.getElementById('_newform').appendChild(submit);
         submit.setAttribute('value',"Actualizar");
         document.getElementById('_newform').insertBefore(aux,insertOpc);
         document.getElementById('_newform').insertBefore(id,aux);
+
+        document.getElementById('_newform').removeChild(brand);
+        document.getElementById('_newform').removeChild(type);
+        document.getElementById('_newform').removeChild(name);
 
 }
