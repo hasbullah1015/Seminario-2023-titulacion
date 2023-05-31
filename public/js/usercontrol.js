@@ -38,19 +38,18 @@ function form_generator(typeUser){
         id.setAttribute('placeholder',"inserte id");
         id.setAttribute('name',"id");
 
-        dropOpc.setAttribute('type',"radio");
+        dropOpc.setAttribute('type',"checkbox");
         dropOpc.setAttribute('name',"opc");
         dropOpc.setAttribute('value',"drop");
         dropOpc.setAttribute('class',"opcSecc")
         
-        insertOpc.setAttribute('type',"radio");
+        insertOpc.setAttribute('type',"checkbox");
         insertOpc.setAttribute('name',"opc");
         insertOpc.setAttribute('value',"insert");
         insertOpc.setAttribute('class',"opcSecc");
-        insertOpc = document.createTextNode("Ingresar usuarios");
 
 
-        pswdOpc.setAttribute('type',"radio");
+        pswdOpc.setAttribute('type',"checkbox");
         pswdOpc.setAttribute('name',"opc");
         pswdOpc.setAttribute('value',"pswd");
         pswdOpc.setAttribute('class',"opcSecc");
