@@ -17,6 +17,14 @@ const module = document.querySelector("#qr_form_mod");
 const QR_module = document.querySelector("#qr_mod");
 const form_module = document.querySelector("#form_mod");
 
+
+const submit = document.createElement("input");
+submit.setAttribute('type',"submit");
+submit.setAttribute('id',"sent");
+submit.classList.add('btnSubmit');
+
+
+
 if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
         module.classList.add("slide");
         new QRCode(QR_module, product_id.innerHTML); //generacíon de qr
@@ -31,8 +39,6 @@ else{
 
 
 function form_generator(typeUser){
-        submit.setAttribute('value',"Agregar");
-        document.getElementById('_newform').insertBefore(rol,labelInsert);
 
         if(typeUser ==='(A)'){
                 const newForm=document.createElement("form");
@@ -64,8 +70,6 @@ function form_generator(typeUser){
                 brand.setAttribute('type',"text");
                 brand.setAttribute('placeholder',"Inserte marca de producto");
                 brand.setAttribute('name',"brand");
-               
-              
         
                 newForm.setAttribute('method',"get");
                 newForm.setAttribute('action',"product_manager.php");
@@ -90,14 +94,7 @@ function form_generator(typeUser){
                 nameOpc.setAttribute('name',"opc");
                 nameOpc.setAttribute('value',"name");
                 nameOpc.setAttribute('class',"opcSecc");
-                nameOpc.setAttribute('id', "nameOpc");
-
-
-                submit.setAttribute('type',"submit");
-                submit.setAttribute('id',"sent");
-                submit.classList.add('btnSubmit');
-
-        
+                nameOpc.setAttribute('id', "nameOpc");        
 
                 newForm.appendChild(labelInsert);
                 newForm.appendChild(insertOpc);
@@ -165,6 +162,9 @@ function pdf_print(){
 
 function insert_product(){
 
+        
+        document.getElementById('_newform').appendChild(submit);
+        submit.setAttribute('value',"Agregar");
         document.getElementById('_newform').insertBefore(brand,labelInsert);
         document.getElementById('_newform').insertBefore(type,brand);
         document.getElementById('_newform').insertBefore(name,type);
