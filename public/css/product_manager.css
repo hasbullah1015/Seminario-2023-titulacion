@@ -142,11 +142,6 @@ _videoinsertproduct{
     Footer {margin-top:auto;}
 
 
-    video{
-        min-height: 100vh;
-
-    }
-
 }
 
 @media (orientation : portrait) {
@@ -157,11 +152,6 @@ _videoinsertproduct{
         flex-direction:column;
     }
     Footer {margin-top:auto;}
-
-    video{
-        min-height: 100vh;
-
-    }
 
         
     
