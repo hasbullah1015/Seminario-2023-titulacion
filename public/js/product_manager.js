@@ -118,6 +118,8 @@ function form_generator(typeUser){
 
                 insertOpc.addEventListener("click",insert_product);
                 nameOpc.addEventListener("click",name_update);
+                idOpc.addEventListener("click",id_update);
+                dropOpc.addEventListener("click",drop_product);
      
 
         }
@@ -193,7 +195,11 @@ function drop_product(){
         document.getElementById('_newform').appendChild(submit);
         submit.setAttribute('value',"Eliminar");
         document.getElementById('_newform').insertBefore(id,insertOpc);
-        document.getElementById('_newform').removeChild(aux);
+        document.getElementById('_newform').removeChild(aux);        
+        document.getElementById('_newform').removeChild(brand);
+        document.getElementById('_newform').removeChild(type);
+        document.getElementById('_newform').removeChild(name);
+
 
 
 }
@@ -214,7 +220,7 @@ function name_update(){
 }
 
 
-function name_update(){
+function id_update(){
 
 
         document.getElementById('_newform').appendChild(submit);
