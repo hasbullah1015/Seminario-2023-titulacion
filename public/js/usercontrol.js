@@ -30,6 +30,7 @@ function form_generator(typeUser){
 
         const labelInsert = document.createElement("label");
         labelInsert.setAttribute("for","dropOpc");
+        labelInsert.innerHTML ='Agregar usuario'
 
        
         newForm.setAttribute('method',"get");
