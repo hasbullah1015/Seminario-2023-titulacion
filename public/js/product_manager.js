@@ -20,7 +20,7 @@ const form_module = document.querySelector("#form_mod");
 
 const submit = document.createElement("input");
 submit.setAttribute('type',"submit");
-submit.setAttribute('id',"sent");
+submit.setAttribute('id',"_sent");
 submit.classList.add('btnSubmit');
 
 const newForm=document.createElement("form");
