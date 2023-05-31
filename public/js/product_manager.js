@@ -10,6 +10,7 @@ const userName = document.querySelector("#userName");
 const userMessage = document.querySelector("#userMessage");
 
 
+form_generator(typeUser);
 
 
 window.jsPDF = window.jspdf.jsPDF;
@@ -33,7 +34,7 @@ else{
 
 function form_generator(typeUser){
 
-if(typeUser ==='(A)'){
+if(typeUser ==='A'){
         const newForm=document.createElement("form");
         const insertOpc = document.createElement("input");
         const dropOpc = document.createElement("input");
