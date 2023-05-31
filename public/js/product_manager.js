@@ -31,103 +31,98 @@ else{
 
 
 function form_generator(typeUser){
-
-if(typeUser ==='(A)'){
-        const newForm=document.createElement("form");
-        const insertOpc = document.createElement("input");
-        const dropOpc = document.createElement("input");
-        const pswdOpc = document.createElement("input");
-
-        const submit = document.createElement("input");
-        const user = document.createElement("input");
-        const rol = document.createElement("select");
-        const opc1 = document.createElement("option");
-        const opc2 = document.createElement("option");
-        const text = document.createElement("option");
+        const id = document.createElement("input");
 
 
-        const opcText = document.createTextNode("Ingrese un rol");
-        const opc1Text = document.createTextNode("Admin (A)");
-        const opc2Text = document.createTextNode("Monitor (M)");
+        if(typeUser ==='(A)'){
+                const newForm=document.createElement("form");
+                const insertOpc = document.createElement("input");
+                const dropOpc = document.createElement("input");
+                const pswdOpc = document.createElement("input");
 
-        const labelInsert = document.createElement("label");
-        labelInsert.setAttribute("for","insertOpc");
-        labelInsert.innerHTML ='Agregar usuario'
+                const submit = document.createElement("input");
+                const user = document.createElement("input");
+                const rol = document.createElement("select");
+                const opc1 = document.createElement("option");
+                const opc2 = document.createElement("option");
+                const text = document.createElement("option");
 
-        
-        const labelDrop = document.createElement("label");
-        labelDrop.setAttribute("for","dropOpc");
-        labelDrop.innerHTML ='Eliminar usuario'
+
+                const opcText = document.createTextNode("Ingrese un rol");
+                const opc1Text = document.createTextNode("Admin (A)");
+                const opc2Text = document.createTextNode("Monitor (M)");
+
+                const labelInsert = document.createElement("label");
+                labelInsert.setAttribute("for","insertOpc");
+                labelInsert.innerHTML ='Agregar usuario'
 
                 
-        const labelUpdatepswd = document.createElement("label");
-        labelUpdatepswd.setAttribute("for","pswdOpc");
-        labelUpdatepswd.innerHTML ='Actualizar contraseña'
+                const labelDrop = document.createElement("label");
+                labelDrop.setAttribute("for","dropOpc");
+                labelDrop.innerHTML ='Eliminar usuario'
 
+                        
+                const labelUpdatepswd = document.createElement("label");
+                labelUpdatepswd.setAttribute("for","pswdOpc");
+                labelUpdatepswd.innerHTML ='Actualizar contraseña'
 
-       
-        newForm.setAttribute('method',"get");
-        newForm.setAttribute('action',"usercontrol.php");
-        newForm.setAttribute('id',"_newform")
-
-
-        id.setAttribute('type',"text");
-        id.setAttribute('placeholder',"inserte id");
-        id.setAttribute('name',"id");
-
-        dropOpc.setAttribute('type',"radio");
-        dropOpc.setAttribute('name',"opc");
-        dropOpc.setAttribute('value',"drop");
-        dropOpc.setAttribute('class',"opcSecc")
-        dropOpc.setAttribute('id',"dropOpc")
 
         
-        insertOpc.setAttribute('type',"radio");
-        insertOpc.setAttribute('name',"opc");
-        insertOpc.setAttribute('value',"insert");
-        insertOpc.setAttribute('class',"opcSecc");
-        insertOpc.setAttribute('id',"insertOpc");
+                newForm.setAttribute('method',"get");
+                newForm.setAttribute('action',"usercontrol.php");
+                newForm.setAttribute('id',"_newform")
 
 
-        pswdOpc.setAttribute('type',"radio");
-        pswdOpc.setAttribute('name',"opc");
-        pswdOpc.setAttribute('value',"pswd");
-        pswdOpc.setAttribute('class',"opcSecc");
-        pswdOpc.setAttribute('id', "pswdOpc");
+                id.setAttribute('type',"text");
+                id.setAttribute('placeholder',"inserte id");
+                id.setAttribute('name',"id");
 
-        user.setAttribute('type',"text");
-        user.setAttribute('placeholder',"inserte usuario");
-        user.setAttribute('name',"user");
+                dropOpc.setAttribute('type',"radio");
+                dropOpc.setAttribute('name',"opc");
+                dropOpc.setAttribute('value',"drop");
+                dropOpc.setAttribute('class',"opcSecc")
+                dropOpc.setAttribute('id',"dropOpc")
 
-        pswd.setAttribute('type',"password");
-        pswd.setAttribute('placeholder',"inserte contraseña");
-        pswd.setAttribute('name',"pswd");
-
-        submit.setAttribute('type',"submit");
-        submit.setAttribute('id',"sent");
-        submit.classList.add('btnSubmit');
-
-        rol.setAttribute('name','rol');
-   
-
-        newForm.appendChild(labelInsert);
-        newForm.appendChild(insertOpc);
-        newForm.appendChild(labelDrop);
-        newForm.appendChild(dropOpc);
-        newForm.appendChild(labelUpdatepswd);
-        newForm.appendChild(pswdOpc);
-        formSection.appendChild(newForm);
-
-        insertOpc.addEventListener("click",insert_user);
-        dropOpc.addEventListener("click",drop_user);
-        pswdOpc.addEventListener("click",pswd_change);
-
-    }
-    else{
-        userMessage.innerHTML ='Solicita el código QR Ingresando el ID';
+                
+                insertOpc.setAttribute('type',"radio");
+                insertOpc.setAttribute('name',"opc");
+                insertOpc.setAttribute('value',"insert");
+                insertOpc.setAttribute('class',"opcSecc");
+                insertOpc.setAttribute('id',"insertOpc");
 
 
-    }
+                pswdOpc.setAttribute('type',"radio");
+                pswdOpc.setAttribute('name',"opc");
+                pswdOpc.setAttribute('value',"pswd");
+                pswdOpc.setAttribute('class',"opcSecc");
+                pswdOpc.setAttribute('id', "pswdOpc");
+
+
+                submit.setAttribute('type',"submit");
+                submit.setAttribute('id',"sent");
+                submit.classList.add('btnSubmit');
+
+                rol.setAttribute('name','rol');
+        
+
+                newForm.appendChild(labelInsert);
+                newForm.appendChild(insertOpc);
+                newForm.appendChild(labelDrop);
+                newForm.appendChild(dropOpc);
+                newForm.appendChild(labelUpdatepswd);
+                newForm.appendChild(pswdOpc);
+                formSection.appendChild(newForm);
+
+                insertOpc.addEventListener("click",insert_user);
+                dropOpc.addEventListener("click",drop_user);
+                pswdOpc.addEventListener("click",pswd_change);
+
+        }
+        else{
+                userMessage.innerHTML ='Solicita el código QR Ingresando el ID';
+
+
+        }
 }
 
 function pdf_generator(){
