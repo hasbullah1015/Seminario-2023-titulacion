@@ -18,9 +18,6 @@ if($opc=='insert' && $id && $user && $_rol  && $pswd){
             echo 'Usuario agregado correctamente';
         }
 }
-else    
-    echo 'Ingresa los datos correctamente';
-
 
 if($opc=="drop" && $id){
     $sqlquery_consulta=mysqli_query($connection,"SELECT idUser FROM administracion WHERE idUser = '$id'");
@@ -45,5 +42,9 @@ if($opc=="pswd" && $id && $pswd){
         echo 'No existe un usuario con ese ID, ingrese nuevamente';
     }
 }
+
+else    
+    echo 'Ingresa los datos correctamente';
+
 
 ?>
