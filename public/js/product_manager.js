@@ -169,6 +169,8 @@ function insert_product(){
         document.getElementById('_newform').insertBefore(type,brand);
         document.getElementById('_newform').insertBefore(name,type);
         document.getElementById('_newform').insertBefore(id,name);
+        document.getElementById('_newform').removeChild(aux);
+
 
 
 }
