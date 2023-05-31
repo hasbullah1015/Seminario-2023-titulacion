@@ -8,11 +8,14 @@ function form_generator(typeUser){
     const newForm=document.createElement("form");
     const id = document.createElement("input");
     const  pswd = document.createElement("input");
+    const aux = document.createElement("input");
 
 
     if(typeUser==="(A)"){
         const insertOpc = document.createElement("input");
         const dropOpc = document.createElement("input");
+        const pswdOpc = document.createElement("input");
+
         const submit = document.createElement("input");
         const user = document.createElement("input");
         const rol = document.createElement("select");
@@ -45,6 +48,11 @@ function form_generator(typeUser){
         insertOpc.setAttribute('value',"insert");
         insertOpc.setAttribute('class',"opcSecc");
 
+        pswdOpc.setAttribute('type',"radio");
+        pswdOpc.setAttribute('name',"opc");
+        pswdOpc.setAttribute('value',"pswd");
+        pswdOpc.setAttribute('class',"opcSecc");
+
         user.setAttribute('type',"text");
         user.setAttribute('placeholder',"inserte usuario");
         user.setAttribute('name',"user");
@@ -61,10 +69,13 @@ function form_generator(typeUser){
    
         newForm.appendChild(insertOpc);
         newForm.appendChild(dropOpc);
+        newForm.appendChild(pswdOpc);
         formSection.appendChild(newForm);
 
         insertOpc.addEventListener("click",insert_user);
         dropOpc.addEventListener("click",drop_user);
+        pswdOpc.addEventListener("click",pswd_change);
+
 
 
 
@@ -103,12 +114,24 @@ function form_generator(typeUser){
 
         function drop_user(){
 
-
             document.getElementById('_newform').appendChild(submit);
             submit.setAttribute('value',"Eliminar");
             document.getElementById('_newform').insertBefore(id,insertOpc);
             document.getElementById('_newform').removeChild(user);
             document.getElementById('_newform').removeChild(pswd);
+            document.getElementById('_newform').removeChild(rol);
+
+
+        }
+
+        function pswd_change(){
+
+            document.getElementById('_newform').appendChild(submit);
+            submit.setAttribute('value',"Actualizar");
+            document.getElementById('_newform').insertBefore(id,insertOpc);
+            document.getElementById('_newform').insertBefore(pswd,id);
+
+            document.getElementById('_newform').removeChild(user);
             document.getElementById('_newform').removeChild(rol);
 
 
