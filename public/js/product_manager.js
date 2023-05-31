@@ -98,11 +98,8 @@ function form_generator(typeUser){
                 nameOpc.setAttribute('class',"opcSecc");
                 nameOpc.setAttribute('id', "nameOpc");        
 
-                newForm.appendChild(labelInsert);
                 newForm.appendChild(insertOpc);
-                newForm.appendChild(labelDrop);
                 newForm.appendChild(dropOpc);
-                newForm.appendChild(labelUpdatename);
                 newForm.appendChild(nameOpc);
                 form_module.appendChild(newForm);
 
