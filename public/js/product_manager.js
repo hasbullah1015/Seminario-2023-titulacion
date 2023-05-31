@@ -31,6 +31,8 @@ const id = document.createElement("input");
 const name = document.createElement("input");
 const type = document.createElement("input");
 const brand = document.createElement("input");
+const aux = document.createElement("input");
+
 
 
 
@@ -60,7 +62,9 @@ function form_generator(typeUser){
                 name.setAttribute('placeholder',"inserte nombre producto");
                 name.setAttribute('name',"name");
 
-                
+                aux.setAttribute('type',"text");
+                aux.setAttribute('placeholder',"inserte nuevo valor");
+                aux.setAttribute('name',"aux");         
                 
                 type.setAttribute('type',"text");
                 type.setAttribute('placeholder',"inserte nombre producto");
@@ -101,6 +105,7 @@ function form_generator(typeUser){
                 form_module.appendChild(newForm);
 
                 insertOpc.addEventListener("click",insert_product);
+                nameOpc.addEventListener("click",name_update);
      
 
         }
@@ -166,8 +171,28 @@ function insert_product(){
         document.getElementById('_newform').insertBefore(id,name);
 
 
+}
 
 
+function drop_product(){
+
+        document.getElementById('_newform').appendChild(submit);
+        submit.setAttribute('value',"Eliminar");
+        document.getElementById('_newform').insertBefore(id,insertOpc);
+
+}
 
 
-        }
+function name_update(){
+
+        document.getElementById('_newform').removeChild(brand);
+        document.getElementById('_newform').removeChild(type);
+        document.getElementById('_newform').removeChild(name);
+
+
+        document.getElementById('_newform').appendChild(submit);
+        submit.setAttribute('value',"Actualizar");
+        document.getElementById('_newform').insertBefore(aux,insertOpc);
+        document.getElementById('_newform').insertBefore(id,aux);
+
+}
