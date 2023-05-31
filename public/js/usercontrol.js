@@ -39,8 +39,8 @@ function form_generator(typeUser){
 
                 
         const labelUpdatepswd = document.createElement("label");
-        labelDrop.setAttribute("for","pswdOpc");
-        labelDrop.innerHTML ='Actualizar contraseña'
+        labelUpdatepswd.setAttribute("for","pswdOpc");
+        labelUpdatepswd.innerHTML ='Actualizar contraseña'
 
 
        
