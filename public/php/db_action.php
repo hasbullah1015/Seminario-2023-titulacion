@@ -8,39 +8,30 @@ $user=$_SESSION['username'];
 $id=$_SESSION['id'];
 $rol=$_SESSION['rol'];
 
-if($id && $nombre && $categoria && $opc && $brand){
-    $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id'");
-    $resultado=mysqli_num_rows($sqlquery_consulta);
+$sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id'");
+$resultado=mysqli_num_rows($sqlquery_consulta);
 
-    if($opc=="insert"){    
-        if($resultado>0){
-            echo 'Ya existe un producto con el id:';  
-        }
-        else echo 'Se añadió el producto';
+echo '<span id="action_label"> <p id="userName">'.$user.'</p>'.'<p id="userROL" >'.'('.$rol.')'.'</p>'. ', <p id="userMessage"> </p> </span>' ;
+
+if($rol=="(a)"){', Ingresa los datos correctos'; }
+
+else 'Genera tu código QR';
+
+if($opc=="insert" && $id && $nombre && $categoria && $opc && $brand){
+    if($resultado>0){
+        echo 'Ya existe un producto con el id:';  
+    }
+    else echo 'Se añadió el producto';
         mysqli_query($connection,"INSERT INTO producto ( idProducto, nombre, categoria, marca, cantidad ) values ('$id', '$nombre', '$categoria','$brand' ,'0')");
-        
-    }
-    
-    if($opc=="drop"){
-        if($resultado>0){
-            $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHERE idProducto = '$id' AND nombre = '$nombre' AND categoria = '$categoria' AND marca = '$brand'");
-            $drop_result=mysqli_num_rows( $sqlquery_consulta);
-
-            if( $drop_result>0){
-                mysqli_query($connection,"DELETE FROM producto WHERE idProducto = '$id' AND nombre = '$nombre' AND categoria = '$categoria' AND marca = '$brand'");
-                echo 'Se eliminó el producto';
-            }
-            else echo 'No se eliminó el producto, datos erroneos';
-        }
-        else echo 'No existe un producto con ese ID';
-
-    }
 }
 
-else{
-    echo '<span id="action_label"> <p id="userName">'.$user.'</p>'.'<p id="userROL" >'.'('.$rol.')'.'</p>'. ', <p id="userMessage"> </p> </span>' ;
 
-    if($rol=="(a)"){', Ingresa los datos correctos';
-    }else 'Genera tu código QR';
+if($opc=="drop" && $id){
+    if( $resultado>0){
+        mysqli_query($connection,"DELETE FROM producto WHERE idProducto = '$id'");
+        echo 'Se eliminó el producto';
+    }
+    else echo 'No se eliminó el producto, datos erroneos';
 }
+
 ?>

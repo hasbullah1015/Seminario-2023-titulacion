@@ -72,11 +72,7 @@
 
         <div class="row" id="qr_form_mod">
             <div class="col-sm-12 col-md-6 "id="qr_mod"></div>
-            <div class="col-sm-12 col-md-6" id="form_mod">
-            <?php 
-                include ("db_action.php");
-            ?>
-            </div>    
+            <div class="col-sm-12 col-md-6" id="form_mod"> <?php include ("db_action.php");?> </div>    
         </div>
         <?php 
             //echo dbGestor(); 
