@@ -78,7 +78,7 @@ function form_generator(typeUser){
         rol.setAttribute('name','rol');
    
 
-        newForm.appendChild(labelInsert);
+        insertOpc.appendChild(labelInsert);
         newForm.appendChild(insertOpc);
         newForm.appendChild(dropOpc);
         newForm.appendChild(pswdOpc);
