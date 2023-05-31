@@ -49,6 +49,8 @@ function form_generator(typeUser){
                 const id = document.createElement("input");
                 const name = document.createElement("input");
                 const type = document.createElement("input");
+                const brand = document.createElement("input");
+
 
 
 
