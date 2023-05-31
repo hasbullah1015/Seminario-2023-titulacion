@@ -128,8 +128,8 @@ function form_generator(typeUser){
 
             document.getElementById('_newform').appendChild(submit);
             submit.setAttribute('value',"Actualizar");
-            document.getElementById('_newform').insertBefore(id,insertOpc);
-            document.getElementById('_newform').insertBefore(pswd,id);
+            document.getElementById('_newform').insertBefore(pswd,insertOpc);
+            document.getElementById('_newform').insertBefore(id,pswd);
 
             document.getElementById('_newform').removeChild(user);
             document.getElementById('_newform').removeChild(rol);
