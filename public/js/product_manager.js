@@ -27,6 +27,8 @@ const newForm=document.createElement("form");
 const insertOpc = document.createElement("input");
 const dropOpc = document.createElement("input");
 const nameOpc = document.createElement("input");
+const idOpc = document.createElement("input");
+
 const id = document.createElement("input");
 const name = document.createElement("input");
 const type = document.createElement("input");
@@ -97,11 +99,21 @@ function form_generator(typeUser){
                 nameOpc.setAttribute('name',"opc");
                 nameOpc.setAttribute('value',"name");
                 nameOpc.setAttribute('class',"opcSecc");
-                nameOpc.setAttribute('id', "nameOpc");        
+                nameOpc.setAttribute('id', "nameOpc");  
+                
+                
+                idOpc.setAttribute('type',"radio");
+                idOpc.setAttribute('name',"opc");
+                idOpc.setAttribute('value',"id");
+                idOpc.setAttribute('class',"opcSecc");
+                idOpc.setAttribute('id', "idOpc");  
 
                 newForm.appendChild(insertOpc);
                 newForm.appendChild(dropOpc);
                 newForm.appendChild(nameOpc);
+                newForm.appendChild(idOpc);
+
+
                 form_module.appendChild(newForm);
 
                 insertOpc.addEventListener("click",insert_product);
@@ -191,7 +203,22 @@ function name_update(){
 
 
         document.getElementById('_newform').appendChild(submit);
-        submit.setAttribute('value',"Actualizar");
+        submit.setAttribute('value',"Actualizar Nombre");
+        document.getElementById('_newform').insertBefore(aux,insertOpc);
+        document.getElementById('_newform').insertBefore(id,aux);
+
+        document.getElementById('_newform').removeChild(brand);
+        document.getElementById('_newform').removeChild(type);
+        document.getElementById('_newform').removeChild(name);
+
+}
+
+
+function name_update(){
+
+
+        document.getElementById('_newform').appendChild(submit);
+        submit.setAttribute('value',"Actualizar ID");
         document.getElementById('_newform').insertBefore(aux,insertOpc);
         document.getElementById('_newform').insertBefore(id,aux);
 
