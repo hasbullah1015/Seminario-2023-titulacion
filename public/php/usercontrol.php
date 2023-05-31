@@ -32,7 +32,7 @@
 </head>
 
 <body>
-<div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
+<div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video>
     <header id="encabezado">
     </header>
     <div class="container">
@@ -41,7 +41,7 @@
                 <h2> Bienvenido, <?php echo $user ?> <span id="typeUser">(<?php echo $rol ?>)</span> </h2><br><br>
                 <div id="form-section" class="col-md-6 col-sm-12"> Ingresa los datos solicitados para la gestión de usuarios</div>
                 <div id="data-section" class="col-md-6 col-sm-12"><?php include ("db_action_usermanage.php"); ?></div>
-<
+
         </div>
     </div>
     <br>
@@ -49,6 +49,6 @@
     
 <script defer src="/public/js/usercontrol.js"></script>
 <link rel="stylesheet" href="/public/css/usercontrol.css" type="text/css">
-
+</div>
 </body>
 </html>

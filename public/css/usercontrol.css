@@ -73,37 +73,24 @@ form .opcSecc{
 @media (orientation:landscape) {
 
     body{
-        min-height:100vh;
         display:flex;
         flex-direction:column;
     }
     Footer {margin-top:auto;}
 
-
-    video{
-        min-height: 100vh;
-
-    }
 
 }
 
 @media (orientation : portrait) {
 
     body{
-        min-height:100vh;
         display:flex;
         flex-direction:column;
     }
     Footer {margin-top:auto;}
 
-    video{
-        min-height: 100vh;
 
-    }
 
-        
-    
-    
 }
 
 
