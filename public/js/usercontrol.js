@@ -122,7 +122,7 @@ function form_generator(typeUser){
             rol.appendChild(text);rol.appendChild(opc1);rol.appendChild(opc2);
 
             
-            document.getElementById('_newform').insertBefore(rol,insertOpc);
+            document.getElementById('_newform').insertBefore(rol,labelInsert);
             document.getElementById('_newform').insertBefore(pswd,rol);
             document.getElementById('_newform').insertBefore(user,pswd);
             document.getElementById('_newform').insertBefore(id,user);
@@ -139,7 +139,7 @@ function form_generator(typeUser){
 
             document.getElementById('_newform').appendChild(submit);
             submit.setAttribute('value',"Eliminar");
-            document.getElementById('_newform').insertBefore(id,insertOpc);
+            document.getElementById('_newform').insertBefore(id,labelInsert);
             document.getElementById('_newform').removeChild(user);
             document.getElementById('_newform').removeChild(pswd);
             document.getElementById('_newform').removeChild(rol);
@@ -151,7 +151,7 @@ function form_generator(typeUser){
 
             document.getElementById('_newform').appendChild(submit);
             submit.setAttribute('value',"Actualizar");
-            document.getElementById('_newform').insertBefore(pswd,insertOpc);
+            document.getElementById('_newform').insertBefore(pswd,labelInsert);
             document.getElementById('_newform').insertBefore(id,pswd);
 
             document.getElementById('_newform').removeChild(user);
