@@ -1,4 +1,5 @@
 
+const video = document.querySelector("#video_background");
 const product_id = document.querySelector("#product_id");
 const product_name = document.querySelector("#product_name");
 const category_name = document.querySelector("#category_name");
@@ -177,6 +178,7 @@ function pdf_print(){
 
 
 function insert_product(){
+        
 
         
         document.getElementById('_newform').appendChild(submit);

@@ -33,8 +33,8 @@
 
 </head>
 
-<body>
-    <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
+<body style="">
+    <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video>
     <header id="encabezado"></header>
     <div class="container">
         <div class="row">
@@ -79,6 +79,7 @@
         ?>
     </div>
     <footer id="pie_pagina" class="mt-auto">
+    </div>
     </footer>
     <script src="/public/js/index.js"></script>
     <script defer src="/public/js/product_manager.js"></script>

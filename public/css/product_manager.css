@@ -127,10 +127,15 @@ img{
     color: white;
 } 
 
+_videoinsertproduct{
+    min-height:120vh;
+
+}
+
 @media (orientation:landscape) {
 
     body{
-        min-height:fit-con !important;
+        min-height:120vh;
         display:flex;
         flex-direction:column;
     }
