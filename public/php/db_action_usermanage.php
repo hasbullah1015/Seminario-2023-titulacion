@@ -21,7 +21,15 @@ if($opc && $id && $user && $_rol  && $pswd){
 }
 
 if($opc && $id){
+    $sqlquery_consulta=mysqli_query($connection,"SELECT idUser FROM administracion WHERE idUser = '$id'");
+    if(mysqli_num_rows($sqlquery_consulta)>0)
+    {
+        echo 'Ya existe un usuario con ese ID, favor de ingresar uno nuevo';
+    }
+    else {
 
+        echo 'No existe un usuario con ese ID, ingrese nuevamente';
+    }
 }
 
 else
