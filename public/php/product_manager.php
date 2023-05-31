@@ -44,7 +44,7 @@
             <div class="slide col-sm-12 col-md-4" id="search_panel">
                 <form action="product_manager.php" method="get">
                     <input type="text" id="search_bar" name="busqueda" placeholder="busqueda">  
-                    <input type="submit" id="_sent" name="enviar">
+                    <input type="submit" id="_sent" name="enviar" value = "Generar">
                 </form>
                 <?php 
                     $busqueda=strtolower($_REQUEST['busqueda']);

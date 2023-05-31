@@ -135,6 +135,8 @@ function pdf_generator(){
         const submit = document.createElement("input");
         submit.setAttribute('type',"submit");
         submit.setAttribute('id',"sent");
+        submit.setAttribute('value',"Imprimir");
+
 
         form_module.appendChild(submit);
 
