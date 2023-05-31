@@ -61,9 +61,10 @@
 
 form{
     margin: 10px;
-    display:flex !important;
+    display:inline-flex !important;
     flex-direction: column !important; /* para poner los div en vertical*/
     margin: 10px;
+
 }
 
 #_sent{
@@ -92,6 +93,7 @@ form .opcSecc{
     flex-direction: inherit;
     border-color: white;
     color: blueviolet;
+
 
 }
 
