@@ -6,7 +6,6 @@ $user=strtoupper($_REQUEST['user']);
 $_rol=strtoupper($_REQUEST['rol']);
 $pswd = $_REQUEST['pswd'];
 
-echo 'Ingresa los datos solicitados para la gestión de usuarios';
 if($opc=='insert' && $id && $user && $_rol  && $pswd){
         $sqlquery_consulta=mysqli_query($connection,"SELECT idUser FROM administracion WHERE idUser = '$id'");
         if(mysqli_num_rows($sqlquery_consulta)>0)

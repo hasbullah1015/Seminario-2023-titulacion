@@ -39,7 +39,7 @@
     <h1>Control de usuarios: </h1> <hr id="div-line"  style="margin: 0px 0px 10px;">
         <div class="row slide">
                 <h2> Bienvenido, <?php echo $user ?> <span id="typeUser">(<?php echo $rol ?>)</span> </h2><br><br>
-                <div id="form-section" class="col-md-6 col-sm-12">hola</div>
+                <div id="form-section" class="col-md-6 col-sm-12"> Ingresa los datos solicitados para la gestión de usuarios</div>
                 <div id="data-section" class="col-md-6 col-sm-12"><?php include ("db_action_usermanage.php"); ?></div>
 <
         </div>
