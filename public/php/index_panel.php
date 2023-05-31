@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video> </div>
+    <div id="video-background" ><video src="/public/assets_img/renderizado-26011.mp4" autoplay="true" muted="true" loop="true" ></video>
     <header id="encabezado"></header>
 
     <div class="container">
@@ -83,6 +83,6 @@
     <script defer src="/public/js/index.js"></script>
     <script defer type="module" src="/public/js/panels_view.js"></script>
 
-
+</div>
 </body>
 </html>
