@@ -38,7 +38,7 @@
     <header id="encabezado"></header>
     <div class="container">
         <div class="row">
-            <h1>Gestor de productos:</h1>
+            <h1>Gestor de productos:</h1><hr id="div-line"  style="margin: 0px 0px 10px;">
         </div>
         <div class="row">
             <div class="slide col-sm-12 col-md-4" id="search_panel">
