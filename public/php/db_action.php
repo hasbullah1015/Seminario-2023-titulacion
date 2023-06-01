@@ -43,7 +43,7 @@ if($opc=="name" && $id && $aux){
 
 if($opc=="id" && $id && $aux){
     if( $resultado>0){
-        $sqlquery_consulta=mysqli_query($connection,"UPDATE producto SET idProdcuto='$aux'  WHERE  idProducto ='$id'");
+        $sqlquery_consulta=mysqli_query($connection,"UPDATE producto SET idProducto='$aux'  WHERE  idProducto ='$id'");
 
         echo 'Se actualizó el ID';
     }
