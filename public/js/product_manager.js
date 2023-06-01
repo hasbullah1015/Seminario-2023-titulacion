@@ -121,12 +121,12 @@ function form_generator(typeUser){
 
                 
                 const labelUpdatename = document.createElement("label");
-                labelUpdatepswd.setAttribute("for","pswdOpc");
-                labelUpdatepswd.innerHTML ='Actualizar nombre'
+                labelUpdatename.setAttribute("for","pswdOpc");
+                labelUpdatename.innerHTML ='Actualizar nombre'
 
                 const labelUpdateid = document.createElement("label");
-                labelUpdatepswd.setAttribute("for","pswdOpc");
-                labelUpdatepswd.innerHTML ='Actualizar ID'
+                labelUpdateid.setAttribute("for","pswdOpc");
+                labelUpdateid.innerHTML ='Actualizar ID'
 
                 newForm.appendChild(labelInsert);
                 newForm.appendChild(insertOpc);
