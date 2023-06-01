@@ -43,8 +43,6 @@ if($opc=="pswd" && $id && $pswd){
     }
 }
 
-else    
-    echo 'Ingresa los datos correctamente';
 
 
 ?>

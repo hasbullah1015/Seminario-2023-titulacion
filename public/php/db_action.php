@@ -17,7 +17,7 @@ if($rol!="A"){ echo 'Genera tu código QR'; }
 
 if($opc=="insert" && $id && $name && $type && $opc && $brand){
     if($resultado>0){
-        echo 'ya existe un producto con el id';  
+        echo 'Ya existe un producto con el id:';  
     }
     else echo 'Se añadió el producto';
         mysqli_query($connection,"INSERT INTO producto ( idProducto, nombre, categoria, marca, cantidad ) values ('$id', '$name', '$type','$brand' ,'0')");
@@ -29,7 +29,7 @@ if($opc=="drop" && $id){
         mysqli_query($connection,"DELETE FROM producto WHERE idProducto = '$id'");
         echo 'Se eliminó el producto';
     }
-    else echo 'no se eliminó el producto';
+    else echo 'No se eliminó el producto, datos erroneos';
 }
 
 
@@ -37,14 +37,14 @@ if($opc=="name" && $id && $aux){
     if( $resultado>0){
         echo 'Se actualizó el nombre';
     }
-    else echo 'no se actualizó el nombre';
+    else echo 'No se actualizó el nombre, datos erroneos';
 }
 
 if($opc=="id" && $id && $aux){
     if( $resultado>0){
         echo 'Se actualizó el ID';
     }
-    else echo 'no se actualizó el ID ';
+    else echo 'No se actualizó el ID, datos erroneos ';
 }
 
 
