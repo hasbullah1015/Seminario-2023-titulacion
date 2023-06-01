@@ -109,9 +109,32 @@ function form_generator(typeUser){
                 idOpc.setAttribute('class',"opcSecc");
                 idOpc.setAttribute('id', "idOpc");  
 
+
+                const labelInsert = document.createElement("label");
+                labelInsert.setAttribute("for","insertOpc");
+                labelInsert.innerHTML ='Agregar producto'
+
+        
+                const labelDrop = document.createElement("label");
+                labelDrop.setAttribute("for","dropOpc");
+                labelDrop.innerHTML ='Eliminar producto'
+
+                
+                const labelUpdatename = document.createElement("label");
+                labelUpdatepswd.setAttribute("for","pswdOpc");
+                labelUpdatepswd.innerHTML ='Actualizar nombre'
+
+                const labelUpdateid = document.createElement("label");
+                labelUpdatepswd.setAttribute("for","pswdOpc");
+                labelUpdatepswd.innerHTML ='Actualizar ID'
+
+                newForm.appendChild(labelInsert);
                 newForm.appendChild(insertOpc);
+                newForm.appendChild(labelDrop);
                 newForm.appendChild(dropOpc);
+                newForm.appendChild(labelUpdatename)
                 newForm.appendChild(nameOpc);
+                newForm.appendChild(labelUpdateid);
                 newForm.appendChild(idOpc);
 
 
@@ -179,11 +202,9 @@ function pdf_print(){
 
 function insert_product(){
         
-
-        
         document.getElementById('_newform').appendChild(submit);
         submit.setAttribute('value',"Agregar");
-        document.getElementById('_newform').insertBefore(brand,insertOpc);
+        document.getElementById('_newform').insertBefore(brand,labelInsert);
         document.getElementById('_newform').insertBefore(type,brand);
         document.getElementById('_newform').insertBefore(name,type);
         document.getElementById('_newform').insertBefore(id,name);
@@ -198,7 +219,7 @@ function drop_product(){
 
         document.getElementById('_newform').appendChild(submit);
         submit.setAttribute('value',"Eliminar");
-        document.getElementById('_newform').insertBefore(id,insertOpc);
+        document.getElementById('_newform').insertBefore(id,labelInsert);
         document.getElementById('_newform').removeChild(name);
         document.getElementById('_newform').removeChild(brand);
         document.getElementById('_newform').removeChild(type);
@@ -216,7 +237,7 @@ function name_update(){
 
         document.getElementById('_newform').appendChild(submit);
         submit.setAttribute('value',"Actualizar Nombre");
-        document.getElementById('_newform').insertBefore(aux,insertOpc);
+        document.getElementById('_newform').insertBefore(aux,labelInsert);
         document.getElementById('_newform').insertBefore(id,aux);
 
         document.getElementById('_newform').removeChild(brand);
@@ -231,7 +252,7 @@ function id_update(){
 
         document.getElementById('_newform').appendChild(submit);
         submit.setAttribute('value',"Actualizar ID");
-        document.getElementById('_newform').insertBefore(aux,insertOpc);
+        document.getElementById('_newform').insertBefore(aux,labelInsert);
         document.getElementById('_newform').insertBefore(id,aux);
 
         document.getElementById('_newform').removeChild(brand);
