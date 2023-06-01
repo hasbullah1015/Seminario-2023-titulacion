@@ -120,7 +120,7 @@ video{
     z-index: 0;
 }
 
-img{
+canvas img{
     display: flex !important;
 }
 
