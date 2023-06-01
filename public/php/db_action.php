@@ -35,6 +35,7 @@ if($opc=="drop" && $id){
 
 if($opc=="name" && $id && $aux){
     if( $resultado>0){
+        $sqlquery_consulta=mysqli_query($connection,"UPDATE producto SET nombre='$aux'  WHERE  idProducto ='$id'");
         echo 'Se actualizó el nombre';
     }
     else echo 'No se actualizó el nombre, datos erroneos';
@@ -42,6 +43,8 @@ if($opc=="name" && $id && $aux){
 
 if($opc=="id" && $id && $aux){
     if( $resultado>0){
+        $sqlquery_consulta=mysqli_query($connection,"UPDATE producto SET idProdcuto='$aux'  WHERE  idProducto ='$id'");
+
         echo 'Se actualizó el ID';
     }
     else echo 'No se actualizó el ID, datos erroneos ';
