@@ -12,14 +12,15 @@ $sqlquery_consulta=mysqli_query($connection,"SELECT idProducto FROM producto WHE
 $resultado=mysqli_num_rows($sqlquery_consulta);
 
 echo '<span id="action_label"> <p id="userName"> Bienvenido, '.$user.'</p>'.'<p id="typeUser" >'.'('.$rol.')'.'</p>'. '<p id="userMessage"> </p> </span>' ;
+echo 'Ingrese los datos correctamente ';
 
 if($rol!="A"){ echo 'Genera tu código QR'; }
 
 if($opc=="insert" && $id && $name && $type && $opc && $brand){
     if($resultado>0){
-        echo 'Ya existe un producto con el id:\n';  
+        echo 'Ya existe un producto con el id:';  
     }
-    else echo 'Se añadió el producto \n';
+    else echo 'Se añadió el producto';
         mysqli_query($connection,"INSERT INTO producto ( idProducto, nombre, categoria, marca, cantidad ) values ('$id', '$name', '$type','$brand' ,'0')");
 }
 
@@ -27,9 +28,9 @@ if($opc=="insert" && $id && $name && $type && $opc && $brand){
 if($opc=="drop" && $id){
     if( $resultado>0){
         mysqli_query($connection,"DELETE FROM producto WHERE idProducto = '$id'");
-        echo 'Se eliminó el producto \n';
+        echo 'Se eliminó el producto';
     }
-    else echo 'No se eliminó el producto, datos erroneos \n';
+    else echo 'No se eliminó el producto, datos erroneos';
 }
 
 
@@ -37,19 +38,15 @@ if($opc=="name" && $id && $aux){
     if( $resultado>0){
         echo 'Se actualizó el nombre';
     }
-    else echo 'No se actualizó el nombre, datos erroneos \n';
+    else echo 'No se actualizó el nombre, datos erroneos';
 }
 
 if($opc=="id" && $id && $aux){
     if( $resultado>0){
-        echo 'Se actualizó el ID \n';
+        echo 'Se actualizó el ID';
     }
-    else echo 'No se actualizó el ID, datos erroneos \n';
+    else echo 'No se actualizó el ID, datos erroneos ';
 }
-
-if($rol=="A"){ echo 'Ingrese los datos correctamente ';}
-
-
 
 
 ?>
