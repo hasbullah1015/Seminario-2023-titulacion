@@ -37,6 +37,15 @@ const brand = document.createElement("input");
 const aux = document.createElement("input");
 
 
+const labelInsert = document.createElement("label");
+const labelDrop = document.createElement("label");
+const labelUpdatename = document.createElement("label");
+const labelUpdateid = document.createElement("label");
+
+
+
+
+
 
 
 if(product_id.innerHTML != 'n/d'  && product_id.innerHTML != '' ){
@@ -110,21 +119,17 @@ function form_generator(typeUser){
                 idOpc.setAttribute('id', "idOpc");  
 
 
-                const labelInsert = document.createElement("label");
                 labelInsert.setAttribute("for","insertOpc");
                 labelInsert.innerHTML ='Agregar producto'
 
         
-                const labelDrop = document.createElement("label");
                 labelDrop.setAttribute("for","dropOpc");
                 labelDrop.innerHTML ='Eliminar producto'
 
                 
-                const labelUpdatename = document.createElement("label");
                 labelUpdatename.setAttribute("for","pswdOpc");
                 labelUpdatename.innerHTML ='Actualizar nombre'
 
-                const labelUpdateid = document.createElement("label");
                 labelUpdateid.setAttribute("for","pswdOpc");
                 labelUpdateid.innerHTML ='Actualizar ID'
 
