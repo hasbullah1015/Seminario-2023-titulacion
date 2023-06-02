@@ -16,7 +16,7 @@
 <html lang=”en”> 
 <head>
     <meta charset="utf-8">
-    <title>FACE ID WEBSITE</title>
+    <title>Inicio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
